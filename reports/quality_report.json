@@ -1,0 +1,75 @@
+{
+  "n_raw_interactions": 18274,
+  "per_site": {
+    "booking": 7597,
+    "traveloka": 6273,
+    "ivivu": 4404
+  },
+  "completeness": {
+    "CustomerName": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Location": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "NameHotel": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Rating": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Date": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0
+    }
+  },
+  "rating_consistency": {
+    "invalid_or_out_of_range": 0,
+    "invalid_pct": 0.0,
+    "min": 1.0,
+    "max": 10.0,
+    "mean": 7.5551
+  },
+  "date_consistency": {
+    "unparsable": 0,
+    "unparsable_pct": 0.0,
+    "out_of_range": 0,
+    "range_observed": [
+      "2011-10-15",
+      "2023-12-09"
+    ]
+  },
+  "duplicates": {
+    "exact_duplicate_rows": 7,
+    "exact_duplicate_pct": 0.0383,
+    "near_duplicate_rows": 11,
+    "near_duplicate_pct": 0.0602
+  },
+  "entity_matching": {
+    "raw_distinct_hotel_names": 581,
+    "canonical_hotels": 560,
+    "name_variants_collapsed": 21,
+    "collapse_rate_pct": 3.6145,
+    "hotels_on_multiple_sites": 78,
+    "canonical_keys_with_variant_spellings": 20
+  },
+  "location_consistency": {
+    "hotels_with_conflicting_location": 1
+  },
+  "cleaned": {
+    "n_after_cleaning": 18267,
+    "removed_total": 7,
+    "removed_pct": 0.0383,
+    "distinct_users_by_name": 6832,
+    "distinct_canonical_hotels": 560
+  }
+}

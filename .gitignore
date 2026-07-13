@@ -1,0 +1,5 @@
+# NEVER publish the re-identification mapping or intermediate name-bearing files.
+reports/_private_mapping.csv
+reports/interactions_clean.csv
+scripts/__pycache__/
+*.pyc

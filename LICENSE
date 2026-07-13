@@ -1,0 +1,43 @@
+ViHoRec Dataset License
+=======================
+
+The ViHoRec dataset (the anonymised files under `dataset_release/release/`:
+interactions.csv, users.csv, hotels.csv, and the benchmark split) is released
+under the
+
+    Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+license. Full legal text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+You are free to:
+  * Share  - copy and redistribute the material in any medium or format.
+  * Adapt  - remix, transform, and build upon the material.
+
+Under the following terms:
+  * Attribution - You must give appropriate credit by citing the dataset paper
+    (see CITATION below), provide a link to this license, and indicate if
+    changes were made.
+  * NonCommercial - You may not use the material for commercial purposes.
+
+The accompanying source code under `dataset_release/scripts/` is released under
+the MIT License and may be reused, including commercially.
+
+Rationale for NonCommercial
+---------------------------
+The underlying reviews were published by users on third-party booking platforms
+(Booking.com, Traveloka, Ivivu). To respect those platforms' Terms of Service
+and the non-commercial spirit of academic data sharing, the derived dataset is
+restricted to research and educational (non-commercial) use only. See
+DATASHEET.md for the full ethical and legal discussion.
+
+CITATION
+--------
+If you use this dataset, please cite:
+
+@article{vihorec,
+  title  = {ViHoRec: A Vietnamese Hotel Recommendation Dataset with a
+            Documented Collection and Quality-Control Pipeline},
+  author = {Nguyen, Hoang Minh and Ta, Nhat Minh and Nguyen, Thien Thuat and
+            Huynh, Van Tin},
+  year   = {2026}
+}

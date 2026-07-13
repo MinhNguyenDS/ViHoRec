@@ -1,0 +1,249 @@
+user_id,hotel_id,rating,date,record_type,name,location,rater_1,rater_2,rater_3
+U920e21611453,H0353,10.0,2021-02-12,interaction,,,1,1,0
+Uc2d7cbfea755,H0184,7.0,2022-04-22,interaction,,,1,1,1
+Ua70d6cc8c74b,H0232,6.4,2016-02-22,interaction,,,1,1,1
+U7f778acf3395,H0203,10.0,2020-09-07,interaction,,,1,1,1
+U337d9e820084,H0336,8.5,2023-03-31,interaction,,,1,1,1
+,H0451,,,hotel,Khách Sạn LADALAT,Đà Lạt,1,1,0
+,H0518,,,hotel,Khu nghỉ dưỡng Novotel Phú Quốc,Phú Quốc,1,1,1
+U5e953c92f790,H0129,9.0,2019-09-04,interaction,,,1,1,1
+Ub1161a4264bc,H0541,5.0,2020-11-30,interaction,,,1,1,0
+,H0090,,,hotel,ANRIZON HOTEL NHA TRANG,Nha Trang,1,1,1
+,H0281,,,hotel,Hưng Nguyên Valley Đà Lạt,Đà Lạt,1,1,1
+,H0070,,,hotel,The Nam An Villa Hoi An,Hội An,1,1,1
+,H0556,,,hotel,Tuấn Vũ Homestay,Đà Lạt,1,1,0
+U7fb83ae780f3,H0232,9.3,2019-05-12,interaction,,,1,1,1
+Ufae96fd5351e,H0296,8.0,2015-10-08,interaction,,,1,1,1
+Uff47cfd7a9c0,H0558,8.5,2017-07-17,interaction,,,1,1,1
+,H0272,,,hotel,Muong Thanh Grand Da Nang Hotel,Đà Nẵng,1,1,1
+Uc43682ad0fad,H0181,9.0,2022-08-06,interaction,,,1,1,1
+Ue1b7d326a532,H0516,6.9,2021-04-07,interaction,,,1,1,1
+Uc18c0094d52f,H0032,10.0,2023-01-16,interaction,,,1,1,1
+U293563b897d9,H0435,6.0,2017-02-14,interaction,,,1,1,1
+Uab90ae8d578c,H0355,5.0,2022-05-21,interaction,,,1,1,1
+Uc2fa4260b151,H0233,7.7,2013-04-28,interaction,,,1,1,1
+U45764f44c185,H0474,9.0,2016-09-01,interaction,,,1,1,1
+,H0479,,,hotel,Mento Hotel Quy Nhon,Quy Nhơn,1,1,1
+,H0371,,,hotel,Flower Boutique Hotel,Đà Nẵng,1,1,1
+,H0275,,,hotel,Khách sạn Hồng Hải Đà Lạt,Đà Lạt,1,1,0
+U5e181805fc19,H0104,10.0,2023-06-21,interaction,,,1,1,1
+Ua571a440c856,H0200,6.0,2022-07-25,interaction,,,1,1,1
+U9482b53a70de,H0137,10.0,2020-03-06,interaction,,,1,1,1
+,H0442,,,hotel,Jade Scene Hotel,Huế,1,1,1
+,H0079,,,hotel,Khu nghỉ dưỡng Ana Mandara Villas Dalat Resort and Spa,Đà Lạt,1,1,0
+Uc7490c282049,H0541,8.0,2019-12-21,interaction,,,1,1,1
+U2a46e9aec727,H0112,9.0,2021-07-04,interaction,,,1,1,1
+,H0524,,,hotel,Khách sạn TTC Premium Phan Thiết,Phan Thiết,1,1,0
+U1995d921a404,H0355,10.0,2022-08-09,interaction,,,1,1,0
+U9666d5aa39a0,H0461,5.8,2022-10-17,interaction,,,1,1,1
+,H0055,,,hotel,Daisy Garden Villa Hoi An,Hội An,1,1,1
+U43c9681df962,H0200,9.0,2022-03-18,interaction,,,1,1,0
+U1e1367252b82,H0381,7.0,2023-08-27,interaction,,,1,1,0
+Ueb157ac6e603,H0516,10.0,2019-12-23,interaction,,,1,1,1
+U5d15975ae749,H0030,9.0,2016-10-14,interaction,,,1,1,1
+U8c5492d08f33,H0179,10.0,2020-12-19,interaction,,,1,1,0
+Uef35cb793711,H0364,7.0,2016-03-15,interaction,,,1,1,1
+U732f3a697fa2,H0332,2.0,2022-05-21,interaction,,,1,1,1
+Uada44920f035,H0528,6.0,2022-07-19,interaction,,,1,1,1
+U2afa5ab7b4ec,H0405,4.0,2018-07-14,interaction,,,1,1,1
+U2877afd59edb,H0294,9.4,2019-03-26,interaction,,,1,1,1
+Ub6449c27ea57,H0532,10.0,2022-04-22,interaction,,,1,1,0
+U6d18502a7078,H0159,9.1,2021-12-04,interaction,,,1,1,1
+Ub2b3296bb884,H0445,6.4,2022-04-05,interaction,,,1,1,1
+,H0006,,,hotel,Thanh Van 1 Hotel,Hội An,1,1,1
+Uf57a18241370,H0544,10.0,2021-08-01,interaction,,,1,1,1
+,H0410,,,hotel,Hoang Long Hotel Phan Thiết,Phan Thiết,1,1,1
+,H0527,,,hotel,Seahorse Resort & Spa Phan Thiết,Phan Thiết,1,1,0
+Uc03afc8432af,H0369,8.0,2019-06-28,interaction,,,1,1,1
+Uae43a1c16f19,H0075,6.0,2017-03-29,interaction,,,1,1,1
+,H0296,,,hotel,Khách sạn Ngọc Mai Phú Đà Lạt,Đà Lạt,1,1,0
+Uf79b29f6f986,H0296,9.0,2015-03-10,interaction,,,1,1,1
+U1c06cd8569c3,H0467,9.7,2022-08-23,interaction,,,1,1,1
+U5d4ea095be61,H0262,10.0,2019-11-07,interaction,,,1,1,1
+Uf05fd455a70d,H0364,10.0,2016-09-11,interaction,,,1,1,1
+U271e5fa64c5f,H0556,9.0,2017-04-02,interaction,,,1,1,1
+,H0155,,,hotel,TMS Hotel Da Nang Beach,Đà Nẵng,1,1,1
+U8dbdd860289a,H0182,9.1,2020-03-03,interaction,,,1,1,1
+U89e44dddec44,H0262,6.0,2019-10-14,interaction,,,1,1,1
+,H0172,,,hotel,Navada Beach Hotel,Nha Trang,1,1,1
+U126ba54ffc44,H0115,9.4,2017-06-12,interaction,,,1,1,1
+U28172820ff33,H0022,9.0,2015-07-16,interaction,,,1,1,1
+,H0101,,,hotel,Rex Hotel and Apartment,Nha Trang,1,1,1
+Uec2056a2a077,H0233,9.5,2019-09-04,interaction,,,1,1,1
+Uacd3c063a3d3,H0086,8.0,2020-08-03,interaction,,,1,1,1
+U458d06a3dcd4,H0289,7.7,2014-04-09,interaction,,,1,1,1
+U9bad77e5dda4,H0433,9.7,2020-06-28,interaction,,,1,1,1
+U57dd8f4e431c,H0437,8.0,2022-01-26,interaction,,,1,1,1
+U0938c5c36632,H0232,10.0,2019-05-27,interaction,,,1,1,1
+U4558266492a4,H0296,9.0,2017-03-17,interaction,,,1,1,1
+U333dc61d1be5,H0518,9.5,2018-11-25,interaction,,,1,1,1
+U194aa6a15c7f,H0087,7.0,2022-03-12,interaction,,,1,1,0
+U8b48f1abe5bb,H0104,7.0,2023-12-05,interaction,,,1,1,0
+Ue7097b34e841,H0454,9.4,2019-02-26,interaction,,,1,1,1
+,H0030,,,hotel,Khách sạn Alana Nha Trang,Nha Trang,1,1,0
+U1cb6e3f71256,H0521,9.7,2018-06-02,interaction,,,1,1,1
+U875db4b1b994,H0082,7.0,2018-04-29,interaction,,,1,1,1
+U72a31a35b4f4,H0521,5.7,2017-02-18,interaction,,,1,1,1
+Uae4e862cbbb3,H0496,6.1,2021-02-12,interaction,,,1,1,1
+,H0346,,,hotel,Hong Diep Hotel Quy Nhon,Quy Nhơn,1,1,1
+U9deb26de64b9,H0232,6.0,2017-03-23,interaction,,,1,1,1
+U76baea6966e0,H0104,5.0,2023-02-24,interaction,,,1,1,0
+Udc7a244453d9,H0378,8.0,2023-07-14,interaction,,,1,1,1
+Ud060e42f88b8,H0408,7.0,2020-10-19,interaction,,,1,1,1
+U7cd997f32f2d,H0018,10.0,2022-08-20,interaction,,,1,1,0
+Ua90f5abdf891,H0077,5.0,2023-07-04,interaction,,,1,1,0
+U577306d16590,H0089,9.7,2017-12-21,interaction,,,1,1,1
+Uc7110aaf2bea,H0437,5.0,2023-05-20,interaction,,,1,1,1
+U43553bc1e3be,H0286,7.5,2018-10-12,interaction,,,1,1,1
+U8c060a0d0c30,H0103,6.0,2015-04-24,interaction,,,1,1,1
+,H0487,,,hotel,Mira Hotel,Quy Nhơn,1,1,0
+U699916231e95,H0008,8.0,2022-05-02,interaction,,,1,1,1
+Ud35a223711a7,H0086,10.0,2018-08-21,interaction,,,1,1,1
+Ue6421d0ffd27,H0064,6.1,2015-09-04,interaction,,,1,1,1
+,H0553,,,hotel,Song Homestay - The Song Vung Tau,Vũng Tàu,1,1,1
+U93a7b3172364,H0376,7.0,2020-05-30,interaction,,,1,1,0
+Uac87ad887d56,H0011,4.0,2023-01-13,interaction,,,1,1,1
+Ud3331afbb2ee,H0551,7.3,2014-07-20,interaction,,,1,1,1
+Ud31580178d1c,H0064,6.9,2015-01-15,interaction,,,1,1,1
+Uf1bd839bb79e,H0318,10.0,2019-04-26,interaction,,,1,1,1
+U2f45ade47ddf,H0467,9.0,2023-01-09,interaction,,,1,1,1
+U80c39feb8af7,H0090,8.0,2023-07-21,interaction,,,1,1,0
+,H0227,,,hotel,Khách sạn Royal Charm,Đà Nẵng,1,1,1
+U1d39c48d3743,H0516,9.4,2022-12-11,interaction,,,1,1,1
+,H0453,,,hotel,Sun Lake Hotel,Vũng Tàu,1,1,1
+U967847e18431,H0516,6.6,2015-08-14,interaction,,,1,1,1
+Ue0a9d4a85ddd,H0014,5.0,2021-06-11,interaction,,,1,1,1
+U6a1ec282d822,H0023,9.0,2023-04-30,interaction,,,1,1,1
+Uf680aead23d1,H0204,6.0,2022-05-14,interaction,,,1,1,1
+U1e1367252b82,H0087,6.0,2022-11-05,interaction,,,1,1,0
+U6ba8dc43549f,H0266,6.0,2012-05-06,interaction,,,1,1,1
+U0c024ce09c1a,H0408,6.7,2017-09-25,interaction,,,1,1,1
+U9c121aefffd9,H0523,6.1,2015-07-29,interaction,,,1,1,1
+Ucc2b71498db9,H0147,8.5,2022-11-29,interaction,,,1,1,1
+U4bf1671e06ad,H0526,7.0,2019-08-30,interaction,,,1,1,1
+U147e1eb2139b,H0420,10.0,2023-04-30,interaction,,,1,1,1
+Ub94c5e42d6ff,H0162,9.1,2019-04-15,interaction,,,1,1,1
+Ub4fa1bcf456b,H0394,6.0,2018-03-04,interaction,,,1,1,1
+Ue0394cde49c9,H0233,8.0,2018-03-08,interaction,,,1,1,1
+U5a350d7e7970,H0015,10.0,2022-06-18,interaction,,,1,1,1
+U6a6e757638ae,H0408,5.5,2016-08-22,interaction,,,1,1,1
+U2e205ede8815,H0225,4.0,2021-01-04,interaction,,,1,1,1
+,H0083,,,hotel,Anantara Resort & Spa Mũi Né,Phan Thiết,1,1,0
+U0cded67ef66e,H0452,9.7,2018-11-17,interaction,,,1,1,1
+U256091ba8422,H0493,3.0,2023-07-25,interaction,,,1,1,1
+,H0555,,,hotel,Vias Hotel Vung Tau,Vũng Tàu,1,1,1
+U869d32477404,H0500,10.0,2023-03-21,interaction,,,1,1,1
+,H0132,,,hotel,Khu Nghỉ Dưỡng Premier Residences Phú Quốc Emerald Bay,Phú Quốc,1,1,0
+U6e9043b7f6e6,H0506,6.0,2021-01-16,interaction,,,1,1,0
+Uabf712daa9ce,H0056,7.0,2017-02-26,interaction,,,1,1,1
+Ud15adbdbba3d,H0021,7.0,2022-03-18,interaction,,,1,1,0
+U9d377e63d53f,H0032,9.4,2015-09-18,interaction,,,1,1,1
+U0861a679fb34,H0485,6.0,2018-08-18,interaction,,,1,1,1
+U9b7256dfdd66,H0557,6.4,2018-12-19,interaction,,,1,1,1
+U1e7bd01ace84,H0114,7.5,2019-05-05,interaction,,,1,1,1
+U0a1b617a4407,H0461,6.0,2023-06-01,interaction,,,1,1,1
+U392227e99234,H0315,8.8,2022-04-29,interaction,,,1,1,1
+,H0078,,,hotel,An Ngân Phú Hotel,Quy Nhơn,1,1,1
+,H0506,,,hotel,Senia Hotel Nha Trang,Nha Trang,1,1,1
+U8ca4392fa347,H0369,8.5,2018-01-11,interaction,,,1,1,1
+,H0332,,,hotel,Kings Hotel Dalat,Đà Lạt,1,1,1
+Ufb6fa5c6cdc5,H0316,6.0,2022-06-11,interaction,,,1,1,1
+U8baca280affb,H0213,7.0,2020-02-12,interaction,,,1,1,1
+Ude141436b922,H0499,5.4,2015-03-29,interaction,,,1,1,1
+Ua888291c135f,H0363,6.0,2022-08-23,interaction,,,1,1,1
+Ub6b1b7581ff2,H0439,6.0,2022-01-13,interaction,,,1,1,1
+U21f30230fde5,H0446,5.7,2016-01-21,interaction,,,1,1,1
+U1995d921a404,H0350,3.0,2023-04-05,interaction,,,1,1,0
+Ua3596c82b9b6,H0412,8.5,2016-12-10,interaction,,,1,1,1
+U1b75ad9e4757,H0162,9.4,2022-09-10,interaction,,,1,1,1
+U4028d4ac9ce8,H0272,7.0,2014-06-05,interaction,,,1,1,1
+U256420ff7896,H0452,10.0,2021-03-16,interaction,,,1,1,1
+,H0467,,,hotel,Khách sạn Mường Thanh Luxury Phú Quốc,Phú Quốc,1,1,1
+Uaf787a152bdc,H0025,8.0,2022-03-25,interaction,,,1,1,0
+Ua20ebc36a84f,H0416,9.0,2018-07-09,interaction,,,1,1,1
+,H0163,,,hotel,Hồ Tràm Beach Boutique Resort & Spa,Vũng Tàu,1,1,0
+Ub394f564fb96,H0126,5.9,2020-12-11,interaction,,,1,1,1
+U85fd989ed38b,H0408,8.0,2021-09-05,interaction,,,1,1,1
+Ud1d9ab571781,H0413,8.5,2019-06-15,interaction,,,1,1,1
+,H0002,,,hotel,Pho Hoi 1 Hotel,Hội An,1,1,1
+Ub4c4d593ee1d,H0112,6.0,2022-06-07,interaction,,,1,1,1
+U182bed4ea9a1,H0477,9.0,2017-08-28,interaction,,,1,1,1
+Uc43682ad0fad,H0397,6.0,2022-05-25,interaction,,,1,1,1
+U6f31ebae1807,H0509,8.8,2019-03-17,interaction,,,1,1,1
+,H0531,,,hotel,Sunset Sanato Resort & Villas Phú Quốc,Phú Quốc,1,1,0
+,H0384,,,hotel,GIC Luxury Hotel And Spa,Đà Nẵng,1,1,1
+,H0368,,,hotel,Khách sạn FLC Grand Quy Nhơn,Quy Nhơn,1,1,0
+Uc9fc9f53967b,H0439,9.0,2020-11-14,interaction,,,1,1,0
+U0582b7c54472,H0496,6.0,2023-02-23,interaction,,,1,1,1
+Uf35c029dd8f5,H0132,9.5,2019-10-06,interaction,,,1,1,1
+Ua571a440c856,H0158,9.0,2022-05-09,interaction,,,1,1,1
+,H0144,,,hotel,Khách sạn CANVAS Đà Nẵng Beach,Đà Nẵng,1,1,0
+Ub0d6aeadc480,H0008,6.0,2022-02-26,interaction,,,1,1,1
+Ue63aa86fe901,H0215,5.1,2015-05-03,interaction,,,1,1,1
+U91ea4166cd1e,H0268,6.3,2013-07-29,interaction,,,1,1,1
+Ucc857b3a2a4c,H0048,10.0,2023-02-05,interaction,,,1,1,1
+U6a59181b4a16,H0121,6.0,2023-06-30,interaction,,,1,1,1
+,H0234,,,hotel,Cô Tư's Homestay,Phan Thiết,1,1,1
+,H0460,,,hotel,Ocean Vista Sea Links Phan Thiết,Phan Thiết,1,1,0
+Ud713487cd63f,H0526,9.0,2015-01-09,interaction,,,1,1,1
+U7f6c9cd1a5f4,H0204,5.0,2022-05-06,interaction,,,1,1,1
+Ueff4fbda6737,H0214,10.0,2022-04-10,interaction,,,1,1,1
+U086c4612b288,H0295,10.0,2023-06-15,interaction,,,1,1,1
+,H0301,,,hotel,Khách sạn Phố Núi Đà Lạt,Đà Lạt,1,1,0
+Uf71884536399,H0446,5.8,2019-08-03,interaction,,,1,1,1
+Ue0a9d4a85ddd,H0089,10.0,2023-07-07,interaction,,,1,1,1
+U5eee0df3dac0,H0521,10.0,2020-09-28,interaction,,,1,1,1
+U7615f717b3f0,H0132,10.0,2020-02-29,interaction,,,1,1,1
+,H0081,,,hotel,Khu nghỉ dưỡng The Anam Mũi Né,Phan Thiết,1,1,0
+Ueb872f9b9d9e,H0532,5.9,2015-12-22,interaction,,,1,1,1
+,H0039,,,hotel,Amona Hotel,Huế,1,1,1
+,H0145,,,hotel,Khu nghỉ dưỡng Carmelina Beach Hồ Tràm,Vũng Tàu,1,1,0
+U7f1d82df196e,H0320,10.0,2020-11-28,interaction,,,1,1,1
+U09897514a3e1,H0104,5.0,2023-07-07,interaction,,,1,1,0
+Uf02e06bbbb64,H0296,9.0,2017-08-18,interaction,,,1,1,1
+U467daa13540d,H0010,10.0,2023-05-18,interaction,,,1,1,1
+,H0204,,,hotel,SOL by Meliá Phu Quoc,Phú Quốc,1,1,1
+U3ca0e073db70,H0529,9.4,2016-09-24,interaction,,,1,1,1
+,H0396,,,hotel,Halona Hotel Phu Quoc,Phú Quốc,1,1,1
+,H0086,,,hotel,Khu nghỉ dưỡng Angsana Lăng Cô Huế,Huế,1,1,0
+,H0376,,,hotel,Khách sạn Fusion Suites Vũng Tàu,Vũng Tàu,1,1,1
+,H0010,,,hotel,La Cactus Hotel 2,Quy Nhơn,1,1,1
+,H0148,,,hotel,HAIAN Beach Hotel & Spa Đà Nẵng,Đà Nẵng,1,1,0
+U3ae14c952a2d,H0366,6.0,2021-05-17,interaction,,,1,1,1
+Ue045989ec9ca,H0078,9.0,2021-12-18,interaction,,,1,1,1
+U16c2298dc0c0,H0510,10.0,2022-06-28,interaction,,,1,1,1
+Ub4f035fd00cd,H0131,8.0,2017-01-09,interaction,,,1,1,1
+Ua84311240102,H0333,9.0,2022-08-20,interaction,,,1,1,0
+U595041030b42,H0018,5.0,2023-08-18,interaction,,,1,1,1
+,H0165,,,hotel,Thanh Kieu Beach Resort,Phú Quốc,1,1,1
+U53b7c7a48fe7,H0147,9.1,2023-05-03,interaction,,,1,1,1
+,H0185,,,hotel,Biệt Thự Hoa Hồng Đà Lạt (Dalat Terrasse Des Roses Villa),Đà Lạt,1,1,0
+,H0341,,,hotel,Khu Nghỉ Dưỡng Tiến Đạt Mũi Né,Phan Thiết,1,1,0
+,H0140,,,hotel,Khu nghỉ dưỡng Rock Water Bay Phan Thiết,Phan Thiết,1,1,0
+U91df3e8eda52,H0232,6.1,2015-12-08,interaction,,,1,1,1
+U63fd833b4a7c,H0220,6.0,2020-11-17,interaction,,,1,1,0
+Ue179889a7726,H0166,5.1,2018-02-11,interaction,,,1,1,1
+,H0073,,,hotel,Son Hoi An Boutique Hotel & Spa,Hội An,1,1,1
+U2d60ecff62f1,H0497,7.0,2023-10-08,interaction,,,1,1,1
+U16c2298dc0c0,H0100,8.0,2020-10-25,interaction,,,1,1,1
+U1561549cf6c7,H0232,8.5,2016-02-17,interaction,,,1,1,1
+U2ad5b9117c30,H0454,8.5,2018-07-26,interaction,,,1,1,1
+Uf120825b3060,H0122,7.2,2018-10-06,interaction,,,1,1,1
+U6156734cc45f,H0237,9.0,2019-07-15,interaction,,,1,1,1
+U80fb5499f05f,H0204,6.0,2020-11-09,interaction,,,1,1,1
+U5efba0fdbf76,H0425,9.5,2019-01-21,interaction,,,1,1,1
+Uda808773dfcb,H0269,9.0,2019-02-22,interaction,,,1,1,1
+,H0517,,,hotel,Khu nghỉ dưỡng Novela Phan Thiết,Phan Thiết,1,1,0
+U22b0797166cb,H0082,10.0,2019-12-14,interaction,,,1,1,1
+,H0072,,,hotel,Hội An Reverie Villas,Hội An,1,1,1
+,H0244,,,hotel,Khách sạn Corvin Vũng Tàu,Vũng Tàu,1,1,0
+Uc845d335921c,H0405,9.0,2017-07-26,interaction,,,1,1,1
+,H0499,,,hotel,Nam Xuan Premium Hotel,Đà Lạt,1,1,1
+Uf50e013c8797,H0311,9.0,2021-01-13,interaction,,,1,1,1
+,H0177,,,hotel,Vinpearl Beachfront Nha Trang,Nha Trang,1,1,0
+Uabf2104dc15d,H0305,6.5,2015-01-08,interaction,,,1,1,1
+Ube55ef869f49,H0299,7.0,2016-08-14,interaction,,,1,1,1
+Ue0f16e914080,H0018,6.0,2023-07-17,interaction,,,1,1,0
+U71d1d0ff09c7,H0058,10.0,2021-02-25,interaction,,,1,1,1
+Uf96b6ab17b89,H0281,5.5,2021-04-28,interaction,,,1,1,1
+U0496458462e0,H0216,10.0,2023-10-02,interaction,,,1,1,1

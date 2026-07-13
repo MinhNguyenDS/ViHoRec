@@ -1,0 +1,10 @@
+{
+  "protocol": "leave-last-one-out (temporal)",
+  "min_interactions": 4,
+  "seed": 42,
+  "n_users": 800,
+  "n_items": 535,
+  "n_train": 9787,
+  "n_test": 800,
+  "sparsity_pct": 97.5264
+}

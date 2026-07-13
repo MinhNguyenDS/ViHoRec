@@ -1,0 +1,8 @@
+{
+  "n_items": 248,
+  "n_raters": 3,
+  "percent_agreement": 0.7944,
+  "majority_vote_accuracy": 1.0,
+  "fleiss_kappa": -0.0736,
+  "estimated_accuracy": 0.9315
+}

@@ -1,0 +1,561 @@
+hotel_id,name,location
+H0000,Khách sạn Dragon King 1 Đà Lạt,Đà Lạt
+H0001,Khách sạn Hoàng Yến 1 Quy Nhơn,Quy Nhơn
+H0002,Pho Hoi 1 Hotel,Hội An
+H0003,Hong Thien 1 Hotel,Huế
+H0004,Hue Sweethouse 1 Homestay,Huế
+H0005,Khanh Uyen 1 Hotel,Đà Lạt
+H0006,Thanh Van 1 Hotel,Hội An
+H0007,Cherry Hotel & Apartment Da Nang - Phoenix 2 Hotel,Đà Nẵng
+H0008,Arapang Hotel 2,Đà Lạt
+H0009,Khách sạn Thanh Bình 2,Hội An
+H0010,La Cactus Hotel 2,Quy Nhơn
+H0011,Sea Castle 2 Hotel Da Nang,Đà Nẵng
+H0012,Khách sạn Xuân Hồng 2 Đà Lạt,Đà Lạt
+H0013,Khách sạn Dạ Lan 2 Đà Lạt,Đà Lạt
+H0014,AN Boutique Hotel - STAY 24H,Đà Lạt
+H0015,Bazan Hotel Dalat - STAY 24H,Đà Lạt
+H0016,Crony Villa - STAY 24H,Hội An
+H0017,Raon Dalat - STAY 24H,Đà Lạt
+H0018,Raon Hotel - STAY 24H,Đà Nẵng
+H0019,Vuon Xuan Hotel - STAY 24H,Đà Lạt
+H0020,Khách sạn Tulip 3 Đà Lạt,Đà Lạt
+H0021,Khanh Uyen 3 Hotel,Đà Lạt
+H0022,Khách sạn Hoa Sen 62 Đà Lạt,Đà Lạt
+H0023,86 Homestay Phan Thiết,Phan Thiết
+H0024,Allegro Hoi An . A Little Luxury Hotel & Spa,Hội An
+H0025,Little Riverside Hoi An . A Luxury Hotel & Spa,Hội An
+H0026,Khách sạn A La Carte Đà Nẵng,Đà Nẵng
+H0027,Sunny A Hotel,Huế
+H0028,Aaron Hotel,Nha Trang
+H0029,Khu nghỉ dưỡng Premier Village Phu Quoc Managed By Accor,Phú Quốc
+H0030,Khách sạn Alana Nha Trang,Nha Trang
+H0031,Alba Wellness Valley by Fusion Huế,Huế
+H0032,Alibaba Hotel Da Nang,Đà Nẵng
+H0033,Allezboo Beach Resort & Spa Phan Thiết,Phan Thiết
+H0034,Khu nghỉ dưỡng ALMA Cam Ranh,Nha Trang
+H0035,Khu nghỉ dưỡng Almanity Hội An Wellness,Hội An
+H0036,Khách sạn Altara Suites Đà Nẵng,Đà Nẵng
+H0037,Khu nghỉ dưỡng Amarin Phú Quốc,Phú Quốc
+H0038,Khu nghỉ dưỡng Amiana Nha Trang,Nha Trang
+H0039,Amona Hotel,Huế
+H0040,Khu nghỉ dưỡng Anantara Hội An,Hội An
+H0041,Anio Boutique Hotel Hoi An,Hội An
+H0042,TTR An Nam Apart Hotel,Đà Lạt
+H0043,Hoi An Riverside Villas & Apartments,Hội An
+H0044,An Lâm Retreats Ninh Vân Bay,Nha Trang
+H0045,Khu nghỉ dưỡng Palm Garden Beach Hội An,Hội An
+H0046,Khu nghỉ dưỡng Hội An Beach,Hội An
+H0047,Hoi An River Beach Resort and Residences,Hội An
+H0048,Victoria Hội An Beach Resort & Spa,Hội An
+H0049,"InterContinental Phu Quoc Long Beach Resort, an IHG Hotel",Phú Quốc
+H0050,"Làng Bình An, Hồ Tuyền Lâm Đà Lạt",Đà Lạt
+H0051,Hoi An Canal House,Hội An
+H0052,La An Central Boutique Villa,Hội An
+H0053,Khu nghỉ dưỡng Citadines Pearl Hội An,Hội An
+H0054,Cozy Savvy Boutique Hotel Hoi An,Hội An
+H0055,Daisy Garden Villa Hoi An,Hội An
+H0056,Khách sạn ÊMM Hội An,Hội An
+H0057,Green Field Villas Hội An,Hội An
+H0058,Khu nghỉ dưỡng Four Seasons The Nam Hải Hội An,Hội An
+H0059,Hoi An Rose Garden Hotel,Hội An
+H0060,An Gia,Đà Lạt
+H0061,Hoi An Golden Holiday Hotel & Spa,Hội An
+H0062,Vinpearl Resort & Golf Nam Hội An,Hội An
+H0063,HOI AN HEART LODGE,Hội An
+H0064,Khách Sạn Hoài Niệm Hội An,Hội An
+H0065,Khách sạn Mường Thanh Holiday Hội An,Hội An
+H0066,La Siesta Hội An Resort & Spa,Hội An
+H0067,Laluna Hoi An Riverside Hotel & Spa,Hội An
+H0068,Khách sạn Lasenta Boutique Hội An,Hội An
+H0069,Hội An Memories Resort & Spa,Hội An
+H0070,The Nam An Villa Hoi An,Hội An
+H0071,Hoi An Odyssey Hotel & Spa,Hội An
+H0072,Hội An Reverie Villas,Hội An
+H0073,Son Hoi An Boutique Hotel & Spa,Hội An
+H0074,TTC Hotel - Hoi An,Hội An
+H0075,Hội An Việt House Homestay,Hội An
+H0076,Zest Villas & Spa Hoi An,Hội An
+H0077,Hotel Khanh An,Phan Thiết
+H0078,An Ngân Phú Hotel,Quy Nhơn
+H0079,Khu nghỉ dưỡng Ana Mandara Villas Dalat Resort and Spa,Đà Lạt
+H0080,Khu nghỉ dưỡng Pax Ana Dốc Lết,Nha Trang
+H0081,Khu nghỉ dưỡng The Anam Mũi Né,Phan Thiết
+H0082,Khu nghỉ dưỡng The Anam Nha Trang,Nha Trang
+H0083,Anantara Resort & Spa Mũi Né,Phan Thiết
+H0084,Khu nghỉ dưỡng Anantara Quy Nhơn Villas,Quy Nhơn
+H0085,Angel Hotel Danang,Đà Nẵng
+H0086,Khu nghỉ dưỡng Angsana Lăng Cô Huế,Huế
+H0087,Hotel Hoai Anh,Vũng Tàu
+H0088,Khách sạn Queen Ann Nha Trang,Nha Trang
+H0089,Annata Beach Hotel,Vũng Tàu
+H0090,ANRIZON HOTEL NHA TRANG,Nha Trang
+H0091,Khách sạn ANYA Premier Quy Nhơn,Quy Nhơn
+H0092,Khách sạn ANYA Quy Nhơn,Quy Nhơn
+H0093,Art Nest Hotel & Apartment Nha Trang,Nha Trang
+H0094,Azura Gold Hotel & Apartment,Nha Trang
+H0095,Fati Boutique Hotel & Apartment,Vũng Tàu
+H0096,FLC SEA TOWER APARTMENT Minh Minh,Quy Nhơn
+H0097,The Garden Hotel and Apartment,Đà Nẵng
+H0098,Halina Hotel and Apartment,Đà Nẵng
+H0099,Marine Hotel & Apartment,Vũng Tàu
+H0100,Vung Tau Melody Apartment,Vũng Tàu
+H0101,Rex Hotel and Apartment,Nha Trang
+H0102,RIO Hotel and Apartment,Vũng Tàu
+H0103,Seashore Hotel & Apartment,Đà Nẵng
+H0104,The Song Vung Tau Apartment,Vũng Tàu
+H0105,Gold Ocean Apartments Nha Trang,Nha Trang
+H0106,Khách sạn Arapang Đà Lạt,Đà Lạt
+H0107,Khu nghỉ dưỡng Arcadia Phú Quốc,Phú Quốc
+H0108,Khu nghỉ The Arena Cam Ranh,Nha Trang
+H0109,Ariyana SmartCondotel Nha Trang,Nha Trang
+H0110,Aroma Beach Resort & Spa Phan Thiết,Phan Thiết
+H0111,Aroma Nha Trang Boutique Hotel,Nha Trang
+H0112,Palmier Hotel - Art House Da Nang,Đà Nẵng
+H0113,Khách sạn Hải Âu Quy Nhơn,Quy Nhơn
+H0114,Avani Quy Nhơn Resort & Spa,Quy Nhơn
+H0115,Azerai Ke Ga Bay,Phan Thiết
+H0116,L'Azure Resort & Spa Phú Quốc,Phú Quốc
+H0117,Golden Bell Backpacker Hotel & Pool Bar,Hội An
+H0118,Bondi Backpackers Nhatrang,Nha Trang
+H0119,Mira Bãi Xếp Quy Nhơn - The Hidden Jewel,Quy Nhơn
+H0120,Quy Nhơn Balahouse,Quy Nhơn
+H0121,Bamboo Village Beach Resort & Spa Mũi Né,Phan Thiết
+H0122,Khu nghỉ dưỡng và Spa Mikazuki Nhật Bản,Đà Nẵng
+H0123,Mercure Đà Nẵng French Village BanaHills,Đà Nẵng
+H0124,Khu nghỉ dưỡng Banyan Tree Lăng Cô Huế,Huế
+H0125,Venus Hotel & Sky Bar Phu Quoc,Phú Quốc
+H0126,Khu nghỉ dưỡng The Sailing Bay Beach Phan Thiết,Phan Thiết
+H0127,Khách sạn Marina Bay Côn Đảo,Vũng Tàu
+H0128,Coral Bay Resort,Phú Quốc
+H0129,Khách sạn Wyndham Danang Golden Bay,Đà Nẵng
+H0130,Emerald Bay Hotel & Spa,Nha Trang
+H0131,JW Marriott Phu Quoc Emerald Bay Resort & Spa,Phú Quốc
+H0132,Khu Nghỉ Dưỡng Premier Residences Phú Quốc Emerald Bay,Phú Quốc
+H0133,LAlya Ninh Vân Bay,Nha Trang
+H0134,Mango Bay Resort,Phú Quốc
+H0135,Marina Bay Resort & Spa Vũng Tàu,Vũng Tàu
+H0136,Khu nghỉ dưỡng Muine Bay Phan Thiết,Phan Thiết
+H0137,Khu nghỉ dưỡng Six Senses Ninh Vân Bay Nha Trang,Nha Trang
+H0138,Vinpearl Resort & Spa Nha Trang Bay,Nha Trang
+H0139,Ocean Bay Phu Quoc Resort and Spa,Phú Quốc
+H0140,Khu nghỉ dưỡng Rock Water Bay Phan Thiết,Phan Thiết
+H0141,Khách sạn Citadines Bayfront Nha Trang,Nha Trang
+H0142,Khu nghỉ dưỡng Meliá Vinpearl Cam Ranh Beach,Nha Trang
+H0143,Cam Ranh Riviera Beach Resort & Spa,Nha Trang
+H0144,Khách sạn CANVAS Đà Nẵng Beach,Đà Nẵng
+H0145,Khu nghỉ dưỡng Carmelina Beach Hồ Tràm,Vũng Tàu
+H0146,FLC City Hotel Beach Quy Nhơn,Quy Nhơn
+H0147,Oceanami Villas & Beach Club Long Hải,Vũng Tàu
+H0148,HAIAN Beach Hotel & Spa Đà Nẵng,Đà Nẵng
+H0149,Holiday Beach Đà Nẵng Hotel & Resort,Đà Nẵng
+H0150,"Đà Nẵng Marriott Resort & Spa, Non Nước Beach Villas",Đà Nẵng
+H0151,Khu nghỉ dưỡng Melia Đà Nẵng Beach,Đà Nẵng
+H0152,Khu nghỉ dưỡng Sandy Beach Non Nước Đà Nẵng,Đà Nẵng
+H0153,Khu nghỉ dưỡng Pullman Đà Nẵng Beach,Đà Nẵng
+H0154,Khách sạn SALA Đà Nẵng Beach,Đà Nẵng
+H0155,TMS Hotel Da Nang Beach,Đà Nẵng
+H0156,Sala Danang Beach Hotel,Đà Nẵng
+H0157,Villa Del Sol Beach Resort  & Spa Phan Thiết,Phan Thiết
+H0158,Dusit Princess Moonrise Beach Resort,Phú Quốc
+H0159,Rạng Garden Beach Side Resort,Phan Thiết
+H0160,Sea Links Beach Resort & Golf,Phan Thiết
+H0161,HAIAN Beach Hotel & Spa,Đà Nẵng
+H0162,Melia Hồ Tràm Beach Resort,Vũng Tàu
+H0163,Hồ Tràm Beach Boutique Resort & Spa,Vũng Tàu
+H0164,Khu nghỉ dưỡng InterContinental Phu Quoc Long Beach,Phú Quốc
+H0165,Thanh Kieu Beach Resort,Phú Quốc
+H0166,La Beach Hotel,Đà Nẵng
+H0167,Sea Links Beach Villas Phan Thiết,Phan Thiết
+H0168,Sheraton Phú Quốc Long Beach Resort,Phú Quốc
+H0169,Khách Sạn Malibu Beach Vũng Tàu,Vũng Tàu
+H0170,Khách sạn Merperle Beach Nha Trang,Nha Trang
+H0171,Khu nghỉ dưỡng Minh Tâm Beach Phan Thiết,Phan Thiết
+H0172,Navada Beach Hotel,Nha Trang
+H0173,Sunny Beach Resort & Spa Phan Thiết,Phan Thiết
+H0174,Victoria Phan Thiết Beach Resort & Spa,Phan Thiết
+H0175,Sandunes Beach Resort and Spa,Phan Thiết
+H0176,Sun Beach Hotel,Vũng Tàu
+H0177,Vinpearl Beachfront Nha Trang,Nha Trang
+H0178,Khách sạn Brown Bean,Đà Nẵng
+H0179,BED STATION HOSTEL,Quy Nhơn
+H0180,Hostel-John Cafe and Beer,Đà Lạt
+H0181,Bella VT Hotel,Vũng Tàu
+H0182,Swiss-Belresort Tuyền Lâm - Đà Lạt,Đà Lạt
+H0183,Best Western Premier Sonasea Phu Quoc,Phú Quốc
+H0184,Nghĩ dưỡng Biển Ngọc,Phan Thiết
+H0185,Biệt Thự Hoa Hồng Đà Lạt (Dalat Terrasse Des Roses Villa),Đà Lạt
+H0186,Biệt Thự  Hoa Trà Đà Lạt,Đà Lạt
+H0187,Biệt thự Khánh Lâm Đà Lạt,Đà Lạt
+H0188,Làng Biệt thự Osaka Đà Lạt,Đà Lạt
+H0189,Khu nghỉ dưỡng & biệt thự Sanctuary Hồ Tràm,Vũng Tàu
+H0190,Thanh Binh Central Hotel,Hội An
+H0191,Minera Hot Springs Bình Châu (Khoáng Nóng Thiên Nhiên Bình Châu),Vũng Tàu
+H0192,Blooms Boutique Village,Hội An
+H0193,Khu nghỉ dưỡng Radisson Blu Cam Ranh,Nha Trang
+H0194,Khu nghỉ dưỡng Radisson Blu Phú Quốc,Phú Quốc
+H0195,Blue Sea Hotel Quy Nhon,Quy Nhơn
+H0196,Blue Sky Phú Quốc Hotel,Phú Quốc
+H0197,Salinda Resort Phu Quoc - Sparkling Wine Breakfast,Phú Quốc
+H0198,Khách sạn Brilliant Đà Nẵng,Đà Nẵng
+H0199,Linh Dan Bungalow,Phú Quốc
+H0200,Huong Giang Bungalow,Phú Quốc
+H0201,S Bungalow Phu Quoc,Phú Quốc
+H0202,Khách sạn Bưu Điện Vũng Tàu,Vũng Tàu
+H0203,Khách sạn Four Points by Sheraton Đà Nẵng,Đà Nẵng
+H0204,SOL by Meliá Phu Quoc,Phú Quốc
+H0205,La Cactus Hotel,Quy Nhơn
+H0206,Khách sạn Cẩm Tú Cầu Đà Lạt,Đà Lạt
+H0207,Khu nghỉ dưỡng Duyên Hà Cam Ranh,Nha Trang
+H0208,Khu nghỉ dưỡng Fusion Cam Ranh,Nha Trang
+H0209,Khu Nghỉ Dưỡng Wyndham Garden Cam Ranh,Nha Trang
+H0210,Khu nghỉ dưỡng Movenpick Cam Ranh,Nha Trang
+H0211,Khu nghỉ dưỡng Selectum Noa Cam Ranh,Nha Trang
+H0212,Swandor Cam Ranh Hotels & Resorts,Nha Trang
+H0213,CAMY Hotel Vung Tau,Vũng Tàu
+H0214,Can ho Melody Vung Tau - Your Homestay,Vũng Tàu
+H0215,Hoang Yen Canary Hotel Quy Nhon,Quy Nhơn
+H0216,Khách sạn The Cap Vũng Tàu,Vũng Tàu
+H0217,La Casa Boutique Hotel,Vũng Tàu
+H0218,Khu nghỉ dưỡng Casa Marina Quy Nhơn,Quy Nhơn
+H0219,Cassia Cottage,Phú Quốc
+H0220,Cen Hotel,Vũng Tàu
+H0221,Khu nghỉ dưỡng Centara Mirage Mũi Né,Phan Thiết
+H0222,Hoian Central Hotel,Hội An
+H0223,Purple Hue Central Hub,Huế
+H0224,Khách sạn Liberty Central Nha Trang,Nha Trang
+H0225,Century Riverside Hue,Huế
+H0226,Cereja Hotel & Resort Đà Lạt,Đà Lạt
+H0227,Khách sạn Royal Charm,Đà Nẵng
+H0228,Dalat De Charme Village,Đà Lạt
+H0229,Thanh Hoang Chau Hotel Da Nang,Đà Nẵng
+H0230,Cherish Hotel Hue,Huế
+H0231,Khách sạn Star City Nha Trang,Nha Trang
+H0232,Khách sạn Sun City Nha Trang,Nha Trang
+H0233,The Cliff Resort & Residences Phan Thiết,Phan Thiết
+H0234,Cô Tư's Homestay,Phan Thiết
+H0235,Khách sạn Gold Coast Đà Nẵng,Đà Nẵng
+H0236,Mulberry Collection Silk Village,Hội An
+H0237,Hôtel Colline Đà Lạt,Đà Lạt
+H0238,Hôtel Colline Dalat,Đà Lạt
+H0239,Poulo Condor Boutique Resort & Spa Côn Đảo,Vũng Tàu
+H0240,Côn Đảo Resort,Vũng Tàu
+H0241,Khách sạn The Secret Côn Đảo,Vũng Tàu
+H0242,Khu nghỉ dưỡng Six Senses Côn Đảo,Vũng Tàu
+H0243,TMS Luxury Condotel Quy Nhơn,Quy Nhơn
+H0244,Khách sạn Corvin Vũng Tàu,Vũng Tàu
+H0245,Khu nghỉ dưỡng Crown Retreat Quy Nhơn,Quy Nhơn
+H0246,Khu nghỉ dưỡng Crowne Plaza Phú Quốc Starbay,Phú Quốc
+H0247,Lys Villa Đà Lạt ( tên cũ Reveto Villa Đà Lạt),Đà Lạt
+H0248,Khách sạn Roy Dala Đà Lạt,Đà Lạt
+H0249,Davue Hotel Da Nang,Đà Nẵng
+H0250,Khách sạn Happy Day Đà Lạt,Đà Lạt
+H0251,Khách sạn Paris Deli Đà Nẵng,Đà Nẵng
+H0252,Khách sạn Kova Diamond Đà Nẵng,Đà Nẵng
+H0253,Khách sạn Giai Điệu Đà Lạt,Đà Lạt
+H0254,Khách sạn Thông Đỏ Đà Lạt,Đà Lạt
+H0255,Khu Nghỉ Dưỡng Đồi Mộng Mơ Đà Lạt,Đà Lạt
+H0256,Khách sạn Nice Dream Đà Lạt,Đà Lạt
+H0257,Khách sạn Du Lys Đà Lạt,Đà Lạt
+H0258,Khách sạn Du Parc Đà Lạt,Đà Lạt
+H0259,Khách sạn Tâm Dung Đà Lạt,Đà Lạt
+H0260,Khách sạn Hải Duyên Đà Lạt,Đà Lạt
+H0261,Khu nghỉ dưỡng Núi Thần Tài Ebisu Đà Nẵng,Đà Nẵng
+H0262,Khu nghỉ dưỡng Edensee Lake Resort & Spa Đà Lạt,Đà Lạt
+H0263,Khách sạn Empress Đà Lạt,Đà Lạt
+H0264,Khách sạn King's Finger Đà Nẵng,Đà Nẵng
+H0265,Khu nghỉ dưỡng Furama Đà Nẵng,Đà Nẵng
+H0266,Khách sạn Thi Thảo - Gardenia Đà Lạt,Đà Lạt
+H0267,Khách Sạn Stop And Go Boutique Đà Lạt,Đà Lạt
+H0268,Khách sạn Gold Đà Nẵng,Đà Nẵng
+H0269,Khách sạn Golf Valley Đà Lạt,Đà Lạt
+H0270,Khách sạn Sài Gòn Đà Lạt,Đà Lạt
+H0271,Menora Grand Đà Nẵng,Đà Nẵng
+H0272,Muong Thanh Grand Da Nang Hotel,Đà Nẵng
+H0273,Khách sạn Grand Sea Đà Nẵng,Đà Nẵng
+H0274,Khu nghỉ dưỡng Sheraton Grand Đà Nẵng,Đà Nẵng
+H0275,Khách sạn Hồng Hải Đà Lạt,Đà Lạt
+H0276,Khách sạn HAIAN Riverfront Đà Nẵng,Đà Nẵng
+H0277,Khách sạn Novotel Đà Nẵng Premier Han River,Đà Nẵng
+H0278,Khách sạn Đà Lạt Palace Heritage,Đà Lạt
+H0279,Khách sạn Hilton Đà Nẵng,Đà Nẵng
+H0280,Khách sạn Hồng Tâm Đà Lạt,Đà Lạt
+H0281,Hưng Nguyên Valley Đà Lạt,Đà Lạt
+H0282,Hyatt Regency Đà Nẵng Resort & Spa,Đà Nẵng
+H0283,InterContinental Đà Nẵng Sun Peninsula Resort,Đà Nẵng
+H0284,Khách sạn Iris Đà Lạt,Đà Lạt
+H0285,Đà Nẵng - Mikazuki Japanese Resorts & Spa,Đà Nẵng
+H0286,Khách sạn Kings Đà Lạt,Đà Lạt
+H0287,Khách sạn La Sapinette Đà Lạt,Đà Lạt
+H0288,Khách sạn Lake View Đà Lạt,Đà Lạt
+H0289,Khách sạn TTC - Ngọc Lan Đà Lạt,Đà Lạt
+H0290,Larita Da Lat Boutique Hotel,Đà Lạt
+H0291,Khách sạn Lasol Boutique Đà Lạt,Đà Lạt
+H0292,Khách sạn Len's Đà Lạt,Đà Lạt
+H0293,Khách sạn Sandals LiLy Đà Lạt,Đà Lạt
+H0294,Khách sạn The Luxe Đà Lạt,Đà Lạt
+H0295,M Hotel Đà Lạt,Đà Lạt
+H0296,Khách sạn Ngọc Mai Phú Đà Lạt,Đà Lạt
+H0297,Khách sạn Marigold Đà Lạt,Đà Lạt
+H0298,Khu nghỉ dưỡng Mercure Đà Lạt,Đà Lạt
+H0299,Khách sạn Mường Thanh Đà Lạt,Đà Lạt
+H0300,Khách sạn Ngọc Phát Đà Lạt,Đà Lạt
+H0301,Khách sạn Phố Núi Đà Lạt,Đà Lạt
+H0302,Khách sạn Paradise Đà Lạt,Đà Lạt
+H0303,Khách sạn Park Đà Lạt,Đà Lạt
+H0304,Khách sạn Phương Uyên Đà Lạt,Đà Lạt
+H0305,Khách sạn Rum Vàng Đà Lạt,Đà Lạt
+H0306,Khách sạn Sammy Đà Lạt,Đà Lạt
+H0307,Khách sạn Saphir Đà Lạt,Đà Lạt
+H0308,Khách sạn Stillus Boutique Đà Lạt,Đà Lạt
+H0309,Khách sạn Sunny Đà Lạt,Đà Lạt
+H0310,Villa T89 Đà Lạt,Đà Lạt
+H0311,Khu nghỉ dưỡng Terracotta Đà Lạt,Đà Lạt
+H0312,Khách sạn TTC – Đà Lạt,Đà Lạt
+H0313,Khu Nghỉ Dưỡng Zen Valley Đà Lạt,Đà Lạt
+H0314,Khách sạn Victory Đà Lạt,Đà Lạt
+H0315,Khách sạn Vietsovpetro Đà Lạt,Đà Lạt
+H0316,Khu nghỉ dưỡng Đà Lạt Wonder,Đà Lạt
+H0317,Khách sạn Mường Thanh Luxury Đà Nẵng,Đà Nẵng
+H0318,Khách sạn Stella Maris Đà Nẵng,Đà Nẵng
+H0319,Đà Nẵng Marriott Resort & Spa,Đà Nẵng
+H0320,Khách sạn Meliá Vinpearl Đà Nẵng Riverfront,Đà Nẵng
+H0321,Khách sạn Minh Toàn Safi Ocean Đà Nẵng,Đà Nẵng
+H0322,NAM Hotel & Spa Đà Nẵng,Đà Nẵng
+H0323,Khu nghỉ dưỡng Naman Retreat Đà Nẵng,Đà Nẵng
+H0324,Khu nghỉ dưỡng Risemount Premier Đà Nẵng,Đà Nẵng
+H0325,Khu nghỉ dưỡng Premier Village Đà Nẵng,Đà Nẵng
+H0326,Khách sạn Radisson Đà Nẵng,Đà Nẵng
+H0327,Sekong Hotel Da Nang,Đà Nẵng
+H0328,The Grace Hotel Dalat,Đà Lạt
+H0329,Dalat Home Villa,Đà Lạt
+H0330,Tigon Dalat Hostel,Đà Lạt
+H0331,K Boutique Hotel in Dalat,Đà Lạt
+H0332,Kings Hotel Dalat,Đà Lạt
+H0333,Redhouse Dalat Hotel,Đà Lạt
+H0334,Royal Dalat Hotel,Đà Lạt
+H0335,Victorian Hotel Dalat,Đà Lạt
+H0336,Dalat Wonder Resort,Đà Lạt
+H0337,Rosetta Hotel Danang,Đà Nẵng
+H0338,Khách sạn Minh Đăng Vũng Tàu,Vũng Tàu
+H0339,Khu nghỉ dưỡng Dankbaar Quy Nhơn,Quy Nhơn
+H0340,Huy Đạt Hotel,Phan Thiết
+H0341,Khu Nghỉ Dưỡng Tiến Đạt Mũi Né,Phan Thiết
+H0342,Khu nghỉ dưỡng Fleur de Lys Long Hải,Vũng Tàu
+H0343,Fleur de Lys Hotel Quy Nhon,Quy Nhơn
+H0344,Delight Hotel,Quy Nhơn
+H0345,Dendro Gold Hotel,Nha Trang
+H0346,Hong Diep Hotel Quy Nhon,Quy Nhơn
+H0347,DMZ Hotel,Huế
+H0348,Khách sạn Đông Xuân Hồng Phú Quốc,Phú Quốc
+H0349,Khách sạn Phương Đông,Quy Nhơn
+H0350,The Dream Resort & Spa,Phan Thiết
+H0351,DTX Hotel Nha Trang,Nha Trang
+H0352,Minh Duc Guesthouse,Phan Thiết
+H0353,Đức Trọng Hotel,Vũng Tàu
+H0354,Khu nghỉ dưỡng Ocean Dunes Phan Thiết,Phan Thiết
+H0355,Mira Eco Hotel Quy Nhơn,Quy Nhơn
+H0356,Khách sạn Eldora Huế,Huế
+H0357,Khu Nghỉ Dưỡng Elwood Phú Quốc,Phú Quốc
+H0358,Mi Nhon Em Hotel Muine,Phan Thiết
+H0359,Khách sạn ÊMM Huế,Huế
+H0360,Khách sạn Meliá Vinpearl Nha Trang Empire,Nha Trang
+H0361,Khách sạn Empyrean Nha Trang,Nha Trang
+H0362,FLC Sea Tower Quy Nhơn - Enochnguyen,Quy Nhơn
+H0363,Everland Hotel,Đà Nẵng
+H0364,Famiana Resort & Spa Phú Quốc,Phú Quốc
+H0365,Hai Yen Family Resort,Phan Thiết
+H0366,Khách sạn VinHolidays Fiesta Phú Quốc,Phú Quốc
+H0367,Fireworks Homestay,Hội An
+H0368,Khách sạn FLC Grand Quy Nhơn,Quy Nhơn
+H0369,Khách sạn FLC Luxury Quy Nhơn,Quy Nhơn
+H0370,Flora Hotel Hue,Huế
+H0371,Flower Boutique Hotel,Đà Nẵng
+H0372,Khách Sạn Flower Sky Nha Trang,Nha Trang
+H0373,Nohana Hotel (Former Y Khoa Hotel),Phan Thiết
+H0374,Hue Four Seasons Hotel,Huế
+H0375,Than Thien Friendly Hotel,Huế
+H0376,Khách sạn Fusion Suites Vũng Tàu,Vũng Tàu
+H0377,Khu nghỉ dưỡng TTC Premium Kê Gà,Phan Thiết
+H0378,Galliot Hotel,Nha Trang
+H0379,Khách sạn Wyndham Garden Grandworld Phú Quốc,Phú Quốc
+H0380,The Secret Garden Hostel,Đà Nẵng
+H0381,Pavillon Garden Hotel Nha Trang,Nha Trang
+H0382,Vuong Gia Hotel,Đà Lạt
+H0383,Hương Giang Hotel Resort & Spa Huế,Huế
+H0384,GIC Luxury Hotel And Spa,Đà Nẵng
+H0385,Golden River Hotel,Hội An
+H0386,Khách sạn Yasaka Sài Gòn Nha Trang,Nha Trang
+H0387,Khách sạn InterContinental Grand Hồ Tràm,Vũng Tàu
+H0388,Silk Path Grand Huế Hotel & Spa,Huế
+H0389,Khách sạn Grand Hyams Quy Nhơn,Quy Nhơn
+H0390,Khách sạn Mường Thanh Grand Nha Trang,Nha Trang
+H0391,Khu nghỉ dưỡng Wyndham Grand Phú Quốc,Phú Quốc
+H0392,Khách sạn Green Vũng Tàu,Vũng Tàu
+H0393,Khu nghỉ dưỡng Hải Dương Intourco Vũng Tàu,Vũng Tàu
+H0394,Khu nghỉ dưỡng Lan Rừng Phước Hải,Vũng Tàu
+H0395,Saint Simeon Resort & Spa Long Hải,Vũng Tàu
+H0396,Halona Hotel Phu Quoc,Phú Quốc
+H0397,Hotel Minh Hang,Phan Thiết
+H0398,Hanh Huong Hostel,Phan Thiết
+H0399,Khách sạn Premier Havana Nha Trang,Nha Trang
+H0400,Minh Hien Hotel,Phan Thiết
+H0401,Khu nghỉ dưỡng Holiday Inn Hồ Tràm,Vũng Tàu
+H0402,Khu nghỉ dưỡng Le Palmier Hồ Tràm,Vũng Tàu
+H0403,Khu nghỉ dưỡng Seava Hồ Tràm,Vũng Tàu
+H0404,Khách sạn San Hô Vũng Tàu,Vũng Tàu
+H0405,Khu nghỉ dưỡng Vietsovpetro Hồ Tràm,Vũng Tàu
+H0406,Nhà nghỉ Hùng Hoa,Phan Thiết
+H0407,Hoa My II Hotel,Hội An
+H0408,Muong Thanh Luxury Khanh Hoa Hotel,Nha Trang
+H0409,Khu nghỉ dưỡng Kim Hoa Phú Quốc,Phú Quốc
+H0410,Hoang Long Hotel Phan Thiết,Phan Thiết
+H0411,Khách sạn Hoàng Yến,Vũng Tàu
+H0412,Holi Panorama Nha Trang,Nha Trang
+H0413,Khách sạn Mường Thanh Holiday Huế,Huế
+H0414,Khách sạn Mường Thanh Holiday Mũi Né,Phan Thiết
+H0415,Khách sạn Mường Thanh Holiday Vũng Tàu,Vũng Tàu
+H0416,"Nha Trang Marriott Resort & Spa, Hon Tre Island",Nha Trang
+H0417,Vinpearl Resort Nha Trang - Hon Tre Island,Nha Trang
+H0418,Khu nghỉ dưỡng MerPerle Hòn Tằm Nha Trang,Nha Trang
+H0419,TinTin Hostel,Huế
+H0420,Khách sạn Imperial Huế,Huế
+H0421,Khách sạn Indochine Palace Huế,Huế
+H0422,Vedana Lagoon Resort & Spa Huế,Huế
+H0423,Khách sạn Thanh Lịch Royal Boutique Huế,Huế
+H0424,White Lotus Hue Hotel,Huế
+H0425,Khách sạn Meliá Vinpearl Huế,Huế
+H0426,Moonlight Hotel Hue,Huế
+H0427,Phong Nha Hotel Hue,Huế
+H0428,Hue Nino Hotel,Huế
+H0429,Pilgrimage Village Resort & Spa Huế,Huế
+H0430,Khách sạn Poetic Huế,Huế
+H0431,Huế Riverside Boutique Resort & Spa,Huế
+H0432,Khách sạn Rosaleen Boutique Huế,Huế
+H0433,The Sunriver Boutique Hotel Hue,Huế
+H0434,Khách sạn Minh Hùng,Phan Thiết
+H0435,Khách Sạn Tùng Hương Phú Quốc,Phú Quốc
+H0436,Khách sạn iBis Styles Nha Trang,Nha Trang
+H0437,ibis Styles Vung Tau,Vũng Tàu
+H0438,Khách sạn Imperial Nha Trang,Nha Trang
+H0439,Khách sạn Imperial Vũng Tàu,Vũng Tàu
+H0440,Khách sạn InterContinental Nha Trang,Nha Trang
+H0441,Khu nghỉ dưỡng Intourco  Vũng Tàu,Vũng Tàu
+H0442,Jade Scene Hotel,Huế
+H0443,Sofiana My Khe Hotel & Spa,Đà Nẵng
+H0444,The Kila Boutique Hotel,Quy Nhơn
+H0445,King House Villa Hotel & Spa,Đà Nẵng
+H0446,Ly Ky Hotel,Quy Nhơn
+H0447,Khu Nghỉ Dưỡng La Mer Phú Quốc,Phú Quốc
+H0448,La Vague Hotel Nha Trang,Nha Trang
+H0449,Hotel La Perle,Huế
+H0450,La Sera Hotel,Nha Trang
+H0451,Khách Sạn LADALAT,Đà Lạt
+H0452,Khu Nghỉ Dưỡng Lahana Phú Quốc,Phú Quốc
+H0453,Sun Lake Hotel,Vũng Tàu
+H0454,Le House Boutique Hotel,Đà Nẵng
+H0455,Khu nghỉ dưỡng Le Viva Mũi Né,Phan Thiết
+H0456,Le Soleil Nha Trang Hotel,Nha Trang
+H0457,Le Robinet Homestay,Huế
+H0458,Thanh Lich Royal Boutique,Huế
+H0459,LIM House,Phan Thiết
+H0460,Ocean Vista Sea Links Phan Thiết,Phan Thiết
+H0461,Lotus Village Resort Mui Ne,Phan Thiết
+H0462,Lotus Rock Hotel,Đà Nẵng
+H0463,Lovely House,Đà Lạt
+H0464,Khách sạn Lucky Sun Nha Trang,Nha Trang
+H0465,Khách sạn Mường Thanh Luxury Nha Trang,Nha Trang
+H0466,Muong Thanh Luxury Vien Trieu Nha Trang,Nha Trang
+H0467,Khách sạn Mường Thanh Luxury Phú Quốc,Phú Quốc
+H0468,Vinpearl Luxury Nha Trang,Nha Trang
+H0469,VES - PA Luxury Hotel,Đà Lạt
+H0470,Phuc Thanh Luxury Hotel,Đà Nẵng
+H0471,Khu nghỉ dưỡng Maia Quy Nhơn,Quy Nhơn
+H0472,Khách sạn Majestic Premium Nha Trang,Nha Trang
+H0473,Khách sạn Majestic Star Nha Trang,Nha Trang
+H0474,Khách sạn Majestic Nha Trang,Nha Trang
+H0475,Malibu Hotel,Vũng Tàu
+H0476,The May Hotel Phu Quoc,Phú Quốc
+H0477,Khu nghỉ dưỡng Meliá Vinpearl Phú Quốc,Phú Quốc
+H0478,Melissa Hotel Nha Trang,Nha Trang
+H0479,Mento Hotel Quy Nhon,Quy Nhơn
+H0480,Mercure Hotel Vũng Tàu,Vũng Tàu
+H0481,Mercury Phú Quốc Resort & Villas,Phú Quốc
+H0482,Khách sạn Mermaid Seaside Vũng Tàu,Vũng Tàu
+H0483,Khu nghỉ dưỡng Mia Nha Trang,Nha Trang
+H0484,Khách sạn TTC Premium - Michelia Nha Trang,Nha Trang
+H0485,Milan Homestay - The Song Vung Tau,Vũng Tàu
+H0486,Minh Boutique,Đà Nẵng
+H0487,Mira Hotel,Quy Nhơn
+H0488,Khách sạn Modern Sky Nha Trang,Nha Trang
+H0489,Mövenpick Resort Phan Thiet,Phan Thiết
+H0490,Mövenpick Villas & Residences Phu Quoc,Phú Quốc
+H0491,Mövenpick Resort Waverly Phu Quoc,Phú Quốc
+H0492,Mũi Né Boutique Hotel,Phan Thiết
+H0493,Tulip Mui Ne,Phan Thiết
+H0494,Khách sạn Vipol Mũi Né,Phan Thiết
+H0495,Khách sạn Tháng Mười,Vũng Tàu
+H0496,Khách sạn Mường Thanh Quy Nhơn,Quy Nhơn
+H0497,MyFa House,Huế
+H0498,Nam Phương Riverside Villa,Huế
+H0499,Nam Xuan Premium Hotel,Đà Lạt
+H0500,Nam Thu Hotel,Quy Nhơn
+H0501,Khu nghỉ dưỡng New World  Phú Quốc,Phú Quốc
+H0502,Khách sạn New Wave Vũng Tàu,Vũng Tàu
+H0503,Homestay Song Ngọc Phan Thiết,Phan Thiết
+H0504,Khách sạn Novotel Nha Trang,Nha Trang
+H0505,Putin Nha Trang Hotel,Nha Trang
+H0506,Senia Hotel Nha Trang,Nha Trang
+H0507,Khách sạn Senkotel Nha Trang,Nha Trang
+H0508,Sheraton Nha Trang Hotel & Spa,Nha Trang
+H0509,Smile Hotel Nha Trang,Nha Trang
+H0510,V Hotel Nha Trang,Nha Trang
+H0511,Vinpearl Resort Nha Trang,Nha Trang
+H0512,Virgo Hotel Nha Trang,Nha Trang
+H0513,Khách sạn Seagull Quy Nhơn,Quy Nhơn
+H0514,TH Quy Nhơn Hotel,Quy Nhơn
+H0515,Sea Night Hotel,Phan Thiết
+H0516,Nolis Hotel Vung Tau,Vũng Tàu
+H0517,Khu nghỉ dưỡng Novela Phan Thiết,Phan Thiết
+H0518,Khu nghỉ dưỡng Novotel Phú Quốc,Phú Quốc
+H0519,O.Six Resort,Quy Nhơn
+H0520,Orchid Hotel,Huế
+H0521,The Palmy Phú Quốc Resort & Spa,Phú Quốc
+H0522,Khu nghỉ dưỡng Pandanus Phan Thiết,Phan Thiết
+H0523,Khách sạn Premier Pearl Vũng Tàu,Vũng Tàu
+H0524,Khách sạn TTC Premium Phan Thiết,Phan Thiết
+H0525,Radisson Resort Phan Thiet,Phan Thiết
+H0526,Romana Resort & Spa Phan Thiết,Phan Thiết
+H0527,Seahorse Resort & Spa Phan Thiết,Phan Thiết
+H0528,Terracotta Resort & Spa Phan Thiết,Phan Thiết
+H0529,TTC Hotel Phan Thiết,Phan Thiết
+H0530,Khu nghỉ dưỡng Pullman Phú Quốc,Phú Quốc
+H0531,Sunset Sanato Resort & Villas Phú Quốc,Phú Quốc
+H0532,Seashells Phu Quoc Hotel & Spa,Phú Quốc
+H0533,Sen Hotel Phu Quoc,Phú Quốc
+H0534,The Shells Resort & Spa Phú Quốc,Phú Quốc
+H0535,VinOasis Phu Quoc,Phú Quốc
+H0536,Vinpearl Resort & Spa Phú Quốc,Phú Quốc
+H0537,Vinpearl Wonderworld Phú Quốc,Phú Quốc
+H0538,Khu nghỉ dưỡng Pilgrimage Village Boutique,Huế
+H0539,Pontus Hotel,Đà Lạt
+H0540,Resort Poshanu,Phan Thiết
+H0541,Pullman Vung Tau,Vũng Tàu
+H0542,Surf4You Residence,Phan Thiết
+H0543,Khách sạn Rex Vũng Tàu,Vũng Tàu
+H0544,Khách sạn Riva Vũng Tàu,Vũng Tàu
+H0545,Khách sạn Romeliess Vũng Tàu,Vũng Tàu
+H0546,Rosaleen Boutique Hotel,Huế
+H0547,Khách sạn Royal Vũng Tàu,Vũng Tàu
+H0548,Khách sạn Sammy Vũng Tàu,Vũng Tàu
+H0549,Sea Star Resort,Phú Quốc
+H0550,Khách sạn Zalo Sea,Đà Nẵng
+H0551,Seaside Resort Vung Tau,Vũng Tàu
+H0552,SOLEIL BOUTIQUE,Huế
+H0553,Song Homestay - The Song Vung Tau,Vũng Tàu
+H0554,Tâm Homestay,Huế
+H0555,Vias Hotel Vung Tau,Vũng Tàu
+H0556,Tuấn Vũ Homestay,Đà Lạt
+H0557,VARIA Hotel,Phú Quốc
+H0558,Vietsovpetro Resort,Vũng Tàu
+H0559,VND Hotel,Vũng Tàu
