@@ -37,7 +37,6 @@ If you use this dataset, please cite:
 @article{vihorec,
   title  = {ViHoRec: A Vietnamese Hotel Recommendation Dataset with a
             Documented Collection and Quality-Control Pipeline},
-  author = {Nguyen, Hoang Minh and Ta, Nhat Minh and Nguyen, Thien Thuat and
-            Huynh, Van Tin},
+  author = {Nguyen, Hoang Minh},
   year   = {2026}
 }
