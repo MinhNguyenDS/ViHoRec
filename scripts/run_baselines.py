@@ -7,7 +7,10 @@ make_benchmark_split.py:
   * ItemKNN   - cosine item-item similarity on the binary user-item matrix;
   * UserKNN   - cosine user-user similarity;
   * BPR-MF    - Bayesian Personalised Ranking matrix factorisation (learned),
-                averaged over several seeds with standard deviation.
+                averaged over several seeds with standard deviation;
+  * Content-TFIDF - TF-IDF content baseline over hotel metadata;
+  * Hybrid-fixed  - late fusion of UserKNN + Content-TFIDF with fixed λ;
+  * AdaptiveHybrid - history-gated fusion (logistic alpha(n)).
 
 Reports MAP@K, NDCG@K, Precision@K, Recall@K (K in {5,10}) and MRR (full rank).
 All models run on the SAME public split, so the numbers are directly comparable.
@@ -22,6 +25,7 @@ import pandas as pd
 
 import config as C
 import content_baseline as cb
+import hybrid_baseline as hb
 
 OUT = C.OUT_RELEASE / "benchmark"
 KS = (5, 10)
@@ -155,6 +159,20 @@ def run() -> pd.DataFrame:
     rows["Content-TFIDF"] = evaluate(
         cb.score_content_tfidf(tr, n_users, n_items), mat, test_items)
 
+    comps = hb.prepare_components(tr, n_users, n_items)
+    # Sweep fixed λ and keep the best global Recall@10 as the reported Hybrid-fixed.
+    best_lam, best_metrics, best_r10 = None, None, -1.0
+    for lam in [i / 10 for i in range(11)]:
+        metrics = evaluate(
+            hb.score_fixed_hybrid(tr, n_users, n_items, lam, components=comps),
+            mat, test_items)
+        if metrics["Recall@10"] > best_r10:
+            best_lam, best_metrics, best_r10 = lam, metrics, metrics["Recall@10"]
+    rows[f"Hybrid-fixed (lam={best_lam:.1f})"] = best_metrics
+    rows["AdaptiveHybrid"] = evaluate(
+        hb.score_adaptive_hybrid(tr, n_users, n_items, components=comps),
+        mat, test_items)
+
     res = pd.DataFrame(rows).T
     res.index.name = "Method"
     res.to_csv(OUT / "baseline_results.csv")
@@ -163,6 +181,7 @@ def run() -> pd.DataFrame:
     print(res.to_string())
     print("\nStd (stochastic models):")
     print(pd.DataFrame(stds).T.to_string())
+    print(f"\nBest fixed Hybrid lam={best_lam:.1f} (by Recall@10)")
     return res
 
 

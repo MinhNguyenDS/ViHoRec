@@ -10,14 +10,16 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-# dataset_release/scripts/config.py -> repo root is two levels up.
-REPO_ROOT = Path(__file__).resolve().parents[2]
+# scripts/config.py -> package root is one level up (ViHoRec/).
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 # Original crawled data shipped with the project.
 def _find_report_dir() -> Path:
-    for cand in REPO_ROOT.rglob("data_raw"):
-        if (cand / "data_content_based_raw.csv").exists():
-            return cand.parent.parent  # .../data/data_raw -> .../Report...-Master
+    search_roots = (REPO_ROOT, REPO_ROOT.parent)
+    for root in search_roots:
+        for cand in root.rglob("data_raw"):
+            if (cand / "data_content_based_raw.csv").exists():
+                return cand.parent.parent  # .../data/data_raw -> .../Report...-Master
     raise FileNotFoundError("Could not locate crawled data under repo root.")
 
 
@@ -38,25 +40,28 @@ MERGED_RATING_FILE = RAW_DIR / "data_crawl_rating.csv"
 # Content-based hotel metadata (309 hotels, 11 attributes).
 CONTENT_RAW_FILE = RAW_DIR / "data_content_based_raw.csv"
 
-# Outputs of this pipeline.
-RELEASE_DIR = REPO_ROOT / "dataset_release"
-OUT_RELEASE = RELEASE_DIR / "release"
-OUT_REPORTS = RELEASE_DIR / "reports"
-OUT_ANNOTATION = RELEASE_DIR / "annotation"
+# Outputs of this pipeline (package-local release layout).
+OUT_RELEASE = REPO_ROOT / "release"
+OUT_REPORTS = REPO_ROOT / "reports"
+OUT_ANNOTATION = REPO_ROOT / "annotation"
 
 for _d in (OUT_RELEASE, OUT_REPORTS, OUT_ANNOTATION):
     _d.mkdir(parents=True, exist_ok=True)
 
 
-# LaTeX paper directory (holds acl_latex.tex + the Image/ figure folder). The
-# project was relocated from DS300/ to ViHoRec/; auto-detect the live copy so
-# figure scripts always write to the folder the paper actually compiles from.
+# LaTeX paper directory (holds acl_latex.tex / sn-article.tex + Image/).
+# Prefer the workspace paper templates when present so figures land where
+# the manuscript actually compiles from.
 def _find_paper_dir() -> Path:
-    for name in ("ViHoRec", "DS300"):
-        cand = REPO_ROOT / name
-        if (cand / "acl_latex.tex").exists() or (cand / "Image").is_dir():
+    workspace = REPO_ROOT.parent
+    for cand in (
+        workspace / "sn-article-template",
+        workspace / "ViHoRec-paper",
+        REPO_ROOT,
+    ):
+        if (cand / "sn-article.tex").exists() or (cand / "acl_latex.tex").exists() or (cand / "Image").is_dir():
             return cand
-    return REPO_ROOT / "ViHoRec"
+    return workspace / "sn-article-template"
 
 
 PAPER_DIR = _find_paper_dir()
