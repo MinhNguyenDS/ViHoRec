@@ -1,0 +1,4 @@
+Method,Recall@10,Recall@10_ci_lo,Recall@10_ci_hi,NDCG@10,NDCG@10_ci_lo,NDCG@10_ci_hi,p_vs_UserKNN_R@10,sig_vs_UserKNN,wilcoxon_n_nonzero,mean_diff_vs_UserKNN
+SASRec,0.1717,0.1466,0.198,0.0845,0.0705,0.0997,0.0007,***,100,0.0426
+NCF-NeuMF,0.1441,0.1203,0.1692,0.0726,0.0592,0.087,0.1396,,66,0.015
+SSEPT,0.1717,0.1454,0.198,0.081,0.0673,0.0952,0.0003,***,90,0.0426

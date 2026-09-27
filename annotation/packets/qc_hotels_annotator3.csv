@@ -1,0 +1,63 @@
+﻿record_id,hotel_id,name,location,label,notes
+R0009,H0090,Villa T89 Đà Lạt,Đà Lạt,1,"Có thật, 231 Phù Đổng Thiên Vương, P.8"
+R0109,H0227,Khách sạn Eldora Huế,Huế,1,"Eldora Hotel, 60 Bến Nghé, trung tâm Huế"
+R0237,H0244,Khách sạn Meliá Vinpearl Huế,Huế,1,"Meliá Vinpearl Hue, 50A Hùng Vương"
+R0063,H0155,Khách sạn Mường Thanh Luxury Đà Nẵng,Đà Nẵng,1,"Mường Thanh Luxury Đà Nẵng, 270 Võ Nguyên Giáp"
+R0218,H0185,Blooms Boutique Village,Hội An,1,"Blooms Boutique Village, 85 Lê Hồng Phong"
+R0220,H0140,Khách sạn Gold Đà Nẵng,Đà Nẵng,1,"Gold Hotel Đà Nẵng, 24 Núi Thành"
+R0224,H0073,M Hotel Đà Lạt,Đà Lạt,1,"M Hotel Đà Lạt, 272 Bùi Thị Xuân"
+R0207,H0376,Khu nghỉ dưỡng Le Viva Mũi Né,Phan Thiết,1,"Le Viva / Le'VIVA Resort Mũi Né, 32 Huỳnh Thúc Kháng"
+R0101,H0553,Khách sạn Royal Vũng Tàu,Vũng Tàu,1,"Royal Hotel Vũng Tàu, 36 Quang Trung"
+R0129,H0083,Khách sạn Phương Uyên Đà Lạt,Đà Lạt,1,"Phương Uyên Hotel, 28 Nguyễn Văn Trỗi"
+R0006,H0518,Khu nghỉ dưỡng Six Senses Côn Đảo,Vũng Tàu,1,Six Senses Con Dao (Côn Đảo thuộc Bà Rịa – Vũng Tàu)
+R0086,H0346,Khu nghỉ dưỡng Rock Water Bay Phan Thiết,Phan Thiết,1,"Rock Water Bay Resort, Kê Gà"
+R0111,H0453,RAON Hotel - STAY 24H,Quy Nhơn,1,"RAON Hotel - STAY 24H, 09 Nguyễn Thị Định, Quy Nhơn"
+R0147,H0332,Smile Hotel Nha Trang,Nha Trang,1,"Smile Hotel Nha Trang, đường Hùng Vương"
+R0166,H0002,Arapang Hotel 2,Đà Lạt,1,"Arapang Hotel 2 (chi nhánh cụ thể), Phan Như Thạch"
+R0054,H0527,Khu nghỉ dưỡng Hải Dương Intourco Vũng Tàu,Vũng Tàu,1,"Hải Dương Intourco Resort, 01 Thùy Vân"
+R0081,H0030,Khách sạn Roy Dala Đà Lạt,Đà Lạt,1,"Roy Dala Hotel, 10A Nam Kỳ Khởi Nghĩa"
+R0195,H0081,Khách sạn Paradise Đà Lạt,Đà Lạt,1,"Dalat Paradise Hotel, 28 Bà Triệu"
+R0051,H0006,Bazan Hotel Dalat - STAY 24H,Đà Lạt,1,"Bazan / Raon Bazan Hotel - STAY 24H, Tô Hiến Thành"
+R0236,H0072,VES - PA Luxury Hotel,Đà Lạt,1,"VES-PA Luxury Hotel, 9A Nguyễn Thị Nghĩa"
+R0144,H0078,Nam Xuan Premium Hotel,Đà Lạt,1,Có thật tại Đà Lạt
+R0069,H0101,Khách sạn A La Carte Đà Nẵng,Đà Nẵng,1,A La Carte Đà Nẵng (có thật)
+R0171,H0531,Khu nghỉ dưỡng Le Palmier Hồ Tràm,Vũng Tàu,1,Le Palmier Hồ Tràm (Hồ Tràm thuộc Bà Rịa – Vũng Tàu)
+R0024,H0479,Khách sạn FLC Luxury Quy Nhơn,Quy Nhơn,1,FLC Luxury Hotel Quy Nhơn
+R0010,H0281,Cam Ranh Riviera Beach Resort & Spa,Nha Trang,1,Cam Ranh Riviera (thuộc khu vực Cam Ranh – Nha Trang)
+R0172,H0384,Homestay Song Ngọc Phan Thiết,Phan Thiết,1,Homestay cụ thể tại Phan Thiết
+R0209,H0148,Hyatt Regency Đà Nẵng Resort & Spa,Đà Nẵng,1,Hyatt Regency Danang Resort & Spa
+R0173,H0368,Khu nghỉ dưỡng TTC Premium Kê Gà,Phan Thiết,1,TTC Premium Resort Kê Gà
+R0053,H0410,Sheraton Phú Quốc Long Beach Resort,Phú Quốc,1,Sheraton Phu Quoc Long Beach Resort
+R0178,H0144,Khu nghỉ dưỡng Sheraton Grand Đà Nẵng,Đà Nẵng,1,Sheraton Grand Danang Resort
+R0159,H0467,Hoang Yen Canary Hotel Quy Nhon,Quy Nhơn,1,Hoàng Yến Canary Hotel Quy Nhơn
+R0219,H0341,Aroma Beach Resort & Spa Phan Thiết,Phan Thiết,1,Aroma Beach Resort & Spa
+R0206,H0086,Khách sạn Sammy Đà Lạt,Đà Lạt,1,Sammy Hotel Đà Lạt
+R0234,H0517,Khách sạn The Secret Côn Đảo,Vũng Tàu,1,The Secret Con Dao (Côn Đảo)
+R0241,H0177,Anio Boutique Hotel Hoi An,Hội An,1,Anio Boutique Hotel Hoi An
+R0198,H0145,Khách sạn HAIAN Riverfront Đà Nẵng,Đà Nẵng,1,HAIAN Riverfront Da Nang
+R0030,H0442,Sunset Sanato Resort & Villas Phú Quốc,Phú Quốc,1,Sunset Sanato Resort & Villas
+R0190,H0301,Pavillon Garden Hotel Nha Trang,Nha Trang,1,Pavillon Garden Hotel
+R0185,H0460,Avani Quy Nhơn Resort & Spa,Quy Nhơn,1,Avani Quy Nhon Resort & Spa
+R0162,H0163,Khu nghỉ dưỡng Naman Retreat Đà Nẵng,Đà Nẵng,1,Naman Retreat
+R0197,H0039,Dalat Wonder Resort,Đà Lạt,1,Dalat Wonder Resort
+R0025,H0371,Minh Hien Hotel,Phan Thiết,1,Minh Hiền Hotel Phan Thiết
+R0066,H0172,Crony Villa - STAY 24H,Hội An,1,Crony Villa - STAY 24H Hội An
+R0208,H0010,Khanh Uyen 3 Hotel,Đà Lạt,1,Khánh Uyên 3 Hotel (chi nhánh cụ thể)
+R0134,H0132,Khách sạn Kova Diamond Đà Nẵng,Đà Nẵng,1,Kova Diamond Hotel Đà Nẵng
+R0034,H0524,Khách sạn Fusion Suites Vũng Tàu,Vũng Tàu,1,Fusion Suites Vung Tau
+R0012,H0556,Song Homestay - The Song Vung Tau,Vũng Tàu,1,Song Homestay / The Song Vũng Tàu
+R0203,H0204,Khách sạn Mường Thanh Holiday Hội An,Hội An,1,Mường Thanh Holiday Hội An
+R0005,H0451,Khách sạn Hoàng Yến 1 Quy Nhơn,Quy Nhơn,1,Hoàng Yến 1 Quy Nhơn (chi nhánh cụ thể)
+R0132,H0555,Seaside Resort Vung Tau,Vũng Tàu,1,Seaside Resort Vũng Tàu
+R0216,H0165,Khu nghỉ dưỡng Premier Village Đà Nẵng,Đà Nẵng,1,Premier Village Danang Resort
+R0011,H0070,Lovely House,Đà Lạt,1,Lovely House Đà Lạt (có thật)
+R0184,H0234,Khách sạn Mường Thanh Holiday Huế,Huế,1,Mường Thanh Holiday Huế
+R0037,H0055,Khách sạn Sài Gòn Đà Lạt,Đà Lạt,1,Saigon Dalat Hotel
+R0026,H0275,Emerald Bay Hotel & Spa,Nha Trang,1,Emerald Bay Hotel & Spa Nha Trang
+R0205,H0396,Khu nghỉ dưỡng Premier Village Phu Quoc Managed By Accor,Phú Quốc,1,Premier Village Phu Quoc Resort
+R0239,H0499,Khách sạn Marina Bay Côn Đảo,Vũng Tàu,1,Marina Bay Con Dao
+R0097,H0487,Khách sạn Mường Thanh Quy Nhơn,Quy Nhơn,1,Mường Thanh Quy Nhơn
+R0016,H0272,Ariyana SmartCondotel Nha Trang,Nha Trang,1,Ariyana SmartCondotel
+R0057,H0296,DTX Hotel Nha Trang,Nha Trang,1,DTX Hotel Nha Trang
+R0031,H0079,Khách sạn Ngọc Phát Đà Lạt,Đà Lạt,1,Ngọc Phát Hotel Đà Lạt
+R0145,H0506,Sun Beach Hotel,Vũng Tàu,1,Sun Beach Hotel Vũng Tàu

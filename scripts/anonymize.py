@@ -29,7 +29,7 @@ import hmac
 import pandas as pd
 
 import config as C
-from textnorm import canonical_hotel_key
+from textnorm import resolve_hotel_entities
 
 
 def pseudonym(value: str, salt: str = C.PSEUDONYM_SALT, prefix: str = "U") -> str:
@@ -48,7 +48,13 @@ def run() -> dict:
     df["user_id"] = df["CustomerName"].map(pseudonym)
 
     # --- Canonical, stable hotel ids from the entity-resolution key ---
-    df["hotel_key"] = df["hotel_key"].fillna(df["NameHotel"].map(canonical_hotel_key))
+    # quality_control.py resolves entities with city and property type; recover
+    # anything unresolved rather than silently dropping it.
+    missing = df["hotel_key"].isna()
+    if missing.any():
+        df.loc[missing, "hotel_key"] = resolve_hotel_entities(
+            df.loc[missing, "NameHotel"], df.loc[missing, "Location"]
+        )["entity_key"]
     hotel_keys = sorted(df["hotel_key"].unique())
     key_to_id = {k: f"H{ i:04d}" for i, k in enumerate(hotel_keys)}
     df["hotel_id"] = df["hotel_key"].map(key_to_id)

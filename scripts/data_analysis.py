@@ -4,7 +4,7 @@ Produces the evidence a resource-paper reviewer expects beyond a single
 benchmark table:
 
   1. Characterization: scale, sparsity, popularity Gini, long-tail head share,
-     cold-start ratio, rating statistics  (-> reports/analysis_report.md/json,
+     single-interaction share, rating statistics  (-> reports/analysis_report.md/json,
      Image/LongTail.png).
   2. Ablation A - entity resolution ON vs OFF: does merging cross-site hotel
      name variants change benchmark metrics? (isolates the paper's core claim).
@@ -27,6 +27,7 @@ import numpy as np
 import pandas as pd
 
 import config as C
+import make_benchmark_split as mbs
 import plot_style as ps
 import run_baselines as rb
 
@@ -37,7 +38,7 @@ MIN_K = 4
 
 def load_clean() -> pd.DataFrame:
     df = pd.read_csv(SRC)
-    df["ts"] = pd.to_datetime(df["Date_parsed"]).astype("int64") // 10**9
+    df["ts"] = mbs.epoch_seconds(df["Date_parsed"])
     return df
 
 
@@ -95,6 +96,10 @@ def characterize(df: pd.DataFrame) -> dict:
         "item_popularity_gini": gini(per_item.to_numpy()),
         "head20pct_interaction_share_pct": round(
             100 * pop_sorted[:head].sum() / n, 2),
+        "single_interaction_users_pct": round(
+            100 * float((per_user == 1).mean()), 2),
+        # Alias kept so older report consumers do not break. The protocol
+        # itself is short-history; this figure is a corpus property.
         "cold_start_users_1_interaction_pct": round(
             100 * float((per_user == 1).mean()), 2),
         "rating_mean": round(float(df["Rating_clean"].mean()), 3),

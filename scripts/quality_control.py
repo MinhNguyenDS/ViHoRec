@@ -14,13 +14,18 @@ Outputs: dataset_release/reports/quality_report.json  (+ .md, + cleaned csv)
 from __future__ import annotations
 
 import json
-from pathlib import Path
+import sys
 
 import numpy as np
 import pandas as pd
 
 import config as C
-from textnorm import canonical_hotel_key, canonical_location
+from textnorm import (
+    canonical_hotel_key,
+    canonical_location,
+    is_placeholder_name,
+    resolve_hotel_entities,
+)
 
 
 def _pct(part: int, whole: int) -> float:
@@ -44,6 +49,13 @@ def load_sites() -> pd.DataFrame:
 
 
 def missing_report(df: pd.DataFrame, cols: list[str]) -> dict:
+    """Field completeness, counting crawl-time placeholders as missing.
+
+    Placeholder detection is accent-insensitive (``is_placeholder_name``): an
+    earlier exact comparison against ``"khong ten"`` never matched the accented
+    ``"Không tên"`` actually present in the crawl, so the name field was
+    reported as 100% complete while 342 rows carried an imputed value.
+    """
     n = len(df)
     out = {}
     for col in cols:
@@ -51,7 +63,7 @@ def missing_report(df: pd.DataFrame, cols: list[str]) -> dict:
             out[col] = {"present": False}
             continue
         s = df[col].astype("string")
-        blank = s.isna() | (s.str.strip() == "") | (s.str.lower() == "khong ten")
+        blank = s.isna() | (s.str.strip() == "") | s.map(is_placeholder_name)
         out[col] = {
             "present": True,
             "missing_count": int(blank.sum()),
@@ -111,8 +123,14 @@ def run() -> dict:
     }
 
     # (4) Duplicate analysis.
-    df["hotel_key"] = df["NameHotel"].map(canonical_hotel_key)
     df["loc_key"] = df["Location"].map(canonical_location)
+    # City- and type-aware entity key (see textnorm.resolve_hotel_entities).
+    # The name-only key is retained under a separate column so the entity-
+    # resolution ablation can compare the two matchers on identical data.
+    resolved = resolve_hotel_entities(df["NameHotel"], df["Location"])
+    df["hotel_key"] = resolved["entity_key"]
+    df["property_type"] = resolved["resolved_type"]
+    df["hotel_key_nameonly"] = df["NameHotel"].map(canonical_hotel_key)
 
     exact_dupe_mask = df.duplicated(
         subset=["CustomerName", "NameHotel", "Rating", "Date"], keep="first"
@@ -138,13 +156,22 @@ def run() -> dict:
     # How many raw spellings collapsed into a shared canonical key?
     names_per_key = df.groupby("hotel_key")["NameHotel"].nunique()
     merged_spelling_variants = int((names_per_key > 1).sum())
+    nameonly_hotels = df["hotel_key_nameonly"].nunique()
     report["entity_matching"] = {
+        "matcher": "city + property-type aware (resolve_hotel_entities)",
         "raw_distinct_hotel_names": int(raw_names),
         "canonical_hotels": int(canonical_hotels),
         "name_variants_collapsed": int(raw_names - canonical_hotels),
         "collapse_rate_pct": _pct(int(raw_names - canonical_hotels), int(raw_names)),
         "hotels_on_multiple_sites": multi_site,
         "canonical_keys_with_variant_spellings": merged_spelling_variants,
+        "name_only_matcher_hotels": int(nameonly_hotels),
+        "entities_split_from_name_only_matcher": int(
+            df.groupby("hotel_key_nameonly")["hotel_key"].nunique().gt(1).sum()
+        ),
+        "entities_merged_beyond_name_only_matcher": int(
+            df.groupby("hotel_key")["hotel_key_nameonly"].nunique().gt(1).sum()
+        ),
     }
 
     # (5b) Consistency: one canonical hotel mapped to multiple locations.
@@ -153,21 +180,44 @@ def run() -> dict:
         "hotels_with_conflicting_location": int((loc_per_hotel > 1).sum()),
     }
 
-    # Build the cleaned interaction table (drop exact dupes + invalid ratings/dates).
+    # (5c) Reviewer-identity validity: placeholder names are not identities and
+    # must never be collapsed into a single pseudonym (see user_identity_audit).
+    placeholder_mask = df["CustomerName"].map(is_placeholder_name)
+    report["identity_validity"] = {
+        "placeholder_name_rows": int(placeholder_mask.sum()),
+        "placeholder_name_pct": _pct(int(placeholder_mask.sum()), n_raw),
+        "placeholder_variants": sorted(
+            df.loc[placeholder_mask, "CustomerName"].astype(str).unique().tolist()
+        ),
+        "note": (
+            "These rows carry an imputed display name. Collapsing them by name "
+            "creates one artificial high-activity user; they are excluded from "
+            "user-level statistics and from the benchmark split."
+        ),
+    }
+
+    # Build the cleaned interaction table: drop exact duplicates, invalid
+    # ratings/dates, and rows whose reviewer name is an imputed placeholder.
+    # Placeholder rows cannot be attributed to a person, and keeping them
+    # collapses hundreds of unrelated reviews into one synthetic user.
     clean = df.loc[~exact_dupe_mask].copy()
     clean = clean[clean["Rating_clean"].between(C.RATING_MIN, C.RATING_MAX)]
     clean = clean[clean["Date_parsed"].notna()]
+    n_before_placeholder = len(clean)
+    clean = clean[~clean["CustomerName"].map(is_placeholder_name)]
     report["cleaned"] = {
         "n_after_cleaning": int(len(clean)),
         "removed_total": int(n_raw - len(clean)),
         "removed_pct": _pct(int(n_raw - len(clean)), n_raw),
+        "removed_placeholder_identity": int(n_before_placeholder - len(clean)),
         "distinct_users_by_name": int(clean["CustomerName"].nunique()),
         "distinct_canonical_hotels": int(clean["hotel_key"].nunique()),
     }
 
     # Persist cleaned interactions for the anonymisation step.
     keep_cols = [
-        "CustomerName", "NameHotel", "hotel_key", "Location", "loc_key",
+        "CustomerName", "NameHotel", "hotel_key", "hotel_key_nameonly",
+        "property_type", "Location", "loc_key",
         "Rating_clean", "Date_parsed", "source",
     ]
     clean[keep_cols].to_csv(
@@ -218,10 +268,15 @@ def to_markdown(rep: dict) -> str:
         f"observed span {d['date_consistency']['range_observed']}",
         f"- Hotels with conflicting location: "
         f"**{d['location_consistency']['hotels_with_conflicting_location']:,}**",
+        f"- Rows with a placeholder reviewer name: "
+        f"**{d['identity_validity']['placeholder_name_rows']:,}** "
+        f"({d['identity_validity']['placeholder_name_pct']}%) — "
+        f"variants: {', '.join(d['identity_validity']['placeholder_variants']) or 'none'}",
         "",
         "## Cleaned dataset",
         f"- Interactions after cleaning: **{cl['n_after_cleaning']:,}** "
-        f"(removed {cl['removed_total']:,}, {cl['removed_pct']}%)",
+        f"(removed {cl['removed_total']:,}, {cl['removed_pct']}%; of which "
+        f"{cl['removed_placeholder_identity']:,} had a placeholder reviewer name)",
         f"- Distinct users (by name key): **{cl['distinct_users_by_name']:,}**",
         f"- Distinct canonical hotels: **{cl['distinct_canonical_hotels']:,}**",
     ]
@@ -234,4 +289,6 @@ if __name__ == "__main__":
         json.dumps(rep, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     (C.OUT_REPORTS / "quality_report.md").write_text(to_markdown(rep), encoding="utf-8")
+    # Vietnamese placeholder names break the default cp1252 Windows console.
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     print(to_markdown(rep))

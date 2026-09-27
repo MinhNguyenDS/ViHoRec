@@ -1,0 +1,94 @@
+{
+  "n_records": 248,
+  "automated_criteria": {
+    "C1_field_validity": {
+      "pass_rate": 1.0,
+      "failures": 0,
+      "by_type": {
+        "hotel": 1.0,
+        "interaction": 1.0
+      }
+    },
+    "C2_release_consistency": {
+      "pass_rate": 1.0,
+      "failures": 0,
+      "by_type": {
+        "hotel": 1.0,
+        "interaction": 1.0
+      }
+    },
+    "C3_identity_plausibility": {
+      "pass_rate": 0.8952,
+      "failures": 26,
+      "by_type": {
+        "hotel": 1.0,
+        "interaction": 0.8602
+      }
+    }
+  },
+  "records_passing_all_criteria": {
+    "count": 222,
+    "rate": 0.8952
+  },
+  "human_annotation": {
+    "records_in_scope": 62,
+    "records_labelled": 62,
+    "gold_valid_hotels": 62,
+    "gold_invalid_hotels": 0,
+    "agreement": {
+      "n_annotators": 3,
+      "annotators": [
+        "annotator_1",
+        "annotator_2",
+        "annotator_3"
+      ],
+      "n_items_with_any_label": 62,
+      "n_items_rated_by_all": 62,
+      "unanimous_items": 61,
+      "unanimous_rate": 0.9839,
+      "items_needing_adjudication": 1,
+      "pairwise_cohens_kappa": {
+        "annotator_1 vs annotator_2": {
+          "n": 62,
+          "percent_agreement": 0.9839,
+          "expected_agreement": 0.9839,
+          "kappa": 0.0,
+          "disagreements": 1,
+          "positive_rate_annotator_1": 0.9839,
+          "positive_rate_annotator_2": 1.0
+        },
+        "annotator_1 vs annotator_3": {
+          "n": 62,
+          "percent_agreement": 0.9839,
+          "expected_agreement": 0.9839,
+          "kappa": 0.0,
+          "disagreements": 1,
+          "positive_rate_annotator_1": 0.9839,
+          "positive_rate_annotator_2": 1.0
+        },
+        "annotator_2 vs annotator_3": {
+          "n": 62,
+          "percent_agreement": 1.0,
+          "expected_agreement": 1.0,
+          "kappa": null,
+          "disagreements": 0,
+          "positive_rate_annotator_1": 1.0,
+          "positive_rate_annotator_2": 1.0
+        }
+      },
+      "fleiss_kappa": {
+        "n_items": 62,
+        "n_raters": 3,
+        "mean_item_agreement": 0.9892,
+        "expected_agreement": 0.9893,
+        "kappa": -0.0054
+      },
+      "n": 62,
+      "percent_agreement": 0.9839,
+      "kappa": -0.0054,
+      "disagreements": 1
+    },
+    "status": "labelled"
+  },
+  "methodology_note": "Automated criteria are reported as pass rates. Inter-annotator agreement is computed only over human-labelled hotel entries; the criteria are not treated as raters."
+}

@@ -1,0 +1,56 @@
+{
+  "selection_fold": "val",
+  "report_fold": "test",
+  "models": {
+    "LightGCN": {
+      "lr": 0.01,
+      "dim": 64,
+      "n_layers": 3,
+      "val_Recall@10": 0.1617
+    },
+    "NeuMF": {
+      "lr": 0.001,
+      "val_Recall@10": 0.1241
+    },
+    "GRU4Rec": {
+      "lr": 0.001,
+      "val_Recall@10": 0.1617,
+      "max_len": 20
+    }
+  },
+  "test": {
+    "LightGCN": {
+      "MRR": 0.0635,
+      "MAP@5": 0.0419,
+      "NDCG@5": 0.0531,
+      "Precision@5": 0.0175,
+      "Recall@5": 0.0877,
+      "MAP@10": 0.0492,
+      "NDCG@10": 0.0714,
+      "Precision@10": 0.0145,
+      "Recall@10": 0.1454
+    },
+    "NeuMF": {
+      "MRR": 0.0538,
+      "MAP@5": 0.0357,
+      "NDCG@5": 0.0463,
+      "Precision@5": 0.0158,
+      "Recall@5": 0.0789,
+      "MAP@10": 0.0415,
+      "NDCG@10": 0.0604,
+      "Precision@10": 0.0123,
+      "Recall@10": 0.1228
+    },
+    "GRU4Rec": {
+      "MRR": 0.0684,
+      "MAP@5": 0.0401,
+      "NDCG@5": 0.0484,
+      "Precision@5": 0.0148,
+      "Recall@5": 0.0739,
+      "MAP@10": 0.0517,
+      "NDCG@10": 0.0764,
+      "Precision@10": 0.016,
+      "Recall@10": 0.1604
+    }
+  }
+}

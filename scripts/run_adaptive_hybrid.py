@@ -1,11 +1,13 @@
 """Adaptive Hybrid experiments: λ sweep, sensitivity, and paper figures.
 
-Runs on the public leave-last-one-out split:
-  1) Fixed-λ Hybrid sweep (λ ∈ {0.0, 0.1, ..., 1.0})
-  2) Adaptive Hybrid (bounded logistic α(n); defaults α_min=0.9, n0=4, τ=2)
+Runs on the public three-way short-history split. Every search
+(λ and (α_min, n0, τ)) is decided on ``val.csv``; the test fold is scored
+once with the chosen settings.
+
+  1) Fixed-λ Hybrid sweep on validation (λ ∈ {0.0, 0.1, ..., 1.0})
+  2) Adaptive Hybrid grid on validation; defaults remain a documented baseline
   3) Unconstrained Adaptive ablation (α_min=0) for claim-evidence honesty
-  4) (α_min, n0, τ) sensitivity grid
-  5) Global + cold-start-stratified comparison tables
+  4) History-stratified comparison on test
 
 Outputs under release/benchmark/ and reports/, plus paper Image/ figures.
 
@@ -27,15 +29,15 @@ import content_baseline as cb
 import hybrid_baseline as hb
 import plot_style as ps
 import run_baselines as rb
-from cold_start_eval import aggregate, per_user_metrics, BUCKETS
+from short_history_eval import aggregate, per_user_metrics, BUCKETS
 
 OUT = C.OUT_RELEASE / "benchmark"
 REPORTS = C.OUT_REPORTS
 IMG_DIR = C.PAPER_IMG_DIR
 LAMBDAS = [i / 10 for i in range(11)]
-ALPHA_MIN_GRID = (0.0, 0.7, 0.8, 0.85, 0.9)
-N0_GRID = (4.0, 5.0, 6.0)
-TAU_GRID = (1.0, 1.5, 2.0)
+ALPHA_MIN_GRID = hb.ALPHA_MIN_GRID
+N0_GRID = hb.N0_GRID
+TAU_GRID = hb.TAU_GRID
 
 
 def _write_markdown(res: pd.DataFrame, path) -> None:
@@ -95,18 +97,21 @@ def figure_alpha_schedule(
 
 
 def run() -> dict:
-    tr, te, n_users, n_items = rb.load()
+    tr, va, n_users, n_items = rb.load("val")
+    _, te, _, _ = rb.load("test")
     mat = rb.build_matrix(tr, n_users, n_items)
+    val_items = dict(zip(va.userID, va.itemID))
     test_items = dict(zip(te.userID, te.itemID))
     train_count = tr.groupby("userID").size().to_dict()
     comps = hb.prepare_components(tr, n_users, n_items)
+    short_label = BUCKETS[0][2]  # shortest train-history bucket ("2")
 
-    # --- Fixed-λ sweep ---
+    # --- Fixed-λ sweep on validation ---
     sweep_rows = []
     for lam in LAMBDAS:
         scores = hb.score_fixed_hybrid(tr, n_users, n_items, lam, components=comps)
-        metrics = rb.evaluate(scores, mat, test_items)
-        buckets = aggregate(per_user_metrics(scores, mat, test_items), train_count)
+        metrics = rb.evaluate(scores, mat, val_items)
+        buckets = aggregate(per_user_metrics(scores, mat, val_items), train_count)
         row = {"lambda": lam, **metrics}
         for label in [b[2] for b in BUCKETS]:
             row[f"R@10[{label}]"] = buckets.loc[label, "Recall@10"]
@@ -116,41 +121,52 @@ def run() -> dict:
     best_idx = int(sweep["Recall@10"].idxmax())
     best_lam = float(sweep.loc[best_idx, "lambda"])
 
-    # --- Adaptive Hybrid (defaults) ---
+    # --- Adaptive Hybrid grid on validation; defaults stay a documented point ---
     adapt_scores = hb.score_adaptive_hybrid(
         tr, n_users, n_items, components=comps)
     adapt_metrics = rb.evaluate(adapt_scores, mat, test_items)
     adapt_buckets = aggregate(
         per_user_metrics(adapt_scores, mat, test_items), train_count)
 
-    # --- Unconstrained ablation (content-heavy for cold) ---
+    # --- Unconstrained ablation (content-heavy for short histories) ---
     uncon_scores = hb.score_adaptive_hybrid(
         tr, n_users, n_items, alpha_min=0.0, n0=5.0, tau=1.5, components=comps)
     uncon_metrics = rb.evaluate(uncon_scores, mat, test_items)
     uncon_buckets = aggregate(
         per_user_metrics(uncon_scores, mat, test_items), train_count)
 
-    # --- Sensitivity ---
+    # --- Sensitivity: choose (α_min, n0, τ) on validation ---
     sens_rows = []
+    best_adapt = None
+    best_adapt_val = -1.0
     for amin in ALPHA_MIN_GRID:
         for n0 in N0_GRID:
             for tau in TAU_GRID:
                 scores = hb.score_adaptive_hybrid(
                     tr, n_users, n_items, n0=n0, tau=tau, alpha_min=amin,
                     components=comps)
-                metrics = rb.evaluate(scores, mat, test_items)
+                val_metrics = rb.evaluate(scores, mat, val_items)
                 buckets = aggregate(
-                    per_user_metrics(scores, mat, test_items), train_count)
+                    per_user_metrics(scores, mat, val_items), train_count)
                 sens_rows.append({
                     "alpha_min": amin, "n0": n0, "tau": tau,
-                    "Recall@10": metrics["Recall@10"],
-                    "NDCG@10": metrics["NDCG@10"],
-                    "MRR": metrics["MRR"],
-                    "R@10[3]": buckets.loc["3", "Recall@10"],
-                    "R@10[11+]": buckets.loc["11+", "Recall@10"],
+                    "val_Recall@10": val_metrics["Recall@10"],
+                    "val_NDCG@10": val_metrics["NDCG@10"],
+                    "val_MRR": val_metrics["MRR"],
+                    f"val_R@10[{short_label}]": buckets.loc[short_label, "Recall@10"],
+                    "val_R@10[11+]": buckets.loc["11+", "Recall@10"],
                 })
+                if val_metrics["Recall@10"] > best_adapt_val:
+                    best_adapt_val = val_metrics["Recall@10"]
+                    best_adapt = {"alpha_min": amin, "n0": n0, "tau": tau}
     sens = pd.DataFrame(sens_rows)
     sens.to_csv(OUT / "hybrid_sensitivity.csv", index=False)
+
+    tuned_adapt_scores = hb.score_adaptive_hybrid(
+        tr, n_users, n_items, components=comps, **best_adapt)
+    tuned_adapt_metrics = rb.evaluate(tuned_adapt_scores, mat, test_items)
+    tuned_adapt_buckets = aggregate(
+        per_user_metrics(tuned_adapt_scores, mat, test_items), train_count)
 
     # --- Comparison table ---
     userknn_scores = rb.score_userknn(mat)
@@ -163,7 +179,8 @@ def run() -> dict:
         "Content-TFIDF": rb.evaluate(content_scores, mat, test_items),
         f"Hybrid-fixed (lam={best_lam:.1f})": rb.evaluate(fixed_scores, mat, test_items),
         "AdaptiveHybrid-uncon": uncon_metrics,
-        "AdaptiveHybrid": adapt_metrics,
+        "AdaptiveHybrid-default": adapt_metrics,
+        "AdaptiveHybrid-valtuned": tuned_adapt_metrics,
     }
     cmp_df = pd.DataFrame(comparison).T
     cmp_df.index.name = "Method"
@@ -177,20 +194,29 @@ def run() -> dict:
         "Content-TFIDF": content_scores,
         f"Hybrid-fixed (lam={best_lam:.1f})": fixed_scores,
         "AdaptiveHybrid-uncon": uncon_scores,
-        "AdaptiveHybrid": adapt_scores,
+        "AdaptiveHybrid-default": adapt_scores,
+        "AdaptiveHybrid-valtuned": tuned_adapt_scores,
     }.items():
         strat[name] = aggregate(
             per_user_metrics(scores, mat, test_items), train_count
         ).to_dict("index")
 
     report = {
+        "selection_fold": "val",
+        "report_fold": "test",
         "best_fixed_lambda": best_lam,
-        "adaptive": {
+        "adaptive_default": {
             "alpha_min": hb.DEFAULT_ALPHA_MIN,
             "n0": hb.DEFAULT_N0,
             "tau": hb.DEFAULT_TAU,
             "global": adapt_metrics,
             "buckets": adapt_buckets.to_dict("index"),
+        },
+        "adaptive_valtuned": {
+            **best_adapt,
+            "val_Recall@10": best_adapt_val,
+            "global": tuned_adapt_metrics,
+            "buckets": tuned_adapt_buckets.to_dict("index"),
         },
         "adaptive_unconstrained": {
             "alpha_min": 0.0,
@@ -207,19 +233,22 @@ def run() -> dict:
     (REPORTS / "adaptive_hybrid.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    figure_lambda_sweep(sweep, adapt_metrics["Recall@10"])
-    figure_alpha_schedule()
+    figure_lambda_sweep(sweep, tuned_adapt_metrics["Recall@10"])
+    figure_alpha_schedule(**best_adapt)
 
     print("=== Global comparison ===")
     print(cmp_df.to_string())
-    print(f"\nBest fixed lam={best_lam:.1f}")
-    print("\n=== AdaptiveHybrid buckets ===")
+    print(f"\nBest fixed lam={best_lam:.1f} (selected on val)")
+    print(f"Val-tuned Adaptive {best_adapt} (val Recall@10={best_adapt_val:.4f})")
+    print("\n=== AdaptiveHybrid-default buckets (test) ===")
     print(adapt_buckets.to_string())
+    print("\n=== AdaptiveHybrid-valtuned buckets (test) ===")
+    print(tuned_adapt_buckets.to_string())
     print("\n=== Unconstrained Adaptive buckets ===")
     print(uncon_buckets.to_string())
-    print("\n=== Sensitivity top-8 by cold R@10 ===")
-    print(sens.sort_values(["R@10[3]", "Recall@10"], ascending=False)
-          .head(8).to_string(index=False))
+    print(f"\n=== Sensitivity top-8 by val R@10[{short_label}] ===")
+    print(sens.sort_values([f"val_R@10[{short_label}]", "val_Recall@10"],
+                           ascending=False).head(8).to_string(index=False))
     print(f"\nWrote figures to {IMG_DIR}")
     return report
 

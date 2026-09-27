@@ -1,0 +1,52 @@
+{
+  "sheet": "C:\\Users\\Admin\\Downloads\\AIDevMinh\\ViHoRec\\ViHoRec\\annotation\\er_pairs_to_annotate.csv",
+  "key": "C:\\Users\\Admin\\Downloads\\AIDevMinh\\ViHoRec\\ViHoRec\\annotation\\er_pairs_key.csv",
+  "n_pairs": 426,
+  "by_stratum": {
+    "random_negative": 150,
+    "hard_negative": 150,
+    "top_similar": 100,
+    "algo_merge": 26
+  },
+  "merges_by_matcher": {
+    "name_only": 22,
+    "resolved": 21,
+    "disputed": 9
+  },
+  "cross_platform_pairs": 202,
+  "same_city_pairs": 260,
+  "strata_pools": {
+    "algo_merge": {
+      "pool_size": 26,
+      "n_sampled": 26,
+      "design": "exhaustive"
+    },
+    "top_similar": {
+      "pool_size": 100,
+      "n_sampled": 100,
+      "design": "exhaustive (highest-similarity unmerged pairs)"
+    },
+    "hard_negative": {
+      "pool_size": 3591,
+      "n_sampled": 150,
+      "design": "uniform random"
+    },
+    "random_negative": {
+      "pool_size": 164773,
+      "n_sampled": 150,
+      "design": "uniform random"
+    }
+  },
+  "catalogue": {
+    "distinct_listings": 581,
+    "distinct_raw_names": 581,
+    "entities_resolved_matcher": 560,
+    "entities_name_only_matcher": 560,
+    "total_pairs_scored": 168490,
+    "hard_thresholds": {
+      "jaccard": 0.34,
+      "seq_ratio": 0.72
+    },
+    "seed": 42
+  }
+}

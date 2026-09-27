@@ -31,6 +31,9 @@ DEFAULT_ALPHA_MIN = 0.9
 DEFAULT_N0 = 4.0
 DEFAULT_TAU = 2.0
 EPS = 1e-8
+ALPHA_MIN_GRID = (0.0, 0.7, 0.8, 0.85, 0.9)
+N0_GRID = (4.0, 5.0, 6.0)
+TAU_GRID = (1.0, 1.5, 2.0)
 
 
 def alpha_logistic(
@@ -135,8 +138,39 @@ def prepare_components(tr: pd.DataFrame, n_users: int, n_items: int):
     return _component_scores(tr, n_users, n_items)
 
 
+def select_adaptive_params(
+    tr: pd.DataFrame,
+    n_users: int,
+    n_items: int,
+    comps,
+    mat,
+    val_items: dict,
+    alpha_min_grid=ALPHA_MIN_GRID,
+    n0_grid=N0_GRID,
+    tau_grid=TAU_GRID,
+) -> tuple[dict, float, list[dict]]:
+    """Pick (α_min, n0, τ) on validation Recall@10. Never look at test."""
+    best, best_r = None, -1.0
+    rows = []
+    for amin in alpha_min_grid:
+        for n0 in n0_grid:
+            for tau in tau_grid:
+                scores = score_adaptive_hybrid(
+                    tr, n_users, n_items, n0=n0, tau=tau, alpha_min=amin,
+                    components=comps)
+                r10 = rb.evaluate(scores, mat, val_items)["Recall@10"]
+                rows.append({
+                    "alpha_min": amin, "n0": n0, "tau": tau,
+                    "val_Recall@10": r10,
+                })
+                if r10 > best_r:
+                    best_r = r10
+                    best = {"alpha_min": amin, "n0": n0, "tau": tau}
+    return best, float(best_r), rows
+
+
 def run() -> dict:
-    tr, te, n_users, n_items = rb.load()
+    tr, te, n_users, n_items = rb.load("test")
     mat = rb.build_matrix(tr, n_users, n_items)
     test_items = dict(zip(te.userID, te.itemID))
     comps = prepare_components(tr, n_users, n_items)

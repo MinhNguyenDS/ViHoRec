@@ -1,0 +1,153 @@
+{
+  "written_at": "2026-09-07T05:01:43Z",
+  "seed": 42,
+  "selection_fold": "val",
+  "report_fold": "test",
+  "library": "https://github.com/recommenders-team/recommenders",
+  "protocol": "Frozen public split. Train on train.csv only; val for early-stop; test scored once. Train-only history (same as GRU4Rec), full catalogue, mask seen train items.",
+  "results": {
+    "SASRec": {
+      "MRR": 0.0753,
+      "MAP@5": 0.0479,
+      "NDCG@5": 0.058,
+      "Precision@5": 0.0178,
+      "Recall@5": 0.089,
+      "MAP@10": 0.0586,
+      "NDCG@10": 0.0845,
+      "Precision@10": 0.0172,
+      "Recall@10": 0.1717,
+      "Train (s)": 75.1,
+      "Test (s)": 0.5
+    },
+    "NCF-NeuMF": {
+      "MRR": 0.0681,
+      "MAP@5": 0.0428,
+      "NDCG@5": 0.0529,
+      "Precision@5": 0.0168,
+      "Recall@5": 0.084,
+      "MAP@10": 0.051,
+      "NDCG@10": 0.0726,
+      "Precision@10": 0.0144,
+      "Recall@10": 0.1441,
+      "Train (s)": 53.1,
+      "Test (s)": 1.7
+    },
+    "SSEPT": {
+      "MRR": 0.0706,
+      "MAP@5": 0.0438,
+      "NDCG@5": 0.0554,
+      "Precision@5": 0.0183,
+      "Recall@5": 0.0915,
+      "MAP@10": 0.0541,
+      "NDCG@10": 0.081,
+      "Precision@10": 0.0172,
+      "Recall@10": 0.1717,
+      "Train (s)": 85.0,
+      "Test (s)": 0.6
+    }
+  },
+  "skipped": {
+    "LightGCN": "Already evaluated in-repo (neural_results.csv, test R@10=0.1454). Recommenders LightGCN is the same 2020 model on the DeepRec yaml stack.",
+    "SUM": "TensorFlow DeepRec sequential (Lian et al., 2021). Not on the 2026 PyTorch UniRec line; extra TF dependency on Python 3.13.",
+    "SLi-Rec": "TensorFlow DeepRec (Microsoft, 2019). Same TF stack as SUM.",
+    "NextItNet": "TensorFlow DeepRec dilated CNN (Yuan et al., 2019).",
+    "NRMS/NAML/LSTUR": "News recommenders; they need article text. ViHoRec has hotel metadata, not news bodies."
+  },
+  "ci": [
+    {
+      "Method": "SASRec",
+      "Recall@10": 0.1717,
+      "Recall@10_ci_lo": 0.1466,
+      "Recall@10_ci_hi": 0.198,
+      "NDCG@10": 0.0845,
+      "NDCG@10_ci_lo": 0.0705,
+      "NDCG@10_ci_hi": 0.0997,
+      "p_vs_UserKNN_R@10": 0.0007,
+      "sig_vs_UserKNN": "***",
+      "wilcoxon_n_nonzero": 100,
+      "mean_diff_vs_UserKNN": 0.0426
+    },
+    {
+      "Method": "NCF-NeuMF",
+      "Recall@10": 0.1441,
+      "Recall@10_ci_lo": 0.1203,
+      "Recall@10_ci_hi": 0.1692,
+      "NDCG@10": 0.0726,
+      "NDCG@10_ci_lo": 0.0592,
+      "NDCG@10_ci_hi": 0.087,
+      "p_vs_UserKNN_R@10": 0.1396,
+      "sig_vs_UserKNN": "",
+      "wilcoxon_n_nonzero": 66,
+      "mean_diff_vs_UserKNN": 0.015
+    },
+    {
+      "Method": "SSEPT",
+      "Recall@10": 0.1717,
+      "Recall@10_ci_lo": 0.1454,
+      "Recall@10_ci_hi": 0.198,
+      "NDCG@10": 0.081,
+      "NDCG@10_ci_lo": 0.0673,
+      "NDCG@10_ci_hi": 0.0952,
+      "p_vs_UserKNN_R@10": 0.0003,
+      "sig_vs_UserKNN": "***",
+      "wilcoxon_n_nonzero": 90,
+      "mean_diff_vs_UserKNN": 0.0426
+    }
+  ],
+  "pairwise_vs_userknn": [
+    {
+      "comparison": "SASRec vs UserKNN-cosine",
+      "metric": "Recall@10",
+      "p": 0.0007,
+      "statistic": 1666.5,
+      "n_nonzero": 100,
+      "n_pos": 67,
+      "n_neg": 33,
+      "n_zero": 698,
+      "mean_diff": 0.0426,
+      "stars": "***"
+    },
+    {
+      "comparison": "NCF-NeuMF vs UserKNN-cosine",
+      "metric": "Recall@10",
+      "p": 0.1396,
+      "statistic": 904.5,
+      "n_nonzero": 66,
+      "n_pos": 39,
+      "n_neg": 27,
+      "n_zero": 732,
+      "mean_diff": 0.015,
+      "stars": ""
+    },
+    {
+      "comparison": "SSEPT vs UserKNN-cosine",
+      "metric": "Recall@10",
+      "p": 0.0003,
+      "statistic": 1274.0,
+      "n_nonzero": 90,
+      "n_pos": 62,
+      "n_neg": 28,
+      "n_zero": 708,
+      "mean_diff": 0.0426,
+      "stars": "***"
+    }
+  ],
+  "meta": {
+    "smoke": false,
+    "n_users": 798,
+    "n_items": 535,
+    "n_train": 8645,
+    "seed": 42,
+    "torch": "2.14.0+cpu",
+    "SSEPT": {
+      "val_Recall@10": 0.1805,
+      "best_epoch": 35,
+      "seq_max_len": 20,
+      "embedding_dim": 64,
+      "n_epochs": 50,
+      "Train (s)": 85.0,
+      "Test (s)": 0.6,
+      "source": "recommenders.models.sasrec (PyTorch UniRec)"
+    }
+  }
+}

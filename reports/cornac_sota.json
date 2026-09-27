@@ -1,0 +1,190 @@
+{
+  "written_at": "2026-09-07T05:10:57Z",
+  "encoder": "paraphrase-multilingual-MiniLM-L12-v2",
+  "seed": 42,
+  "selection_fold": "val",
+  "report_fold": "test",
+  "protocol": "Frozen public split. NextItemEvaluation.from_splits USIT, mode=last, exclude_unknowns=True. Test history includes the val interaction (Cornac leave-last-out prefixes); val is not used as a training label.",
+  "results": {
+    "TIGER": {
+      "MRR": 0.0599,
+      "MAP@5": null,
+      "NDCG@5": 0.0495,
+      "Precision@5": 0.016,
+      "Recall@5": 0.0802,
+      "MAP@10": null,
+      "NDCG@10": 0.0734,
+      "Precision@10": 0.0157,
+      "Recall@10": 0.1566,
+      "MAP": 0.0573,
+      "Train (s)": 19973.7,
+      "Test (s)": 155.3
+    },
+    "RPG": {
+      "MRR": 0.0673,
+      "MAP@5": null,
+      "NDCG@5": 0.0515,
+      "Precision@5": 0.016,
+      "Recall@5": 0.0802,
+      "MAP@10": null,
+      "NDCG@10": 0.0722,
+      "Precision@10": 0.0145,
+      "Recall@10": 0.1454,
+      "MAP": 0.0673,
+      "Train (s)": 2298.6,
+      "Test (s)": 34.9
+    },
+    "LETTER": {
+      "MRR": 0.0569,
+      "MAP@5": null,
+      "NDCG@5": 0.0484,
+      "Precision@5": 0.016,
+      "Recall@5": 0.0802,
+      "MAP@10": null,
+      "NDCG@10": 0.0698,
+      "Precision@10": 0.0147,
+      "Recall@10": 0.1466,
+      "MAP": 0.0544,
+      "Train (s)": 28723.7,
+      "Test (s)": 171.0
+    },
+    "SANSA": {
+      "MRR": 0.0583,
+      "MAP@5": 0.0359,
+      "NDCG@5": 0.045,
+      "Precision@5": 0.0145,
+      "Recall@5": 0.0727,
+      "MAP@10": 0.042,
+      "NDCG@10": 0.0598,
+      "Precision@10": 0.0119,
+      "Recall@10": 0.119,
+      "Train (s)": 2.2,
+      "Test (s)": 0.1
+    }
+  },
+  "skipped": {
+    "Companion": "Needs SentimentModality (aspect–opinion tuples from reviews). ViHoRec does not release review text.",
+    "HypAR": "Review-hypergraph model; the public release has no review documents.",
+    "DiffGRM": "Paper-scale GPU recipe (d_model=256, 100 epochs, beam 128). This environment is torch CPU-only."
+  },
+  "ci": [
+    {
+      "Method": "TIGER",
+      "Recall@10": 0.1566,
+      "Recall@10_ci_lo": 0.1316,
+      "Recall@10_ci_hi": 0.183,
+      "NDCG@10": 0.0734,
+      "NDCG@10_ci_lo": 0.0607,
+      "NDCG@10_ci_hi": 0.087,
+      "p_vs_UserKNN_R@10": 0.0233,
+      "sig_vs_UserKNN": "*",
+      "wilcoxon_n_nonzero": 94,
+      "mean_diff_vs_UserKNN": 0.0276
+    },
+    {
+      "Method": "RPG",
+      "Recall@10": 0.1454,
+      "Recall@10_ci_lo": 0.1216,
+      "Recall@10_ci_hi": 0.1704,
+      "NDCG@10": 0.0722,
+      "NDCG@10_ci_lo": 0.059,
+      "NDCG@10_ci_hi": 0.0866,
+      "p_vs_UserKNN_R@10": 0.2596,
+      "sig_vs_UserKNN": "",
+      "wilcoxon_n_nonzero": 133,
+      "mean_diff_vs_UserKNN": 0.0163
+    },
+    {
+      "Method": "LETTER",
+      "Recall@10": 0.1466,
+      "Recall@10_ci_lo": 0.1228,
+      "Recall@10_ci_hi": 0.1717,
+      "NDCG@10": 0.0698,
+      "NDCG@10_ci_lo": 0.0573,
+      "NDCG@10_ci_hi": 0.0833,
+      "p_vs_UserKNN_R@10": 0.205,
+      "sig_vs_UserKNN": "",
+      "wilcoxon_n_nonzero": 122,
+      "mean_diff_vs_UserKNN": 0.0175
+    },
+    {
+      "Method": "SANSA",
+      "Recall@10": 0.119,
+      "Recall@10_ci_lo": 0.0977,
+      "Recall@10_ci_hi": 0.1416,
+      "NDCG@10": 0.0598,
+      "NDCG@10_ci_lo": 0.0475,
+      "NDCG@10_ci_hi": 0.0729,
+      "p_vs_UserKNN_R@10": 0.1441,
+      "sig_vs_UserKNN": "",
+      "wilcoxon_n_nonzero": 30,
+      "mean_diff_vs_UserKNN": -0.01
+    }
+  ],
+  "pairwise_vs_userknn": [
+    {
+      "comparison": "TIGER vs UserKNN-cosine",
+      "metric": "Recall@10",
+      "p": 0.0233,
+      "statistic": 1710.0,
+      "n_nonzero": 94,
+      "n_pos": 58,
+      "n_neg": 36,
+      "n_zero": 704,
+      "mean_diff": 0.0276,
+      "stars": "*"
+    },
+    {
+      "comparison": "RPG vs UserKNN-cosine",
+      "metric": "Recall@10",
+      "p": 0.2596,
+      "statistic": 4020.0,
+      "n_nonzero": 133,
+      "n_pos": 73,
+      "n_neg": 60,
+      "n_zero": 665,
+      "mean_diff": 0.0163,
+      "stars": ""
+    },
+    {
+      "comparison": "LETTER vs UserKNN-cosine",
+      "metric": "Recall@10",
+      "p": 0.205,
+      "statistic": 3321.0,
+      "n_nonzero": 122,
+      "n_pos": 68,
+      "n_neg": 54,
+      "n_zero": 676,
+      "mean_diff": 0.0175,
+      "stars": ""
+    },
+    {
+      "comparison": "SANSA vs UserKNN-cosine",
+      "metric": "Recall@10",
+      "p": 0.1441,
+      "statistic": 170.5,
+      "n_nonzero": 30,
+      "n_pos": 11,
+      "n_neg": 19,
+      "n_zero": 768,
+      "mean_diff": -0.01,
+      "stars": ""
+    }
+  ],
+  "meta": {
+    "device": "cpu",
+    "smoke": false,
+    "n_users": 798,
+    "n_items": 535,
+    "n_train": 8645,
+    "encoder": "paraphrase-multilingual-MiniLM-L12-v2",
+    "seed": 42,
+    "sansa": {
+      "l2": 1000.0,
+      "backend": "dense-exact LDL (CHOLMOD density=1 analogue)",
+      "val_Recall@10": 0.1291,
+      "library_icf": false,
+      "note": "Cornac SANSA ICF skipped: 535-item gramian is 19.5% dense; ICF repeatedly fails and inflates λ. Exact dense LDL is the small-catalog SANSA/NSAE closed form."
+    }
+  }
+}

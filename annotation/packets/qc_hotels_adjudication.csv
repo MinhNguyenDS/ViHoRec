@@ -1,0 +1,2 @@
+﻿record_id,hotel_id,name,location,annotator_1,annotator_2,annotator_3,notes,adjudicated
+R0006,H0518,Khu nghỉ dưỡng Six Senses Côn Đảo,Vũng Tàu,0.0,1.0,1.0,"Tên khách sạn là Six Senses Côn Đảo nhưng location ghi Vũng Tàu; địa điểm thực tế ở Côn Đảo, nên location mâu thuẫn theo guideline. Tên khách sạn là Six Senses Côn Đảo nhưng location ghi Vũng Tàu; địa điểm thực tế ở Côn Đảo, nên location mâu thuẫn theo guideline. Six Senses Con Dao (Côn Đảo thuộc Bà Rịa – Vũng Tàu)",1

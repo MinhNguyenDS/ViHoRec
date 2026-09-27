@@ -1,0 +1,63 @@
+{
+  "protocol": "temporal leave-one-out, three-way (train / val / test)",
+  "fold_assignment": {
+    "test": "last interaction per user",
+    "val": "second-last interaction per user",
+    "train": "all earlier interactions"
+  },
+  "temporal_scope": {
+    "ordering": "per user, not global",
+    "note": "Each user's own history is split chronologically, so no user's future leaks into their training data. Across users the folds overlap in wall-clock time: one user's training review can be later than another user's test review. This is the standard leave-last-one-out protocol; a single global cut-off date would be a different and stricter setting, and is not used here."
+  },
+  "relevance": {
+    "definition": "implicit next-item: the chronologically next hotel the user reviewed",
+    "all_ratings_are_positive": false,
+    "relevance_threshold": 7.0,
+    "note": "Ratings are not thresholded by default; the holdout item is relevant because it was visited, not because it scored well."
+  },
+  "min_interactions": 4,
+  "seed": 42,
+  "n_users": 798,
+  "n_items": 535,
+  "n_train": 8645,
+  "n_val": 506,
+  "n_test": 512,
+  "train_history_length": {
+    "min": 2,
+    "median": 5.0,
+    "max": 208
+  },
+  "users_with_train_history_2": 183,
+  "users_evaluated": {
+    "val": 506,
+    "test": 512
+  },
+  "sparsity_pct": 97.6012,
+  "output_dir": "benchmark\\relevance_ge_7",
+  "folds": {
+    "train": {
+      "n": 8645,
+      "n_users": 798,
+      "n_items": 508,
+      "date_min": "2012-01-08",
+      "date_max": "2023-12-06",
+      "rating_mean": 7.5283
+    },
+    "val": {
+      "n": 506,
+      "n_users": 506,
+      "n_items": 232,
+      "date_min": "2015-10-20",
+      "date_max": "2023-12-07",
+      "rating_mean": 8.8534
+    },
+    "test": {
+      "n": 512,
+      "n_users": 512,
+      "n_items": 226,
+      "date_min": "2017-07-08",
+      "date_max": "2023-12-09",
+      "rating_mean": 8.782
+    }
+  }
+}

@@ -54,14 +54,17 @@ for _d in (OUT_RELEASE, OUT_REPORTS, OUT_ANNOTATION):
 # the manuscript actually compiles from.
 def _find_paper_dir() -> Path:
     workspace = REPO_ROOT.parent
+    # Springer Nature submission first: it is the version under revision.
     for cand in (
+        workspace / "ViHoRec-SN",
         workspace / "sn-article-template",
         workspace / "ViHoRec-paper",
+        workspace / "ViHoRec-Arxiv",
         REPO_ROOT,
     ):
         if (cand / "sn-article.tex").exists() or (cand / "acl_latex.tex").exists() or (cand / "Image").is_dir():
             return cand
-    return workspace / "sn-article-template"
+    return workspace / "ViHoRec-SN"
 
 
 PAPER_DIR = _find_paper_dir()
@@ -74,6 +77,10 @@ DATE_MIN, DATE_MAX = "2010-01-01", "2024-12-31"
 
 # Reproducibility.
 RANDOM_SEED = 42
+
+# Annotation panel size. Odd, so a majority vote resolves every binary item;
+# non-unanimous items still go to a human adjudicator. See annotation/GUIDELINES.md.
+N_ANNOTATORS = 3
 
 # HMAC secret for pseudonymisation. Override in production via environment
 # variable and keep it OUT of the public release (see anonymize.py / DATASHEET).

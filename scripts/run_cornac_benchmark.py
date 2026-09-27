@@ -11,17 +11,20 @@ WHY A SEPARATE SCRIPT?
 HOW TO RUN (Google Colab)
     1) Upload the public split:
          dataset_release/release/benchmark/train.csv
+         dataset_release/release/benchmark/val.csv
          dataset_release/release/benchmark/test.csv
     2) Install dependencies:
          !pip install cornac torch
-    3) Point TRAIN_CSV / TEST_CSV below at the uploaded files and run:
+    3) Point TRAIN_CSV / VAL_CSV / TEST_CSV below at the uploaded files and run:
          !python run_cornac_benchmark.py
     Output: cornac_results.csv (one row per model, ranking metrics).
 
 PROTOCOL
-    Same public split as run_baselines.py (temporal leave-last-one-out). Ranking
-    metrics are computed over the full item catalogue with seen items excluded,
-    matching the lightweight-baseline protocol so the two tables are comparable.
+    Same public three-way short-history split as run_baselines.py. Neural
+    hyper-parameters, when searched, must be chosen on val.csv; this script
+    evaluates the published settings once on test.csv. Ranking metrics use
+    the full item catalogue with seen items excluded. Relevance is implicit
+    next-item: every crawled rating (>= 1) is a positive (threshold 0.5).
 """
 
 from __future__ import annotations
@@ -35,10 +38,12 @@ try:
     import config as C
     _BENCH = C.OUT_RELEASE / "benchmark"
     TRAIN_CSV = str(_BENCH / "train.csv")
+    VAL_CSV = str(_BENCH / "val.csv")
     TEST_CSV = str(_BENCH / "test.csv")
     OUT_CSV = str(_BENCH / "cornac_results.csv")
 except Exception:  # standalone on Colab
     TRAIN_CSV = "train.csv"
+    VAL_CSV = "val.csv"
     TEST_CSV = "test.csv"
     OUT_CSV = "cornac_results.csv"
 

@@ -1,0 +1,249 @@
+record_id,user_id,hotel_id,rating,date,source,record_type,name,location,human_task,annotator_1,annotator_2,annotator_3,adjudicated,notes
+R0000,Uae8735b5c0c9,H0395,4.0,2022-06-02,booking,interaction,,,,,,,,
+R0001,U3b9fee761ece,H0405,10.0,2023-11-05,booking,interaction,,,,,,,,
+R0002,Ua70d6cc8c74b,H0294,6.4,2016-02-22,traveloka,interaction,,,,,,,,
+R0003,U7f778acf3395,H0125,10.0,2020-09-07,ivivu,interaction,,,,,,,,
+R0004,U337d9e820084,H0039,8.5,2023-03-31,traveloka,interaction,,,,,,,,
+R0005,,H0451,,,,hotel,Khách sạn Hoàng Yến 1 Quy Nhơn,Quy Nhơn,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Hoàng Yến 1 Quy Nhơn (chi nhánh cụ thể) Hoàng Yến 1 Quy Nhơn (chi nhánh cụ thể)
+R0006,,H0518,,,,hotel,Khu nghỉ dưỡng Six Senses Côn Đảo,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,0.0,1.0,1.0,1.0,"Tên khách sạn là Six Senses Côn Đảo nhưng location ghi Vũng Tàu; địa điểm thực tế ở Côn Đảo, nên location mâu thuẫn theo guideline. Tên khách sạn là Six Senses Côn Đảo nhưng location ghi Vũng Tàu; địa điểm thực tế ở Côn Đảo, nên location mâu thuẫn theo guideline. Six Senses Con Dao (Côn Đảo thuộc Bà Rịa – Vũng Tàu) Tên khách sạn là Six Senses Côn Đảo nhưng location ghi Vũng Tàu; địa điểm thực tế ở Côn Đảo, nên location mâu thuẫn theo guideline. Six Senses Con Dao (Côn Đảo thuộc Bà Rịa – Vũng Tàu)"
+R0007,U5e953c92f790,H0111,9.0,2019-09-04,ivivu,interaction,,,,,,,,
+R0008,U86d6149ace93,H0033,1.0,2022-12-21,booking,interaction,,,,,,,,
+R0009,,H0090,,,,hotel,Villa T89 Đà Lạt,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Có thật, 231 Phù Đổng Thiên Vương, P.8 Có thật, 231 Phù Đổng Thiên Vương, P.8"
+R0010,,H0281,,,,hotel,Cam Ranh Riviera Beach Resort & Spa,Nha Trang,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Cam Ranh Riviera (thuộc khu vực Cam Ranh – Nha Trang) Cam Ranh Riviera (thuộc khu vực Cam Ranh – Nha Trang)
+R0011,,H0070,,,,hotel,Lovely House,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Lovely House Đà Lạt (có thật) Lovely House Đà Lạt (có thật)
+R0012,,H0556,,,,hotel,Song Homestay - The Song Vung Tau,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Song Homestay / The Song Vũng Tàu Song Homestay / The Song Vũng Tàu
+R0013,U7fb83ae780f3,H0294,9.3,2019-05-12,traveloka,interaction,,,,,,,,
+R0014,Ufae96fd5351e,H0074,8.0,2015-10-08,ivivu,interaction,,,,,,,,
+R0015,Uff47cfd7a9c0,H0558,8.5,2017-07-17,traveloka,interaction,,,,,,,,
+R0016,,H0272,,,,hotel,Ariyana SmartCondotel Nha Trang,Nha Trang,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Ariyana SmartCondotel Ariyana SmartCondotel
+R0017,Uae8735b5c0c9,H0443,6.0,2020-10-15,booking,interaction,,,,,,,,
+R0018,Ue1b7d326a532,H0547,6.9,2021-04-07,traveloka,interaction,,,,,,,,
+R0019,Ucaa5e34765c3,H0156,7.0,2022-04-07,booking,interaction,,,,,,,,
+R0020,U293563b897d9,H0429,6.0,2017-02-14,ivivu,interaction,,,,,,,,
+R0021,U63fd833b4a7c,H0070,10.0,2023-06-17,booking,interaction,,,,,,,,
+R0022,Uc2fa4260b151,H0358,7.7,2013-04-28,ivivu,interaction,,,,,,,,
+R0023,U45764f44c185,H0322,9.0,2016-09-01,ivivu,interaction,,,,,,,,
+R0024,,H0479,,,,hotel,Khách sạn FLC Luxury Quy Nhơn,Quy Nhơn,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,FLC Luxury Hotel Quy Nhơn FLC Luxury Hotel Quy Nhơn
+R0025,,H0371,,,,hotel,Minh Hien Hotel,Phan Thiết,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Minh Hiền Hotel Phan Thiết Minh Hiền Hotel Phan Thiết
+R0026,,H0275,,,,hotel,Emerald Bay Hotel & Spa,Nha Trang,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Emerald Bay Hotel & Spa Nha Trang Emerald Bay Hotel & Spa Nha Trang
+R0027,U82a5ed2b4568,H0466,10.0,2020-06-09,booking,interaction,,,,,,,,
+R0028,U7536430e4ac2,H0006,7.0,2023-03-14,booking,interaction,,,,,,,,
+R0029,U9482b53a70de,H0277,10.0,2020-03-06,ivivu,interaction,,,,,,,,
+R0030,,H0442,,,,hotel,Sunset Sanato Resort & Villas Phú Quốc,Phú Quốc,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Sunset Sanato Resort & Villas Sunset Sanato Resort & Villas
+R0031,,H0079,,,,hotel,Khách sạn Ngọc Phát Đà Lạt,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Ngọc Phát Hotel Đà Lạt Ngọc Phát Hotel Đà Lạt
+R0032,Uc7490c282049,H0549,8.0,2019-12-21,ivivu,interaction,,,,,,,,
+R0033,Ube1ed5d2dd22,H0466,10.0,2023-06-18,booking,interaction,,,,,,,,
+R0034,,H0524,,,,hotel,Khách sạn Fusion Suites Vũng Tàu,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Fusion Suites Vung Tau Fusion Suites Vung Tau
+R0035,Uab90ae8d578c,H0010,10.0,2021-05-13,booking,interaction,,,,,,,,
+R0036,U9666d5aa39a0,H0379,5.8,2022-10-17,traveloka,interaction,,,,,,,,
+R0037,,H0055,,,,hotel,Khách sạn Sài Gòn Đà Lạt,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Saigon Dalat Hotel Saigon Dalat Hotel
+R0038,U61419e49de12,H0256,3.0,2022-07-24,booking,interaction,,,,,,,,
+R0039,U82a5ed2b4568,H0258,7.0,2022-10-08,booking,interaction,,,,,,,,
+R0040,Ueb157ac6e603,H0547,10.0,2019-12-23,traveloka,interaction,,,,,,,,
+R0041,U5d15975ae749,H0259,9.0,2016-10-14,ivivu,interaction,,,,,,,,
+R0042,U82a5ed2b4568,H0514,7.0,2022-11-29,booking,interaction,,,,,,,,
+R0043,Uef35cb793711,H0423,7.0,2016-03-15,traveloka,interaction,,,,,,,,
+R0044,U42cfb242c8b6,H0027,7.0,2020-12-12,booking,interaction,,,,,,,,
+R0045,Uada44920f035,H0394,6.0,2022-07-19,ivivu,interaction,,,,,,,,
+R0046,U2afa5ab7b4ec,H0533,4.0,2018-07-14,ivivu,interaction,,,,,,,,
+R0047,U2877afd59edb,H0071,9.4,2019-03-26,traveloka,interaction,,,,,,,,
+R0048,Uab90ae8d578c,H0153,7.0,2022-10-31,booking,interaction,,,,,,,,
+R0049,U6d18502a7078,H0348,9.1,2021-12-04,traveloka,interaction,,,,,,,,
+R0050,Ub2b3296bb884,H0152,6.4,2022-04-05,traveloka,interaction,,,,,,,,
+R0051,,H0006,,,,hotel,Bazan Hotel Dalat - STAY 24H,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Bazan / Raon Bazan Hotel - STAY 24H, Tô Hiến Thành Bazan / Raon Bazan Hotel - STAY 24H, Tô Hiến Thành"
+R0052,Uf57a18241370,H0551,10.0,2021-08-01,ivivu,interaction,,,,,,,,
+R0053,,H0410,,,,hotel,Sheraton Phú Quốc Long Beach Resort,Phú Quốc,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Sheraton Phu Quoc Long Beach Resort Sheraton Phu Quoc Long Beach Resort
+R0054,,H0527,,,,hotel,Khu nghỉ dưỡng Hải Dương Intourco Vũng Tàu,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Hải Dương Intourco Resort, 01 Thùy Vân Hải Dương Intourco Resort, 01 Thùy Vân"
+R0055,Uc03afc8432af,H0479,8.0,2019-06-28,ivivu,interaction,,,,,,,,
+R0056,Uae43a1c16f19,H0214,6.0,2017-03-29,traveloka,interaction,,,,,,,,
+R0057,,H0296,,,,hotel,DTX Hotel Nha Trang,Nha Trang,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,DTX Hotel Nha Trang DTX Hotel Nha Trang
+R0058,Uf79b29f6f986,H0074,9.0,2015-03-10,ivivu,interaction,,,,,,,,
+R0059,U1c06cd8569c3,H0432,9.7,2022-08-23,traveloka,interaction,,,,,,,,
+R0060,U5d4ea095be61,H0049,10.0,2019-11-07,ivivu,interaction,,,,,,,,
+R0061,Uf05fd455a70d,H0423,10.0,2016-09-11,ivivu,interaction,,,,,,,,
+R0062,U271e5fa64c5f,H0093,9.0,2017-04-02,ivivu,interaction,,,,,,,,
+R0063,,H0155,,,,hotel,Khách sạn Mường Thanh Luxury Đà Nẵng,Đà Nẵng,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Mường Thanh Luxury Đà Nẵng, 270 Võ Nguyên Giáp Mường Thanh Luxury Đà Nẵng, 270 Võ Nguyên Giáp"
+R0064,U8dbdd860289a,H0019,9.1,2020-03-03,traveloka,interaction,,,,,,,,
+R0065,U89e44dddec44,H0049,6.0,2019-10-14,ivivu,interaction,,,,,,,,
+R0066,,H0172,,,,hotel,Crony Villa - STAY 24H,Hội An,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Crony Villa - STAY 24H Hội An Crony Villa - STAY 24H Hội An
+R0067,U126ba54ffc44,H0342,9.4,2017-06-12,traveloka,interaction,,,,,,,,
+R0068,U28172820ff33,H0012,9.0,2015-07-16,ivivu,interaction,,,,,,,,
+R0069,,H0101,,,,hotel,Khách sạn A La Carte Đà Nẵng,Đà Nẵng,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,A La Carte Đà Nẵng (có thật) A La Carte Đà Nẵng (có thật)
+R0070,Uec2056a2a077,H0358,9.5,2019-09-04,ivivu,interaction,,,,,,,,
+R0071,Uacd3c063a3d3,H0221,8.0,2020-08-03,ivivu,interaction,,,,,,,,
+R0072,U458d06a3dcd4,H0065,7.7,2014-04-09,ivivu,interaction,,,,,,,,
+R0073,U9bad77e5dda4,H0256,9.7,2020-06-28,traveloka,interaction,,,,,,,,
+R0074,U764b50c0d940,H0411,5.0,2022-06-07,booking,interaction,,,,,,,,
+R0075,U0938c5c36632,H0294,10.0,2019-05-27,traveloka,interaction,,,,,,,,
+R0076,U4558266492a4,H0074,9.0,2017-03-17,ivivu,interaction,,,,,,,,
+R0077,U333dc61d1be5,H0439,9.5,2018-11-25,ivivu,interaction,,,,,,,,
+R0078,U6a1ec282d822,H0497,4.0,2022-06-06,booking,interaction,,,,,,,,
+R0079,U6ee8629c8a1a,H0001,10.0,2021-01-19,booking,interaction,,,,,,,,
+R0080,Ue7097b34e841,H0153,9.4,2019-02-26,traveloka,interaction,,,,,,,,
+R0081,,H0030,,,,hotel,Khách sạn Roy Dala Đà Lạt,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Roy Dala Hotel, 10A Nam Kỳ Khởi Nghĩa Roy Dala Hotel, 10A Nam Kỳ Khởi Nghĩa"
+R0082,U1cb6e3f71256,H0440,9.7,2018-06-02,traveloka,interaction,,,,,,,,
+R0083,U875db4b1b994,H0264,7.0,2018-04-29,ivivu,interaction,,,,,,,,
+R0084,U72a31a35b4f4,H0440,5.7,2017-02-18,traveloka,interaction,,,,,,,,
+R0085,Uae4e862cbbb3,H0487,6.1,2021-02-12,traveloka,interaction,,,,,,,,
+R0086,,H0346,,,,hotel,Khu nghỉ dưỡng Rock Water Bay Phan Thiết,Phan Thiết,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Rock Water Bay Resort, Kê Gà Rock Water Bay Resort, Kê Gà"
+R0087,U9deb26de64b9,H0294,6.0,2017-03-23,traveloka,interaction,,,,,,,,
+R0088,U5c13d56d6b33,H0006,10.0,2022-07-27,booking,interaction,,,,,,,,
+R0089,U920e21611453,H0493,9.0,2022-09-07,booking,interaction,,,,,,,,
+R0090,U2204416dfb34,H0466,10.0,2021-09-02,booking,interaction,,,,,,,,
+R0091,Uc439ac066a38,H0498,1.0,2023-10-07,booking,interaction,,,,,,,,
+R0092,U5592d3d14f3a,H0497,10.0,2023-12-02,booking,interaction,,,,,,,,
+R0093,U577306d16590,H0493,9.7,2017-12-21,traveloka,interaction,,,,,,,,
+R0094,U55ba0a35377a,H0507,5.0,2022-08-16,booking,interaction,,,,,,,,
+R0095,U43553bc1e3be,H0061,7.5,2018-10-12,ivivu,interaction,,,,,,,,
+R0096,U8c060a0d0c30,H0107,6.0,2015-04-24,traveloka,interaction,,,,,,,,
+R0097,,H0487,,,,hotel,Khách sạn Mường Thanh Quy Nhơn,Quy Nhơn,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Mường Thanh Quy Nhơn Mường Thanh Quy Nhơn
+R0098,Ub88006c8832f,H0496,9.0,2022-02-11,booking,interaction,,,,,,,,
+R0099,Ud35a223711a7,H0221,10.0,2018-08-21,ivivu,interaction,,,,,,,,
+R0100,Ue6421d0ffd27,H0203,6.1,2015-09-04,traveloka,interaction,,,,,,,,
+R0101,,H0553,,,,hotel,Khách sạn Royal Vũng Tàu,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Royal Hotel Vũng Tàu, 36 Quang Trung Royal Hotel Vũng Tàu, 36 Quang Trung"
+R0102,U93a7b3172364,H0524,7.0,2020-05-30,ivivu,interaction,,,,,,,,
+R0103,U4db7760a8d27,H0266,7.0,2023-04-07,booking,interaction,,,,,,,,
+R0104,Ud3331afbb2ee,H0555,7.3,2014-07-20,ivivu,interaction,,,,,,,,
+R0105,Ud31580178d1c,H0203,6.9,2015-01-15,traveloka,interaction,,,,,,,,
+R0106,Uf1bd839bb79e,H0157,10.0,2019-04-26,ivivu,interaction,,,,,,,,
+R0107,U2f45ade47ddf,H0432,9.0,2023-01-09,traveloka,interaction,,,,,,,,
+R0108,Ub76b66cd6c5d,H0512,8.0,2023-03-01,booking,interaction,,,,,,,,
+R0109,,H0227,,,,hotel,Khách sạn Eldora Huế,Huế,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Eldora Hotel, 60 Bến Nghé, trung tâm Huế Eldora Hotel, 60 Bến Nghé, trung tâm Huế"
+R0110,U1d39c48d3743,H0547,9.4,2022-12-11,traveloka,interaction,,,,,,,,
+R0111,,H0453,,,,hotel,RAON Hotel - STAY 24H,Quy Nhơn,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"RAON Hotel - STAY 24H, 09 Nguyễn Thị Định, Quy Nhơn RAON Hotel - STAY 24H, 09 Nguyễn Thị Định, Quy Nhơn"
+R0112,U967847e18431,H0547,6.6,2015-08-14,traveloka,interaction,,,,,,,,
+R0113,U2a46e9aec727,H0495,10.0,2021-01-12,booking,interaction,,,,,,,,
+R0114,U655646f09724,H0493,8.0,2022-08-27,booking,interaction,,,,,,,,
+R0115,Uf680aead23d1,H0418,6.0,2022-05-14,ivivu,interaction,,,,,,,,
+R0116,U8c5492d08f33,H0100,10.0,2020-09-25,booking,interaction,,,,,,,,
+R0117,U6ba8dc43549f,H0051,6.0,2012-05-06,ivivu,interaction,,,,,,,,
+R0118,U0c024ce09c1a,H0305,6.7,2017-09-25,traveloka,interaction,,,,,,,,
+R0119,U9c121aefffd9,H0548,6.1,2015-07-29,traveloka,interaction,,,,,,,,
+R0120,Ucc2b71498db9,H0502,8.5,2022-11-29,traveloka,interaction,,,,,,,,
+R0121,U4bf1671e06ad,H0392,7.0,2019-08-30,ivivu,interaction,,,,,,,,
+R0122,U147e1eb2139b,H0236,10.0,2023-04-30,ivivu,interaction,,,,,,,,
+R0123,Ub94c5e42d6ff,H0503,9.1,2019-04-15,traveloka,interaction,,,,,,,,
+R0124,Ub4fa1bcf456b,H0528,6.0,2018-03-04,traveloka,interaction,,,,,,,,
+R0125,Ue0394cde49c9,H0358,8.0,2018-03-08,ivivu,interaction,,,,,,,,
+R0126,U0934c5ee91a3,H0493,1.0,2023-08-18,booking,interaction,,,,,,,,
+R0127,U6a6e757638ae,H0305,5.5,2016-08-22,traveloka,interaction,,,,,,,,
+R0128,Uf910cfcea493,H0466,5.0,2022-09-05,booking,interaction,,,,,,,,
+R0129,,H0083,,,,hotel,Khách sạn Phương Uyên Đà Lạt,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Phương Uyên Hotel, 28 Nguyễn Văn Trỗi Phương Uyên Hotel, 28 Nguyễn Văn Trỗi"
+R0130,U0cded67ef66e,H0431,9.7,2018-11-17,traveloka,interaction,,,,,,,,
+R0131,U6a1ec282d822,H0002,9.0,2020-12-29,booking,interaction,,,,,,,,
+R0132,,H0555,,,,hotel,Seaside Resort Vung Tau,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Seaside Resort Vũng Tàu Seaside Resort Vũng Tàu
+R0133,U6092aefed3f7,H0129,8.0,2023-10-01,booking,interaction,,,,,,,,
+R0134,,H0132,,,,hotel,Khách sạn Kova Diamond Đà Nẵng,Đà Nẵng,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Kova Diamond Hotel Đà Nẵng Kova Diamond Hotel Đà Nẵng
+R0135,U9390dc3995ea,H0557,7.0,2023-01-16,booking,interaction,,,,,,,,
+R0136,Uabf712daa9ce,H0193,7.0,2017-02-26,ivivu,interaction,,,,,,,,
+R0137,U55ba0a35377a,H0005,7.0,2023-11-06,booking,interaction,,,,,,,,
+R0138,U9d377e63d53f,H0102,9.4,2015-09-18,traveloka,interaction,,,,,,,,
+R0139,U0861a679fb34,H0544,6.0,2018-08-18,traveloka,interaction,,,,,,,,
+R0140,U9b7256dfdd66,H0447,6.4,2018-12-19,traveloka,interaction,,,,,,,,
+R0141,U1e7bd01ace84,H0460,7.5,2019-05-05,ivivu,interaction,,,,,,,,
+R0142,U0a1b617a4407,H0379,6.0,2023-06-01,traveloka,interaction,,,,,,,,
+R0143,U392227e99234,H0096,8.8,2022-04-29,traveloka,interaction,,,,,,,,
+R0144,,H0078,,,,hotel,Nam Xuan Premium Hotel,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Có thật tại Đà Lạt Có thật tại Đà Lạt
+R0145,,H0506,,,,hotel,Sun Beach Hotel,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Sun Beach Hotel Vũng Tàu Sun Beach Hotel Vũng Tàu
+R0146,U8ca4392fa347,H0479,8.5,2018-01-11,ivivu,interaction,,,,,,,,
+R0147,,H0332,,,,hotel,Smile Hotel Nha Trang,Nha Trang,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Smile Hotel Nha Trang, đường Hùng Vương Smile Hotel Nha Trang, đường Hùng Vương"
+R0148,Ufb6fa5c6cdc5,H0097,6.0,2022-06-11,ivivu,interaction,,,,,,,,
+R0149,Uf87323b22adb,H0496,10.0,2023-11-02,booking,interaction,,,,,,,,
+R0150,Ude141436b922,H0078,5.4,2015-03-29,traveloka,interaction,,,,,,,,
+R0151,Ua866dc69d643,H0537,10.0,2022-03-29,booking,interaction,,,,,,,,
+R0152,Ub6b1b7581ff2,H0538,6.0,2022-01-13,ivivu,interaction,,,,,,,,
+R0153,U21f30230fde5,H0483,5.7,2016-01-21,traveloka,interaction,,,,,,,,
+R0154,Ud988f30458dc,H0360,8.0,2023-04-01,booking,interaction,,,,,,,,
+R0155,Ua3596c82b9b6,H0306,8.5,2016-12-10,traveloka,interaction,,,,,,,,
+R0156,U1b75ad9e4757,H0503,9.4,2022-09-10,traveloka,interaction,,,,,,,,
+R0157,U4028d4ac9ce8,H0142,7.0,2014-06-05,ivivu,interaction,,,,,,,,
+R0158,U7a37ffff8050,H0202,6.0,2023-06-02,booking,interaction,,,,,,,,
+R0159,,H0467,,,,hotel,Hoang Yen Canary Hotel Quy Nhon,Quy Nhơn,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Hoàng Yến Canary Hotel Quy Nhơn Hoàng Yến Canary Hotel Quy Nhơn
+R0160,Uc43682ad0fad,H0466,7.0,2022-06-16,booking,interaction,,,,,,,,
+R0161,Ua20ebc36a84f,H0307,9.0,2018-07-09,ivivu,interaction,,,,,,,,
+R0162,,H0163,,,,hotel,Khu nghỉ dưỡng Naman Retreat Đà Nẵng,Đà Nẵng,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Naman Retreat Naman Retreat
+R0163,Ub394f564fb96,H0344,5.9,2020-12-11,traveloka,interaction,,,,,,,,
+R0164,U57dd8f4e431c,H0537,8.0,2022-01-26,booking,interaction,,,,,,,,
+R0165,Ud1d9ab571781,H0234,8.5,2019-06-15,traveloka,interaction,,,,,,,,
+R0166,,H0002,,,,hotel,Arapang Hotel 2,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Arapang Hotel 2 (chi nhánh cụ thể), Phan Như Thạch Arapang Hotel 2 (chi nhánh cụ thể), Phan Như Thạch"
+R0167,U665904d21807,H0113,6.0,2022-08-03,booking,interaction,,,,,,,,
+R0168,U182bed4ea9a1,H0434,9.0,2017-08-28,ivivu,interaction,,,,,,,,
+R0169,Ue6f23e712b71,H0010,10.0,2021-11-22,booking,interaction,,,,,,,,
+R0170,U6f31ebae1807,H0332,8.8,2019-03-17,traveloka,interaction,,,,,,,,
+R0171,,H0531,,,,hotel,Khu nghỉ dưỡng Le Palmier Hồ Tràm,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Le Palmier Hồ Tràm (Hồ Tràm thuộc Bà Rịa – Vũng Tàu) Le Palmier Hồ Tràm (Hồ Tràm thuộc Bà Rịa – Vũng Tàu)
+R0172,,H0384,,,,hotel,Homestay Song Ngọc Phan Thiết,Phan Thiết,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Homestay cụ thể tại Phan Thiết Homestay cụ thể tại Phan Thiết
+R0173,,H0368,,,,hotel,Khu nghỉ dưỡng TTC Premium Kê Gà,Phan Thiết,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,TTC Premium Resort Kê Gà TTC Premium Resort Kê Gà
+R0174,U2278f685b611,H0498,10.0,2023-09-04,booking,interaction,,,,,,,,
+R0175,U0582b7c54472,H0487,6.0,2023-02-23,traveloka,interaction,,,,,,,,
+R0176,Uf35c029dd8f5,H0404,9.5,2019-10-06,ivivu,interaction,,,,,,,,
+R0177,U6a1ec282d822,H0496,5.0,2022-09-15,booking,interaction,,,,,,,,
+R0178,,H0144,,,,hotel,Khu nghỉ dưỡng Sheraton Grand Đà Nẵng,Đà Nẵng,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Sheraton Grand Danang Resort Sheraton Grand Danang Resort
+R0179,U665904d21807,H0106,7.0,2022-03-11,booking,interaction,,,,,,,,
+R0180,Ue63aa86fe901,H0467,5.1,2015-05-03,traveloka,interaction,,,,,,,,
+R0181,U91ea4166cd1e,H0140,6.3,2013-07-29,ivivu,interaction,,,,,,,,
+R0182,Ucc857b3a2a4c,H0182,10.0,2023-02-05,ivivu,interaction,,,,,,,,
+R0183,U6a59181b4a16,H0343,6.0,2023-06-30,ivivu,interaction,,,,,,,,
+R0184,,H0234,,,,hotel,Khách sạn Mường Thanh Holiday Huế,Huế,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Mường Thanh Holiday Huế Mường Thanh Holiday Huế
+R0185,,H0460,,,,hotel,Avani Quy Nhơn Resort & Spa,Quy Nhơn,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Avani Quy Nhon Resort & Spa Avani Quy Nhon Resort & Spa
+R0186,Ud713487cd63f,H0392,9.0,2015-01-09,ivivu,interaction,,,,,,,,
+R0187,U82a5ed2b4568,H0010,9.0,2023-09-03,booking,interaction,,,,,,,,
+R0188,U1453914ccca2,H0380,10.0,2023-09-05,booking,interaction,,,,,,,,
+R0189,U7a37ffff8050,H0523,3.0,2022-09-08,booking,interaction,,,,,,,,
+R0190,,H0301,,,,hotel,Pavillon Garden Hotel Nha Trang,Nha Trang,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Pavillon Garden Hotel Pavillon Garden Hotel
+R0191,Uf71884536399,H0483,5.8,2019-08-03,traveloka,interaction,,,,,,,,
+R0192,U3550151b709f,H0549,7.0,2021-05-22,booking,interaction,,,,,,,,
+R0193,U5eee0df3dac0,H0440,10.0,2020-09-28,traveloka,interaction,,,,,,,,
+R0194,U7615f717b3f0,H0404,10.0,2020-02-29,ivivu,interaction,,,,,,,,
+R0195,,H0081,,,,hotel,Khách sạn Paradise Đà Lạt,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Dalat Paradise Hotel, 28 Bà Triệu Dalat Paradise Hotel, 28 Bà Triệu"
+R0196,Ueb872f9b9d9e,H0444,5.9,2015-12-22,traveloka,interaction,,,,,,,,
+R0197,,H0039,,,,hotel,Dalat Wonder Resort,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Dalat Wonder Resort Dalat Wonder Resort
+R0198,,H0145,,,,hotel,Khách sạn HAIAN Riverfront Đà Nẵng,Đà Nẵng,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,HAIAN Riverfront Da Nang HAIAN Riverfront Da Nang
+R0199,U7f1d82df196e,H0159,10.0,2020-11-28,ivivu,interaction,,,,,,,,
+R0200,U4bf9a070771d,H0191,7.0,2022-02-27,booking,interaction,,,,,,,,
+R0201,Uf02e06bbbb64,H0074,9.0,2017-08-18,ivivu,interaction,,,,,,,,
+R0202,Uc43682ad0fad,H0363,9.0,2023-07-07,booking,interaction,,,,,,,,
+R0203,,H0204,,,,hotel,Khách sạn Mường Thanh Holiday Hội An,Hội An,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Mường Thanh Holiday Hội An Mường Thanh Holiday Hội An
+R0204,U3ca0e073db70,H0395,9.4,2016-09-24,traveloka,interaction,,,,,,,,
+R0205,,H0396,,,,hotel,Khu nghỉ dưỡng Premier Village Phu Quoc Managed By Accor,Phú Quốc,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Premier Village Phu Quoc Resort Premier Village Phu Quoc Resort
+R0206,,H0086,,,,hotel,Khách sạn Sammy Đà Lạt,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Sammy Hotel Đà Lạt Sammy Hotel Đà Lạt
+R0207,,H0376,,,,hotel,Khu nghỉ dưỡng Le Viva Mũi Né,Phan Thiết,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Le Viva / Le'VIVA Resort Mũi Né, 32 Huỳnh Thúc Kháng Le Viva / Le'VIVA Resort Mũi Né, 32 Huỳnh Thúc Kháng"
+R0208,,H0010,,,,hotel,Khanh Uyen 3 Hotel,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Khánh Uyên 3 Hotel (chi nhánh cụ thể) Khánh Uyên 3 Hotel (chi nhánh cụ thể)
+R0209,,H0148,,,,hotel,Hyatt Regency Đà Nẵng Resort & Spa,Đà Nẵng,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Hyatt Regency Danang Resort & Spa Hyatt Regency Danang Resort & Spa
+R0210,U3ae14c952a2d,H0424,6.0,2021-05-17,traveloka,interaction,,,,,,,,
+R0211,U82a5ed2b4568,H0506,5.0,2022-09-16,booking,interaction,,,,,,,,
+R0212,Uf76a42d21a7d,H0010,8.0,2021-08-12,booking,interaction,,,,,,,,
+R0213,Ub4f035fd00cd,H0403,8.0,2017-01-09,ivivu,interaction,,,,,,,,
+R0214,U869d32477404,H0190,8.0,2022-12-29,booking,interaction,,,,,,,,
+R0215,U7038329f5ad6,H0537,1.0,2023-01-06,booking,interaction,,,,,,,,
+R0216,,H0165,,,,hotel,Khu nghỉ dưỡng Premier Village Đà Nẵng,Đà Nẵng,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Premier Village Danang Resort Premier Village Danang Resort
+R0217,U53b7c7a48fe7,H0502,9.1,2023-05-03,traveloka,interaction,,,,,,,,
+R0218,,H0185,,,,hotel,Blooms Boutique Village,Hội An,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Blooms Boutique Village, 85 Lê Hồng Phong Blooms Boutique Village, 85 Lê Hồng Phong"
+R0219,,H0341,,,,hotel,Aroma Beach Resort & Spa Phan Thiết,Phan Thiết,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Aroma Beach Resort & Spa Aroma Beach Resort & Spa
+R0220,,H0140,,,,hotel,Khách sạn Gold Đà Nẵng,Đà Nẵng,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Gold Hotel Đà Nẵng, 24 Núi Thành Gold Hotel Đà Nẵng, 24 Núi Thành"
+R0221,U91df3e8eda52,H0294,6.1,2015-12-08,traveloka,interaction,,,,,,,,
+R0222,U894404028a81,H0537,9.0,2021-12-30,booking,interaction,,,,,,,,
+R0223,Ue179889a7726,H0116,5.1,2018-02-11,traveloka,interaction,,,,,,,,
+R0224,,H0073,,,,hotel,M Hotel Đà Lạt,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"M Hotel Đà Lạt, 272 Bùi Thị Xuân M Hotel Đà Lạt, 272 Bùi Thị Xuân"
+R0225,U0fa462fa5f5d,H0102,7.0,2023-10-05,booking,interaction,,,,,,,,
+R0226,U4ceba8673ab5,H0370,7.0,2023-04-20,booking,interaction,,,,,,,,
+R0227,U1561549cf6c7,H0294,8.5,2016-02-17,traveloka,interaction,,,,,,,,
+R0228,U2ad5b9117c30,H0153,8.5,2018-07-26,traveloka,interaction,,,,,,,,
+R0229,Uf120825b3060,H0109,7.2,2018-10-06,traveloka,interaction,,,,,,,,
+R0230,U6156734cc45f,H0028,9.0,2019-07-15,ivivu,interaction,,,,,,,,
+R0231,U80fb5499f05f,H0418,6.0,2020-11-09,ivivu,interaction,,,,,,,,
+R0232,U5efba0fdbf76,H0244,9.5,2019-01-21,ivivu,interaction,,,,,,,,
+R0233,Uda808773dfcb,H0054,9.0,2019-02-22,ivivu,interaction,,,,,,,,
+R0234,,H0517,,,,hotel,Khách sạn The Secret Côn Đảo,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,The Secret Con Dao (Côn Đảo) The Secret Con Dao (Côn Đảo)
+R0235,U22b0797166cb,H0264,10.0,2019-12-14,ivivu,interaction,,,,,,,,
+R0236,,H0072,,,,hotel,VES - PA Luxury Hotel,Đà Lạt,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"VES-PA Luxury Hotel, 9A Nguyễn Thị Nghĩa VES-PA Luxury Hotel, 9A Nguyễn Thị Nghĩa"
+R0237,,H0244,,,,hotel,Khách sạn Meliá Vinpearl Huế,Huế,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,"Meliá Vinpearl Hue, 50A Hùng Vương Meliá Vinpearl Hue, 50A Hùng Vương"
+R0238,Uc845d335921c,H0533,9.0,2017-07-26,ivivu,interaction,,,,,,,,
+R0239,,H0499,,,,hotel,Khách sạn Marina Bay Côn Đảo,Vũng Tàu,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Marina Bay Con Dao Marina Bay Con Dao
+R0240,U6ee8629c8a1a,H0523,8.0,2023-07-15,booking,interaction,,,,,,,,
+R0241,,H0177,,,,hotel,Anio Boutique Hotel Hoi An,Hội An,Does this entry denote exactly one real hotel at this location?,1.0,1.0,1.0,,Anio Boutique Hotel Hoi An Anio Boutique Hotel Hoi An
+R0242,Uabf2104dc15d,H0085,6.5,2015-01-08,ivivu,interaction,,,,,,,,
+R0243,Ube55ef869f49,H0077,7.0,2016-08-14,ivivu,interaction,,,,,,,,
+R0244,U8f9142984511,H0482,10.0,2021-03-23,booking,interaction,,,,,,,,
+R0245,U71d1d0ff09c7,H0196,10.0,2021-02-25,ivivu,interaction,,,,,,,,
+R0246,Uf96b6ab17b89,H0059,5.5,2021-04-28,traveloka,interaction,,,,,,,,
+R0247,U0496458462e0,H0513,10.0,2023-10-02,ivivu,interaction,,,,,,,,

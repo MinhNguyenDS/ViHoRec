@@ -1,0 +1,31 @@
+﻿pair_id,name_a,city_a,platforms_a,name_b,city_b,platforms_b,label,notes
+P0373,Khách sạn Mường Thanh Grand Đà Nẵng,Đà Nẵng,ivivu,Muong Thanh Grand Da Nang Hotel,Đà Nẵng,traveloka,1,
+P0171,Khu nghỉ dưỡng Risemount Premier Đà Nẵng,Đà Nẵng,traveloka,Khu nghỉ dưỡng Risemount Premier Đà Nẵng,Đà Nẵng,ivivu,1,
+P0327,Khu nghỉ dưỡng Movenpick Phan Thiết,Phan Thiết,ivivu,Mövenpick Resort Phan Thiet,Phan Thiết,booking,1,
+P0185,Mira Eco Hotel Quy Nhơn,Quy Nhơn,booking,Mira Hotel,Quy Nhơn,booking | traveloka,0,"Mira Eco và Mira Hotel là hai cơ sở khác địa chỉ (24 Nguyễn Như Đỗ và 11A/13 Ngô Mây), cùng hệ thống Mira nhưng không phải cùng khách sạn. https://miraquynhon.com/"
+P0089,Khách sạn ANYA Premier Quy Nhơn,Quy Nhơn,ivivu,Khách sạn ANYA Quy Nhơn,Quy Nhơn,ivivu | traveloka,0,Khác hạng/thuộc tính thương hiệu: ANYA Premier vs ANYA.
+P0098,Khu nghỉ dưỡng Pilgrimage Village Boutique,Huế,booking | traveloka,Pilgrimage Village Resort & Spa Huế,Huế,ivivu,1,Tên đầy đủ được dùng là Pilgrimage Village - Boutique Resort & Spa. https://khamphahue.com.vn/en-us/Shopping/Detail/pid/15110/cid/540?tid=Pilgrimage-Village-Boutique-Resort-Spa.html
+P0398,RAON Hotel - STAY 24H,Quy Nhơn,booking,Raon Villa - STAY 24H,Đà Lạt,booking,0,Khác thành phố nên luôn là 0.
+P0331,Khách sạn Pullman Vũng Tàu,Vũng Tàu,ivivu,Pullman Vung Tau,Vũng Tàu,booking,1,
+P0109,Khách sạn Vias Vũng Tàu,Vũng Tàu,ivivu,Vias Hotel Vung Tau,Vũng Tàu,booking,1,
+P0018,Khu nghỉ dưỡng Novotel Phú Quốc,Phú Quốc,ivivu,Novotel Phu Quoc Resort,Phú Quốc,booking,1,
+P0065,The Palmy Phú Quốc Resort & Spa,Phú Quốc,traveloka,The Palmy Resort & Spa Phú Quốc,Phú Quốc,ivivu,1,
+P0176,Khu nghỉ dưỡng Ocean Dunes Phan Thiết,Phan Thiết,ivivu,Phan Thiet Ocean Dunes Resort,Phan Thiết,traveloka,1,
+P0076,Raon Hotel - STAY 24H,Đà Nẵng,booking,Raon Villa - STAY 24H,Đà Lạt,booking,0,Khác thành phố nên luôn là 0.
+P0122,Khu nghỉ dưỡng Hải Dương Intourco Vũng Tàu,Vũng Tàu,ivivu,Khu nghỉ dưỡng Intourco  Vũng Tàu,Vũng Tàu,ivivu,1,Khác biệt chỉ là tên/ khoảng trắng.
+P0108,Khu Nghỉ Dưỡng Movenpick Waverly Phú Quốc,Phú Quốc,ivivu,Mövenpick Resort Waverly Phu Quoc,Phú Quốc,booking,1,
+P0299,Khu Nghỉ Dưỡng Radisson Phan Thiết,Phan Thiết,ivivu,Radisson Resort Phan Thiet,Phan Thiết,booking,1,
+P0050,Khách sạn Rosaleen Boutique Huế,Huế,ivivu,Rosaleen Boutique Hotel,Huế,booking,1,
+P0053,Best Western Premier Sonasea Phu Quoc,Phú Quốc,booking,Khu Nghỉ Dưỡng Best Western Premier Sonasea Phú Quốc,Phú Quốc,ivivu,1,
+P0359,Fleur de Lys Hotel Quy Nhon,Quy Nhơn,booking,Khách sạn Fleur De Lys Quy Nhơn,Quy Nhơn,ivivu,1,
+P0054,Khách sạn ibis Styles Vũng Tàu,Vũng Tàu,ivivu,ibis Styles Vung Tau,Vũng Tàu,booking,1,
+P0279,Khu nghỉ dưỡng Seaside Vũng Tàu,Vũng Tàu,ivivu,Seaside Resort Vung Tau,Vũng Tàu,traveloka,1,
+P0362,Khách sạn TTC - Ngọc Lan Đà Lạt,Đà Lạt,ivivu,Khách sạn TTC – Đà Lạt,Đà Lạt,ivivu,1,
+P0193,HAIAN Beach Hotel & Spa,Đà Nẵng,booking,HAIAN Beach Hotel & Spa Đà Nẵng,Đà Nẵng,ivivu,1,
+P0419,RAON Hotel - STAY 24H,Quy Nhơn,booking,Raon Hotel - STAY 24H,Đà Nẵng,booking,0,Khác thành phố nên luôn là 0.
+P0237,Khu nghỉ dưỡng SOL by Meliá Phú Quốc,Phú Quốc,ivivu,SOL by Meliá Phu Quoc,Phú Quốc,booking,1,
+P0085,Khách sạn Thanh Lịch Royal Boutique Huế,Huế,ivivu,Thanh Lich Royal Boutique,Huế,booking,1,
+P0104,Khách sạn Sea Links Beach Phan Thiết,Phan Thiết,ivivu,Sea Links Beach Villas Phan Thiết,Phan Thiết,ivivu,0,Sea Links Beach Hotel và Sea Links Beach Villa là hai cơ sở khác nhau trong Sea Links City; nguồn địa phương mô tả villa là cơ sở riêng và nói villa cách/ở gần hotel. https://mybinhthuan.vn/en/sealinksbeachhotel ; https://mybinhthuan.vn/en/sealinksvilla
+P0123,Khu nghỉ dưỡng FLC Luxury Quy Nhơn,Quy Nhơn,ivivu | traveloka,Khách sạn FLC Luxury Quy Nhơn,Quy Nhơn,ivivu,0,FLC tách riêng FLC Luxury Resort Quy Nhon và FLC Luxury Hotel Quy Nhon thành hai hạng mục; guideline không gộp Hotel và Resort nếu không chứng minh cùng một cơ sở. https://quynhon.flchotelsresorts.com/en/hotel/flc-luxury-resort-quy-nhon-2/ ; https://quynhon.flchotelsresorts.com/en/hotel/flc-luxury-hotel-quy-nhon-2/
+P0205,Seashells Phu Quoc Hotel & Spa,Phú Quốc,booking,Seashells Phú Quốc Hotel & Spa,Phú Quốc,ivivu | traveloka,1,
+P0084,TMS Hotel Da Nang Beach,Đà Nẵng,booking,TMS Hotel Đà Nẵng Beach,Đà Nẵng,ivivu,1,

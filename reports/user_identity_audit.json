@@ -1,0 +1,317 @@
+{
+  "name_space": {
+    "n_interactions": 17911,
+    "n_distinct_names": 6822,
+    "name_char_length": {
+      "mean": 9.79,
+      "median": 10,
+      "p10": 5,
+      "p90": 14,
+      "max": 30
+    },
+    "token_count_distribution": {
+      "1": 1046,
+      "2": 844,
+      "3": 2682,
+      "4": 2182,
+      "5": 37,
+      "6": 14,
+      "7": 11,
+      "8": 2,
+      "9": 3,
+      "10": 1
+    },
+    "single_token_names": 1046,
+    "single_token_names_pct": 15.33,
+    "single_token_interactions": 7247,
+    "single_token_interactions_pct": 40.46,
+    "short_names_le3_chars": 330,
+    "short_names_le3_chars_pct": 4.84,
+    "short_name_interactions": 2514,
+    "short_name_interactions_pct": 14.04,
+    "initials_only_names": 5755,
+    "initials_only_names_pct": 84.36,
+    "top_names": [
+      {
+        "CustomerName": "Nguyễn",
+        "n_interactions": 210,
+        "n_tokens": 1,
+        "n_cities": 8
+      },
+      {
+        "CustomerName": "Nguyen",
+        "n_interactions": 188,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Thanh",
+        "n_interactions": 172,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Thi",
+        "n_interactions": 154,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Minh",
+        "n_interactions": 129,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Nguyen T. T.",
+        "n_interactions": 117,
+        "n_tokens": 3,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Trần",
+        "n_interactions": 106,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Anh",
+        "n_interactions": 104,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Nguyen T. H.",
+        "n_interactions": 103,
+        "n_tokens": 3,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Trang",
+        "n_interactions": 97,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Linh",
+        "n_interactions": 95,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Ngọc",
+        "n_interactions": 84,
+        "n_tokens": 1,
+        "n_cities": 8
+      },
+      {
+        "CustomerName": "Thu",
+        "n_interactions": 79,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Thị",
+        "n_interactions": 75,
+        "n_tokens": 1,
+        "n_cities": 9
+      },
+      {
+        "CustomerName": "Lê",
+        "n_interactions": 73,
+        "n_tokens": 1,
+        "n_cities": 8
+      }
+    ]
+  },
+  "placeholders": {
+    "placeholder_rows": 0,
+    "placeholder_rows_pct": 0.0,
+    "placeholder_user_ids_created": 0,
+    "largest_placeholder_bucket": 0,
+    "variants": [],
+    "after_removal": {
+      "n_interactions": 17911,
+      "n_users": 6822,
+      "max_interactions_per_user": 210,
+      "benchmark_eligible_users": 798
+    },
+    "impact": "The top entry of users.csv is a placeholder bucket, not a person; it must be removed or split before any user-level claim."
+  },
+  "collisions": {
+    "assumption": "one reviewer cannot post reviews for hotels in two different cities on the same calendar day",
+    "same_day_multi_city_events": 171,
+    "names_with_proven_collision": 69,
+    "names_with_proven_collision_pct": 1.01,
+    "interactions_under_colliding_names": 3513,
+    "interactions_under_colliding_names_pct": 19.61,
+    "released_user_ids": 6822,
+    "lower_bound_distinct_people": 6895,
+    "identity_inflation_factor": 1.011,
+    "names_on_all_three_platforms": 0,
+    "worst_offenders": [
+      {
+        "CustomerName": "Nguyen T. T. H.",
+        "min_distinct_people": 3,
+        "n_interactions": 72,
+        "n_cities_total": 9
+      },
+      {
+        "CustomerName": "Thi",
+        "min_distinct_people": 3,
+        "n_interactions": 154,
+        "n_cities_total": 9
+      },
+      {
+        "CustomerName": "Thanh",
+        "min_distinct_people": 3,
+        "n_interactions": 172,
+        "n_cities_total": 9
+      },
+      {
+        "CustomerName": "Trần",
+        "min_distinct_people": 3,
+        "n_interactions": 106,
+        "n_cities_total": 9
+      },
+      {
+        "CustomerName": "Anh",
+        "min_distinct_people": 2,
+        "n_interactions": 104,
+        "n_cities_total": 9
+      },
+      {
+        "CustomerName": "Hiếu",
+        "min_distinct_people": 2,
+        "n_interactions": 26,
+        "n_cities_total": 7
+      },
+      {
+        "CustomerName": "Dung",
+        "min_distinct_people": 2,
+        "n_interactions": 56,
+        "n_cities_total": 8
+      },
+      {
+        "CustomerName": "Chiến",
+        "min_distinct_people": 2,
+        "n_interactions": 4,
+        "n_cities_total": 3
+      },
+      {
+        "CustomerName": "Bao",
+        "min_distinct_people": 2,
+        "n_interactions": 20,
+        "n_cities_total": 8
+      },
+      {
+        "CustomerName": "Huong",
+        "min_distinct_people": 2,
+        "n_interactions": 30,
+        "n_cities_total": 9
+      },
+      {
+        "CustomerName": "Ho",
+        "min_distinct_people": 2,
+        "n_interactions": 12,
+        "n_cities_total": 6
+      },
+      {
+        "CustomerName": "Hoang",
+        "min_distinct_people": 2,
+        "n_interactions": 60,
+        "n_cities_total": 9
+      },
+      {
+        "CustomerName": "Hoa",
+        "min_distinct_people": 2,
+        "n_interactions": 33,
+        "n_cities_total": 8
+      },
+      {
+        "CustomerName": "Lan",
+        "min_distinct_people": 2,
+        "n_interactions": 36,
+        "n_cities_total": 9
+      },
+      {
+        "CustomerName": "Le H. T.",
+        "min_distinct_people": 2,
+        "n_interactions": 8,
+        "n_cities_total": 5
+      }
+    ]
+  },
+  "sensitivity": [
+    {
+      "policy": "all_names",
+      "label": "All display names (current release)",
+      "n_interactions": 17911,
+      "retained_pct": 100.0,
+      "n_users": 6822,
+      "n_hotels": 560,
+      "mean_interactions_per_user": 2.63,
+      "max_interactions_per_user": 210,
+      "single_interaction_users_pct": 69.5,
+      "benchmark_eligible_users": 798,
+      "sparsity_pct": 99.53
+    },
+    {
+      "policy": "drop_placeholders",
+      "label": "Drop imputed placeholder names",
+      "n_interactions": 17911,
+      "retained_pct": 100.0,
+      "n_users": 6822,
+      "n_hotels": 560,
+      "mean_interactions_per_user": 2.63,
+      "max_interactions_per_user": 210,
+      "single_interaction_users_pct": 69.5,
+      "benchmark_eligible_users": 798,
+      "sparsity_pct": 99.53
+    },
+    {
+      "policy": "drop_short_le3",
+      "label": "... and names with <= 3 characters",
+      "n_interactions": 15397,
+      "retained_pct": 85.96,
+      "n_users": 6492,
+      "n_hotels": 557,
+      "mean_interactions_per_user": 2.37,
+      "max_interactions_per_user": 210,
+      "single_interaction_users_pct": 70.63,
+      "benchmark_eligible_users": 688,
+      "sparsity_pct": 99.57
+    },
+    {
+      "policy": "drop_single_token",
+      "label": "... and single-token names",
+      "n_interactions": 10664,
+      "retained_pct": 59.54,
+      "n_users": 5776,
+      "n_hotels": 427,
+      "mean_interactions_per_user": 1.85,
+      "max_interactions_per_user": 117,
+      "single_interaction_users_pct": 71.88,
+      "benchmark_eligible_users": 493,
+      "sparsity_pct": 99.57
+    },
+    {
+      "policy": "min_two_tokens_and_no_collision",
+      "label": ">= 2 tokens, no proven collision",
+      "n_interactions": 10155,
+      "retained_pct": 56.7,
+      "n_users": 5763,
+      "n_hotels": 423,
+      "mean_interactions_per_user": 1.76,
+      "max_interactions_per_user": 46,
+      "single_interaction_users_pct": 72.05,
+      "benchmark_eligible_users": 481,
+      "sparsity_pct": 99.58
+    }
+  ],
+  "config": {
+    "min_interactions_benchmark": 4,
+    "short_name_chars": 3
+  },
+  "figure": "C:\\Users\\Admin\\Downloads\\AIDevMinh\\ViHoRec\\ViHoRec-SN\\Image\\UserIdentity.png"
+}

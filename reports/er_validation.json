@@ -1,0 +1,419 @@
+{
+  "human_vs_panel": {
+    "n_compared": 30,
+    "agreed": 28,
+    "agreement_rate": 0.9333,
+    "overturned_by_human": [
+      "P0123",
+      "P0185"
+    ]
+  },
+  "negative_audit": {
+    "n_compared": 100,
+    "agreed": 100,
+    "n_human_positive": 0,
+    "overturned_by_human": [],
+    "rule_of_three_95_upper": 0.03
+  },
+  "coverage": {
+    "n_pairs_in_sheet": 426,
+    "n_labelled": 426,
+    "n_unlabelled": 0,
+    "algo_merge_pairs_labelled": 26,
+    "algo_merge_pairs_total": 26
+  },
+  "label_provenance": {
+    "status": "llm_with_human_verification",
+    "verdict": "LLM annotation with human verification of 30 load-bearing rows plus a 100-row random audit of unanimous negatives. Describe it as such, never as manual annotation.",
+    "n_annotator_slots": 3,
+    "n_llm_slots": 3,
+    "n_human_resolved_labels": 130,
+    "n_load_bearing_verified": 30,
+    "n_negative_audited": 100,
+    "slots": [
+      {
+        "slot": "annotator_1",
+        "kind": "llm",
+        "model": "openai/gpt-5-mini",
+        "params": {
+          "temperature": null,
+          "top_p": null,
+          "seed": 42,
+          "max_tokens": 2000,
+          "reasoning_effort": "low"
+        },
+        "run_at": "2026-09-06T06:23:53+00:00",
+        "labelled": 426
+      },
+      {
+        "slot": "annotator_2",
+        "kind": "llm",
+        "model": "openai/gpt-4.1-mini",
+        "params": {
+          "temperature": 0.0,
+          "top_p": null,
+          "seed": 42,
+          "max_tokens": 2000,
+          "reasoning_effort": null
+        },
+        "run_at": "2026-09-06T06:39:04+00:00",
+        "labelled": 426
+      },
+      {
+        "slot": "annotator_3",
+        "kind": "llm",
+        "model": "z-ai/glm-5.3-flash",
+        "params": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "seed": 42,
+          "max_tokens": 2000,
+          "reasoning_effort": "low"
+        },
+        "run_at": "2026-09-06T06:50:15+00:00",
+        "labelled": 413
+      }
+    ]
+  },
+  "agreement": {
+    "n_annotators": 3,
+    "annotators": [
+      "annotator_1",
+      "annotator_2",
+      "annotator_3"
+    ],
+    "n_items_with_any_label": 426,
+    "n_items_rated_by_all": 413,
+    "unanimous_items": 409,
+    "unanimous_rate": 0.9903,
+    "items_needing_adjudication": 4,
+    "pairwise_cohens_kappa": {
+      "annotator_1 vs annotator_2": {
+        "n": 426,
+        "percent_agreement": 0.9953,
+        "expected_agreement": 0.8895,
+        "kappa": 0.9575,
+        "disagreements": 2,
+        "positive_rate_annotator_1": 0.0587,
+        "positive_rate_annotator_2": 0.0587
+      },
+      "annotator_1 vs annotator_3": {
+        "n": 413,
+        "percent_agreement": 0.9952,
+        "expected_agreement": 0.8905,
+        "kappa": 0.9558,
+        "disagreements": 2,
+        "positive_rate_annotator_1": 0.0605,
+        "positive_rate_annotator_2": 0.0557
+      },
+      "annotator_2 vs annotator_3": {
+        "n": 413,
+        "percent_agreement": 0.9903,
+        "expected_agreement": 0.8905,
+        "kappa": 0.9115,
+        "disagreements": 4,
+        "positive_rate_annotator_1": 0.0605,
+        "positive_rate_annotator_2": 0.0557
+      }
+    },
+    "fleiss_kappa": {
+      "n_items": 413,
+      "n_raters": 3,
+      "mean_item_agreement": 0.9935,
+      "expected_agreement": 0.8891,
+      "kappa": 0.9418
+    },
+    "n": 413,
+    "percent_agreement": 0.9903,
+    "kappa": 0.9418,
+    "disagreements": 4
+  },
+  "matchers": {
+    "name_only": {
+      "label": "Name-only canonical key (submitted version)",
+      "confusion": {
+        "true_positives": 17,
+        "false_positives": 5,
+        "false_negatives": 6,
+        "true_negatives": 398
+      },
+      "weighted_false_negatives": 6.0,
+      "weighted_fn_by_stratum": [
+        {
+          "stratum": "algo_merge",
+          "n_items": 4,
+          "weighted_fn": 4.0,
+          "share": 0.6667
+        },
+        {
+          "stratum": "top_similar",
+          "n_items": 2,
+          "weighted_fn": 2.0,
+          "share": 0.3333
+        }
+      ],
+      "recall_estimate_fragile": false,
+      "recall_driver": null,
+      "precision": 0.7727,
+      "sample_recall": 0.7391,
+      "estimated_recall": 0.7391,
+      "f1_sample": 0.7556,
+      "f1_estimated": 0.7556,
+      "false_positive_examples": [
+        {
+          "pair_id": "P0076",
+          "name_a": "Raon Hotel - STAY 24H",
+          "city_a": "Đà Nẵng",
+          "name_b": "Raon Villa - STAY 24H",
+          "city_b": "Đà Lạt"
+        },
+        {
+          "pair_id": "P0104",
+          "name_a": "Khách sạn Sea Links Beach Phan Thiết",
+          "city_a": "Phan Thiết",
+          "name_b": "Sea Links Beach Villas Phan Thiết",
+          "city_b": "Phan Thiết"
+        },
+        {
+          "pair_id": "P0123",
+          "name_a": "Khu nghỉ dưỡng FLC Luxury Quy Nhơn",
+          "city_a": "Quy Nhơn",
+          "name_b": "Khách sạn FLC Luxury Quy Nhơn",
+          "city_b": "Quy Nhơn"
+        },
+        {
+          "pair_id": "P0398",
+          "name_a": "RAON Hotel - STAY 24H",
+          "city_a": "Quy Nhơn",
+          "name_b": "Raon Villa - STAY 24H",
+          "city_b": "Đà Lạt"
+        },
+        {
+          "pair_id": "P0419",
+          "name_a": "RAON Hotel - STAY 24H",
+          "city_a": "Quy Nhơn",
+          "name_b": "Raon Hotel - STAY 24H",
+          "city_b": "Đà Nẵng"
+        }
+      ],
+      "false_negative_examples": [
+        {
+          "pair_id": "P0050",
+          "name_a": "Khách sạn Rosaleen Boutique Huế",
+          "city_a": "Huế",
+          "name_b": "Rosaleen Boutique Hotel",
+          "city_b": "Huế",
+          "jaccard": 0.3333
+        },
+        {
+          "pair_id": "P0085",
+          "name_a": "Khách sạn Thanh Lịch Royal Boutique Huế",
+          "city_a": "Huế",
+          "name_b": "Thanh Lich Royal Boutique",
+          "city_b": "Huế",
+          "jaccard": 0.5714
+        },
+        {
+          "pair_id": "P0098",
+          "name_a": "Khu nghỉ dưỡng Pilgrimage Village Boutique",
+          "city_a": "Huế",
+          "name_b": "Pilgrimage Village Resort & Spa Huế",
+          "city_b": "Huế",
+          "jaccard": 0.2222
+        },
+        {
+          "pair_id": "P0122",
+          "name_a": "Khu nghỉ dưỡng Hải Dương Intourco Vũng Tàu",
+          "city_a": "Vũng Tàu",
+          "name_b": "Khu nghỉ dưỡng Intourco  Vũng Tàu",
+          "city_b": "Vũng Tàu",
+          "jaccard": 0.8571
+        },
+        {
+          "pair_id": "P0193",
+          "name_a": "HAIAN Beach Hotel & Spa",
+          "city_a": "Đà Nẵng",
+          "name_b": "HAIAN Beach Hotel & Spa Đà Nẵng",
+          "city_b": "Đà Nẵng",
+          "jaccard": 0.6667
+        },
+        {
+          "pair_id": "P0362",
+          "name_a": "Khách sạn TTC - Ngọc Lan Đà Lạt",
+          "city_a": "Đà Lạt",
+          "name_b": "Khách sạn TTC – Đà Lạt",
+          "city_b": "Đà Lạt",
+          "jaccard": 0.7143
+        }
+      ]
+    },
+    "resolved": {
+      "label": "City- and type-aware resolver (revised)",
+      "confusion": {
+        "true_positives": 21,
+        "false_positives": 0,
+        "false_negatives": 2,
+        "true_negatives": 403
+      },
+      "weighted_false_negatives": 2.0,
+      "weighted_fn_by_stratum": [
+        {
+          "stratum": "top_similar",
+          "n_items": 2,
+          "weighted_fn": 2.0,
+          "share": 1.0
+        }
+      ],
+      "recall_estimate_fragile": true,
+      "recall_driver": "top_similar",
+      "precision": 1.0,
+      "sample_recall": 0.913,
+      "estimated_recall": 0.913,
+      "f1_sample": 0.9545,
+      "f1_estimated": 0.9545,
+      "false_positive_examples": [],
+      "false_negative_examples": [
+        {
+          "pair_id": "P0122",
+          "name_a": "Khu nghỉ dưỡng Hải Dương Intourco Vũng Tàu",
+          "city_a": "Vũng Tàu",
+          "name_b": "Khu nghỉ dưỡng Intourco  Vũng Tàu",
+          "city_b": "Vũng Tàu",
+          "jaccard": 0.8571
+        },
+        {
+          "pair_id": "P0362",
+          "name_a": "Khách sạn TTC - Ngọc Lan Đà Lạt",
+          "city_a": "Đà Lạt",
+          "name_b": "Khách sạn TTC – Đà Lạt",
+          "city_b": "Đà Lạt",
+          "jaccard": 0.7143
+        }
+      ]
+    }
+  },
+  "stratum_weights": {
+    "algo_merge": 1.0,
+    "top_similar": 1.0,
+    "hard_negative": 23.94,
+    "random_negative": 1098.49
+  },
+  "per_stratum": [
+    {
+      "stratum": "algo_merge",
+      "n_labelled": 26,
+      "n_true_duplicates": 21,
+      "duplicate_rate": 0.8077
+    },
+    {
+      "stratum": "hard_negative",
+      "n_labelled": 150,
+      "n_true_duplicates": 0,
+      "duplicate_rate": 0.0
+    },
+    {
+      "stratum": "random_negative",
+      "n_labelled": 150,
+      "n_true_duplicates": 0,
+      "duplicate_rate": 0.0
+    },
+    {
+      "stratum": "top_similar",
+      "n_labelled": 100,
+      "n_true_duplicates": 2,
+      "duplicate_rate": 0.02
+    }
+  ],
+  "disputed_pairs": [
+    {
+      "pair_id": "P0050",
+      "name_a": "Khách sạn Rosaleen Boutique Huế",
+      "city_a": "Huế",
+      "name_b": "Rosaleen Boutique Hotel",
+      "city_b": "Huế",
+      "merge_nameonly": false,
+      "merge_resolved": true,
+      "gold": 1
+    },
+    {
+      "pair_id": "P0076",
+      "name_a": "Raon Hotel - STAY 24H",
+      "city_a": "Đà Nẵng",
+      "name_b": "Raon Villa - STAY 24H",
+      "city_b": "Đà Lạt",
+      "merge_nameonly": true,
+      "merge_resolved": false,
+      "gold": 0
+    },
+    {
+      "pair_id": "P0085",
+      "name_a": "Khách sạn Thanh Lịch Royal Boutique Huế",
+      "city_a": "Huế",
+      "name_b": "Thanh Lich Royal Boutique",
+      "city_b": "Huế",
+      "merge_nameonly": false,
+      "merge_resolved": true,
+      "gold": 1
+    },
+    {
+      "pair_id": "P0098",
+      "name_a": "Khu nghỉ dưỡng Pilgrimage Village Boutique",
+      "city_a": "Huế",
+      "name_b": "Pilgrimage Village Resort & Spa Huế",
+      "city_b": "Huế",
+      "merge_nameonly": false,
+      "merge_resolved": true,
+      "gold": 1
+    },
+    {
+      "pair_id": "P0104",
+      "name_a": "Khách sạn Sea Links Beach Phan Thiết",
+      "city_a": "Phan Thiết",
+      "name_b": "Sea Links Beach Villas Phan Thiết",
+      "city_b": "Phan Thiết",
+      "merge_nameonly": true,
+      "merge_resolved": false,
+      "gold": 0
+    },
+    {
+      "pair_id": "P0123",
+      "name_a": "Khu nghỉ dưỡng FLC Luxury Quy Nhơn",
+      "city_a": "Quy Nhơn",
+      "name_b": "Khách sạn FLC Luxury Quy Nhơn",
+      "city_b": "Quy Nhơn",
+      "merge_nameonly": true,
+      "merge_resolved": false,
+      "gold": 0
+    },
+    {
+      "pair_id": "P0193",
+      "name_a": "HAIAN Beach Hotel & Spa",
+      "city_a": "Đà Nẵng",
+      "name_b": "HAIAN Beach Hotel & Spa Đà Nẵng",
+      "city_b": "Đà Nẵng",
+      "merge_nameonly": false,
+      "merge_resolved": true,
+      "gold": 1
+    },
+    {
+      "pair_id": "P0398",
+      "name_a": "RAON Hotel - STAY 24H",
+      "city_a": "Quy Nhơn",
+      "name_b": "Raon Villa - STAY 24H",
+      "city_b": "Đà Lạt",
+      "merge_nameonly": true,
+      "merge_resolved": false,
+      "gold": 0
+    },
+    {
+      "pair_id": "P0419",
+      "name_a": "RAON Hotel - STAY 24H",
+      "city_a": "Quy Nhơn",
+      "name_b": "Raon Hotel - STAY 24H",
+      "city_b": "Đà Nẵng",
+      "merge_nameonly": true,
+      "merge_resolved": false,
+      "gold": 0
+    }
+  ]
+}

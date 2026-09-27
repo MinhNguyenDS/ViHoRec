@@ -1,0 +1,10 @@
+comparison,metric,p,statistic,n_nonzero,n_pos,n_neg,n_zero,mean_diff,stars
+Random vs UserKNN-cosine,Recall@10,0.0,496.0,134,31,103,664,-0.1132,***
+BPR-MF vs UserKNN-cosine,Recall@10,0.0,4071.0,170,85,85,628,-0.0313,***
+MostPop vs UserKNN-cosine,Recall@10,0.0588,768.0,63,24,39,735,-0.0188,
+ItemKNN-cosine vs UserKNN-cosine,Recall@10,0.0001,750.0,74,20,54,724,-0.0426,***
+Content-TFIDF vs UserKNN-cosine,Recall@10,0.0,2079.0,125,33,92,673,-0.0739,***
+Hybrid-fixed (lam=0.7) vs UserKNN-cosine,Recall@10,0.5002,700.0,55,30,25,743,0.0063,
+AdaptiveHybrid vs UserKNN-cosine,Recall@10,0.4386,48.0,15,9,6,783,0.0038,
+EASE (lam=1000) vs UserKNN-cosine,Recall@10,0.2087,192.0,31,12,19,767,-0.0088,
+AdaptiveHybrid vs Hybrid-fixed (lam=0.7),Recall@10,0.7728,563.5,48,23,25,750,-0.0025,

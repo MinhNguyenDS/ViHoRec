@@ -8,8 +8,8 @@
   "completeness": {
     "CustomerName": {
       "present": true,
-      "missing_count": 0,
-      "missing_pct": 0.0
+      "missing_count": 357,
+      "missing_pct": 1.9536
     },
     "Location": {
       "present": true,
@@ -55,21 +55,43 @@
     "near_duplicate_pct": 0.0602
   },
   "entity_matching": {
+    "matcher": "city + property-type aware (resolve_hotel_entities)",
     "raw_distinct_hotel_names": 581,
     "canonical_hotels": 560,
     "name_variants_collapsed": 21,
     "collapse_rate_pct": 3.6145,
-    "hotels_on_multiple_sites": 78,
-    "canonical_keys_with_variant_spellings": 20
+    "hotels_on_multiple_sites": 81,
+    "canonical_keys_with_variant_spellings": 21,
+    "name_only_matcher_hotels": 560,
+    "entities_split_from_name_only_matcher": 3,
+    "entities_merged_beyond_name_only_matcher": 4
   },
   "location_consistency": {
-    "hotels_with_conflicting_location": 1
+    "hotels_with_conflicting_location": 0
+  },
+  "identity_validity": {
+    "placeholder_name_rows": 357,
+    "placeholder_name_pct": 1.9536,
+    "placeholder_variants": [
+      "-",
+      "Guest",
+      "Khách",
+      "Không tên",
+      "Na",
+      "グエン",
+      "吴振成",
+      "洪",
+      "粟原",
+      "선아"
+    ],
+    "note": "These rows carry an imputed display name. Collapsing them by name creates one artificial high-activity user; they are excluded from user-level statistics and from the benchmark split."
   },
   "cleaned": {
-    "n_after_cleaning": 18267,
-    "removed_total": 7,
-    "removed_pct": 0.0383,
-    "distinct_users_by_name": 6832,
+    "n_after_cleaning": 17911,
+    "removed_total": 363,
+    "removed_pct": 1.9864,
+    "removed_placeholder_identity": 356,
+    "distinct_users_by_name": 6822,
     "distinct_canonical_hotels": 560
   }
 }

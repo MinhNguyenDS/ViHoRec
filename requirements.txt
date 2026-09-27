@@ -1,2 +1,19 @@
+# Core pipeline: quality control, entity resolution, anonymisation, split,
+# dependency-free baselines and the validation reports.
 pandas>=1.5
 numpy>=1.23
+scipy>=1.10
+
+# Figures (user_identity_audit.py, data_analysis.py, cold_start_eval.py,
+# make_figures.py). user_identity_audit.py degrades gracefully without it;
+# the other figure scripts require it.
+matplotlib>=3.5
+
+# Phase 3 statistics (eval_stats.py) use scipy.
+# Optional neural baselines (run_neural_baselines.py): torch
+# Optional Cornac zoo on Colab (run_cornac_benchmark.py):
+# cornac>=1.17
+# scripts/llm_annotate/ calls OpenRouter for model-assisted annotation:
+# requests>=2.28
+
+# Verified on Python 3.13.13 with pandas 3.0.3, numpy 2.4.6.

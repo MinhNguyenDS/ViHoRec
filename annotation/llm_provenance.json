@@ -1,0 +1,52 @@
+{
+  "er_pairs": {
+    "annotator_1": {
+      "kind": "llm",
+      "model": "openai/gpt-5-mini",
+      "resolved_slug": "openai-gpt-5-mini",
+      "items": 426,
+      "labelled": 426,
+      "params": {
+        "temperature": null,
+        "top_p": null,
+        "seed": 42,
+        "max_tokens": 2000,
+        "reasoning_effort": "low"
+      },
+      "run_at": "2026-09-06T06:23:53+00:00",
+      "note": "Model-generated labels. Disclose as LLM annotation, not manual annotation."
+    },
+    "annotator_2": {
+      "kind": "llm",
+      "model": "openai/gpt-4.1-mini",
+      "resolved_slug": "openai-gpt-4.1-mini",
+      "items": 426,
+      "labelled": 426,
+      "params": {
+        "temperature": 0.0,
+        "top_p": null,
+        "seed": 42,
+        "max_tokens": 2000,
+        "reasoning_effort": null
+      },
+      "run_at": "2026-09-06T06:39:04+00:00",
+      "note": "Model-generated labels. Disclose as LLM annotation, not manual annotation."
+    },
+    "annotator_3": {
+      "kind": "llm",
+      "model": "z-ai/glm-5.3-flash",
+      "resolved_slug": "z-ai-glm-5.3-flash",
+      "items": 426,
+      "labelled": 413,
+      "params": {
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "seed": 42,
+        "max_tokens": 2000,
+        "reasoning_effort": "low"
+      },
+      "run_at": "2026-09-06T06:50:15+00:00",
+      "note": "Model-generated labels. Disclose as LLM annotation, not manual annotation."
+    }
+  }
+}
